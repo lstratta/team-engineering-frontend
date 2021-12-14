@@ -1,0 +1,46 @@
+body{
+    font-family: sans-serif;
+   
+}
+
+.your-profile-section{
+    border: 1px solid rgb(6, 20, 80);
+}
+
+.profile-edit{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.profile{
+    color: black;
+}
+
+.edit-btn{
+    border: none;
+    background: none;
+    padding-left: 10px;
+    color: rgb(6, 20, 80);
+
+}
+
+.summary-section{
+display: flex;
+align-items: center;
+padding: 30px 30px 30px 20px;
+}
+
+
+
+.personal-info, .training-info, .ps-list, .ts-list{
+font-size: 12px;
+}
+
+.personal-story-summary{
+    font-size: 15px;
+}
+.box2{
+    border: 1px solid rgb(6, 20, 80);
+    padding: 0 10px 10px 5px ;
+}
