@@ -1,7 +1,7 @@
 import React from "react";
 import '../css/your-profile.css'
 
-export default function YourTraining() {
+export default function YourTraining({cohort, learningPath, trainer, trainingFinishDate}) {
     return (
         <div>
             <div className="profile-edit">
@@ -10,10 +10,10 @@ export default function YourTraining() {
 
             <div className="summary-section">
                 <div className="your-training-info">
-                    <p className="training-info">Cohort: xxxxxxxx</p>
-                    <p className="training-info">Learning Path: xxxxxxx</p>
-                    <p className="training-info">Trainer: Ed Wright</p>
-                    <p className="training-info">Training: xx/xx/xxxx</p>
+                    <p className="training-info">Cohort: {cohort}</p>
+                    <p className="training-info">Learning Path: {learningPath}</p>
+                    <p className="training-info">Trainer: {trainer}</p>
+                    <p className="training-info">Training: {trainingFinishDate}</p>
                 </div>
 
                 <div className="training-summary">

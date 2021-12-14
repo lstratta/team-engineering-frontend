@@ -1,6 +1,4 @@
-{ 
-    "exampleGradUsers" :
-    [
+[
         {
             "_id": "60f532903ded77001064ae92",
             "soldOut": false,
@@ -41,7 +39,7 @@
                 },
                 {
                     "school": "Banana Episcopi",
-                    "exam-type": "A level",
+                    "examType": "A level",
                     "subject": "Geography",
                     "grade": "A",
                     "year": 2010,
@@ -98,5 +96,5 @@
             "trainingFinishDate": 1610643600
         }   
     ]
-}
+
 
