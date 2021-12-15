@@ -1,4 +1,5 @@
-[
+{
+    "graduate-user": [
         {
             "_id": "60f532903ded77001064ae92",
             "soldOut": false,
@@ -8,13 +9,13 @@
             "gender": "female",
             "nationality": "british",
             "personality": "INTJ",
-            "phone": 447845232994, 
+            "phone": 447845232994,
             "linkedIn": "www.linkedin.com/in/kalliope-schmidt-228a23189",
             "gitHub": "KalliopeSchmidt",
             "personalEmail": "kallischmidt@gmail.com",
             "digitalFuturesEmail": "kalliopehederaschmidt@gmail.com",
             "degrees": [
-                { 
+                {
                     "university": "Bristol",
                     "degreeSubject": "History",
                     "degreeLevel": "Bachelor's",
@@ -94,7 +95,6 @@
             "learningPath": "Software Engineering",
             "trainer": "Doris McLean",
             "trainingFinishDate": 1610643600
-        }   
+        }
     ]
-
-
+}
