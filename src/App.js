@@ -1,14 +1,20 @@
 import React from "react";
 import Trainee from "./components/Trainee";
 import NavBar from "./components/NavBar";
+import EditProfile from "./components/EditProfile";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
       <NavBar />
-      <h1>MAIN APPS</h1>
+      <Routes>
+        <Route exact path='/' element={<Trainee />} />
+        <Route path='EditProfile' element={<EditProfile />} />
+      </Routes>
       
-      <Trainee />
+      
+      
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import '../css/your-profile.css'
+import { Link } from "react-router-dom";
 
 
 export default function YourProfile({firstName, lastName, digitalFuturesEmail, personalEmail, gitHub, linkedIn, phone, degrees}) {
@@ -12,7 +13,7 @@ export default function YourProfile({firstName, lastName, digitalFuturesEmail, p
 
             <div className="profile-edit">
                 <h2 className="profile">Your Profile</h2>
-                <button className="edit-btn">Edit</button>
+                <Link to='/EditProfile'><button className="edit-btn">Edit</button></Link> 
             </div>
 
 
