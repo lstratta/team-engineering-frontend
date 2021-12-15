@@ -7,13 +7,8 @@ import Data from '../example-data.json'
 
 
 export default function Trainee() {
-//     const { degree } = Data
-//     const loop = degree?.map(d => console.log(d.degree))
-
-// console.log(loop)
 
     const profile = Data.map((data) => {
-      
         return <YourProfile
             key={data.id}
             {...data}

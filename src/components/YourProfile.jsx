@@ -31,7 +31,7 @@ export default function YourProfile({firstName, lastName, digitalFuturesEmail, p
                 <div className="personal-story">
                     <h2 className="personal-story-summary">Personal Story Summary:</h2>
                     <div className="box2">
-                        <p className="ps-list">Degree in {degrees[1]} from YYY</p>
+                        <p className="ps-list">Degree in {degrees[0].degreeSubject} from {degrees[0].from}</p>
                         <p className="ps-list">4 school qualifications</p>
                         <p className="ps-list">5 work experiences</p>
                         <p className="ps-list">3 personal achievements</p>
