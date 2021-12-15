@@ -16,7 +16,7 @@ export default function NavBar() {
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="/"><img src="./assets/df-logo.png" alt="Digital Futures Logo" width="50px" /></a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown position-absolute top-40 end-0 translate-middle-x">
                                 <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Menu
                                 </a>
