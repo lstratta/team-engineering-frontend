@@ -1,0 +1,19 @@
+.ep-personal-info-section, .ep-personal-story{
+    border: 1px solid rgb(6, 20, 80);
+    margin: 40px 20px;
+}
+
+.ep-personal-info-summary{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ep-personal-info{
+    display: flex;
+    align-items: center;
+}
+
+select{
+    margin-top: 30px;
+}

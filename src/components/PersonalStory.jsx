@@ -2,7 +2,7 @@ import React from "react";
 
 export default function PersonalStory() {
     return (
-        <div>
+        <div className="ep-personal-story">
             <div>
                 <h3>Degrees:</h3>
                 <form action="#">

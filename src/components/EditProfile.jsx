@@ -1,23 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PersonalInfo from "./PersonalInfo";
 import PersonalStory from "./PersonalStory";
-import Data from '../example-data.json'
+
+
 
 
 export default function EditProfile() {
+
+ const [graduateUser, setGraduateUser] = useState(null);
+
+ useEffect(() => {
+   fetch(" http://localhost:3000/graduateUser")
+     .then((res) => {
+       return res.json();
+     })
+     .then((data) => {
+       setGraduateUser(data);
+     });
+ }, []);
+
+
     
-    const edit = Data.map((editProfile) => {
-        return <PersonalInfo
-            key={editProfile.id}
-            {...editProfile}/>
-    })
+    // const edit = Data.map((editProfile) => {
+    //     return <PersonalInfo
+    //         key={editProfile.id}
+    //         {...editProfile}/>
+    // })
 
 
     return (
       <div>
-            {edit}
-            <PersonalStory/>
-      
+        {graduateUser && <PersonalInfo graduateUser={graduateUser} />}
+        <PersonalStory />
       </div>
     );
 }
