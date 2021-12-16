@@ -1,5 +1,7 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Trainee from "./components/Trainee";
+// import NavBar from "./components/NavBar";
 import NavBar from "./components/NavBar";
 import EditProfile from "./components/EditProfile";
 import { Routes, Route } from "react-router-dom";
