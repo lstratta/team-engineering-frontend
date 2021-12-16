@@ -2,7 +2,7 @@
   "graduateUser": [
     {
       "_id": "1234",
-      "soldOut": false,
+      "available": false,
       "firstName": "David",
       "lastName": "Schwimmer",
       "dateOfBirth": 609356000,
@@ -71,8 +71,27 @@
           "description": "Honing initiative to deliver high-quality team-engagement solutions"
         }
       ],
-      "certificatesAndAwards": [],
-      "portfolio": [],
+      "certificatesAndAwards": [ {
+        "type": "Cert",
+        "issuer": "Oracle",
+        "award": "Oracle Java SE",
+        "grade": "Pass",
+        "year": 2020,
+        "weight": "L",
+        "priority": 8,
+        "description": "Java certified"
+        
+      }],
+      "portfolio": [
+        {
+          "title": "How to drive",
+          "URL": "www.google.com",
+          "year": "2009",
+          "weight": "L",
+          "priority": 8,
+          "description": "Driving tutorial"
+        }
+      ],
       "personalSummary": "Magic and science fuse together to create... ME!",
       "cohort": "ds-2121-a",
       "learningPath": "Data Science",
@@ -151,8 +170,27 @@
           "description": "Looking after animals"
         }
       ],
-      "certificatesAndAwards": [],
-      "portfolio": [],
+      "certificatesAndAwards": [
+        {
+          "type": "Award",
+          "issuer": "Oracle",
+          "award": "Oracle Java SE",
+          "grade": "Pass",
+          "year": 2010,
+          "weight": "L",
+          "priority": 8,
+          "description": "Java certi"
+          
+        }
+      ],
+      "portfolio": [{
+        "title": "How to Yoga",
+        "URL": "www.google.com",
+        "year": "2019",
+        "weight": "L",
+        "priority": 8,
+        "description": "Yoga tutorial"
+      }],
       "personalSummary": "I am driven and determinded",
       "cohort": "mse-2121-a",
       "learningPath": "Software Engineering",
@@ -231,7 +269,19 @@
           "description": "Honing initiative to deliver high-quality team-engagement solutions"
         }
       ],
-      "certificatesAndAwards": [],
+      "certificatesAndAwards": [
+        {
+          "type": "Cert",
+          "issuer": "App stuff",
+          "award": "Python",
+          "grade": "Pass",
+          "year": 2019,
+          "weight": "L",
+          "priority": 2,
+          "description": "Pycharm certified"
+          
+        }
+      ],
       "portfolio": [
         {
           "title": "Lava: What is it really?",
