@@ -7,6 +7,7 @@ import Awards from "./Awards";
 import Portfolio from "./Portfolio"
 import DegreesModal from "./Modals/DegreesModal";
 import { Modal, Button } from "react-bootstrap";
+import SchoolModal from "./Modals/SchoolModal";
 
 
 export default function PersonalStory({ graduateUser }) {
@@ -37,8 +38,11 @@ export default function PersonalStory({ graduateUser }) {
   const [degreeShow, setDegreeShow] = useState(false)
   const handleShow = () => setDegreeShow(true)
   const handleClose = () => setDegreeShow(false)
-  
-  
+
+  const [schoolShow, setSchoolShow] = useState(false)
+  const handleSchoolShow = () => setSchoolShow(true)
+  const handleSchoolClose = () => setSchoolShow(false)
+ 
   
     
     return (
@@ -76,6 +80,7 @@ export default function PersonalStory({ graduateUser }) {
 
         <div className="app-container2">
           <h2>School Qualifications</h2>
+          <Button onClick={handleSchoolShow} className="btn btn-success" data-toggle="modal">Add New School Qualification</Button>
           <table>
             <thead>
               <tr>
@@ -147,6 +152,8 @@ export default function PersonalStory({ graduateUser }) {
           </table>
 
 
+          {/* DEGREE MODAL  */}
+
     <Modal show={degreeShow}>
           <Modal.Header>
             <Modal.Title>
@@ -164,7 +171,28 @@ export default function PersonalStory({ graduateUser }) {
           </Button>
           </Modal.Footer>
           
-        </Modal>
+          </Modal>
+          
+
+           {/* SCHOOL QUALIFICATIONS  MODAL  */}
+          <Modal show={schoolShow}>
+            <Modal.Header>
+              <Modal.Title>
+                Add School Qualifications
+              </Modal.Title>
+            </Modal.Header>
+
+            <Modal.Body>
+              <SchoolModal />
+            </Modal.Body>
+
+            <Modal.Footer>
+              <Button onClick={handleSchoolClose} variant="secondary">
+                Save
+              </Button>
+            </Modal.Footer>
+
+          </Modal>
 
 
 
