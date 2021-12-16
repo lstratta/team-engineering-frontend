@@ -5,9 +5,12 @@ import PersonalStory from "./PersonalStory";
 
 
 
+
 export default function EditProfile() {
 
- const [graduateUser, setGraduateUser] = useState(null);
+  const [graduateUser, setGraduateUser] = useState(null);
+  
+
 
  useEffect(() => {
    fetch(" http://localhost:3000/graduateUser")
@@ -31,7 +34,8 @@ export default function EditProfile() {
     return (
       <div>
         {graduateUser && <PersonalInfo graduateUser={graduateUser} />}
-        {graduateUser &&  <PersonalStory graduateUser={graduateUser[0]}/> }
+        {graduateUser && <PersonalStory graduateUser={graduateUser[0]} />}
+
        
       </div>
     );

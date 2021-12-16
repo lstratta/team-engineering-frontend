@@ -1,19 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import "../css/personal-story.css";
 import Degree from "./Degree";
 import SchoolQualifications from './SchoolQualifications'
 import WorkExperience from "./Work";
 import Awards from "./Awards";
 import Portfolio from "./Portfolio"
+import DegreesModal from "./Modals/DegreesModal";
+import { Modal, Button } from "react-bootstrap";
 
 
 export default function PersonalStory({ graduateUser }) {
   //   const { degrees } = graduateUser.degrees;
   const graduateId = graduateUser._id;
      const degreeRows = graduateUser.degrees.map((degree, graduateId) => (
-    <Degree key={graduateId} degree={degree} />
+       <Degree key={graduateId} degree={degree} />
+       
      ));
-    
+  
+  
     const schoolRows = graduateUser.schoolQualifications.map((schooling, graduateId) => (
         <SchoolQualifications key={graduateId} schooling={schooling} />
     ))
@@ -30,13 +34,22 @@ export default function PersonalStory({ graduateUser }) {
       <Portfolio key={graduateId} portfolio={portfolio} />
     ));
    
+  const [degreeShow, setDegreeShow] = useState(false)
+  const handleShow = () => setDegreeShow(true)
+  const handleClose = () => setDegreeShow(false)
+  
+  
+  
     
     return (
       <div>
+    
         <div className="ep-personal-story">
           <div>
             <div className="app-container">
+             
               <h2>Degrees</h2>
+              <Button onClick={handleShow} className="btn btn-success" data-toggle="modal">Add New Degree</Button>
               <table>
                 <thead>
                   <tr>
@@ -53,28 +66,9 @@ export default function PersonalStory({ graduateUser }) {
                 </thead>
                 <tbody>
                   {degreeRows}
-
-                  {/* <tr>
-                  {graduateUser &&
-                    graduateUser.map((graduate) => (
-                      <div key={graduateUser._id}>
-                        {graduate.degrees &&
-                          graduate.degrees.map((degree) => (
-                              
-                            <div  key={graduate._id}>
-                              <td>{degree.university}</td>
-                              <td>{degree.degreeSubject}</td>
-                              </div>
-                           
-                             
-                            
-                          ))}
-                            
-                      </div>
-                    ))}
-                </tr> */}
                 </tbody>
               </table>
+              
             </div>
           </div>
         </div>
@@ -151,6 +145,36 @@ export default function PersonalStory({ graduateUser }) {
             </thead>
             <tbody>{portfolioRows}</tbody>
           </table>
+
+
+    <Modal show={degreeShow}>
+          <Modal.Header>
+            <Modal.Title>
+              Add Degree
+            </Modal.Title>
+          </Modal.Header>
+          
+            <Modal.Body>
+              <DegreesModal />
+            </Modal.Body>
+
+          <Modal.Footer>
+            <Button  onClick={handleClose} variant="secondary">
+              Save
+          </Button>
+          </Modal.Footer>
+          
+        </Modal>
+
+
+
+
+
+
+
+
+
+
         </div>
       </div>
     );
