@@ -1,5 +1,18 @@
 nav{
-    background: rgb(6, 20, 80);
+    background: rgb(6, 20, 80);   
+}
+
+.navbar-light .navbar-nav .nav-link {
+    /* color: rgba(0,0,0,.55); */
+    color: white;
+}
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    /* color: #0d6efd; */
+    color: white;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
 .nav-link  {
