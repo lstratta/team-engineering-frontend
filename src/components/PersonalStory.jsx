@@ -5,12 +5,12 @@ import SchoolQualifications from './SchoolQualifications'
 import WorkExperience from "./Work";
 import Awards from "./Awards";
 import Portfolio from "./Portfolio"
-// import DegreesModal from "./Modals/DegreesModal";
+import DegreesModal from "./Modals/DegreesModal";
 import { Modal, Button } from "react-bootstrap";
-// import SchoolModal from "./Modals/SchoolModal";
-// import WorkModal from "./Modals/WorkModal";
-// import PortfolioModal from "./Modals/PortfolioModal"
-// import AwardsModal from "./Modals/AwardsModal"
+import SchoolModal from "./Modals/SchoolModal";
+import WorkModal from "./Modals/WorkModal";
+import PortfolioModal from "./Modals/PortfolioModal"
+import AwardsModal from "./Modals/AwardsModal"
 
 
 
@@ -202,7 +202,7 @@ export default function PersonalStory({graduateUser}) {
 
           {/* DEGREE MODAL  */}
 
-          {/* <Modal show={degreeShow}>
+          <Modal show={degreeShow}>
             <Modal.Header>
               <Modal.Title>Add Degree</Modal.Title>
             </Modal.Header>
@@ -216,31 +216,13 @@ export default function PersonalStory({graduateUser}) {
                 Close
               </Button>
             </Modal.Footer>
-          </Modal> */}
+          </Modal>
 
           
-
-
-
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
           {/* SCHOOL QUALIFICATIONS  MODAL  */}
-          {/* <Modal show={schoolShow}>
+          <Modal show={schoolShow}>
             <Modal.Header>
               <Modal.Title>Add School Qualifications</Modal.Title>
             </Modal.Header>
@@ -254,11 +236,11 @@ export default function PersonalStory({graduateUser}) {
                 Close
               </Button>
             </Modal.Footer>
-          </Modal> */}
+          </Modal>
 
           {/* WORK MODAL  */}
 
-          {/* <Modal show={workShow}>
+          <Modal show={workShow}>
             <Modal.Header>
               <Modal.Title>Add New Work Experience</Modal.Title>
             </Modal.Header>
@@ -272,10 +254,11 @@ export default function PersonalStory({graduateUser}) {
                 Close
               </Button>
             </Modal.Footer>
-          </Modal> */}
+          </Modal>
 
           {/* CERTS MODAL  */}
-          {/* <Modal show={awardsShow}>
+
+          <Modal show={awardsShow}>
             <Modal.Header>
               <Modal.Title>Add New Certificate/Award</Modal.Title>
             </Modal.Header>
@@ -289,10 +272,11 @@ export default function PersonalStory({graduateUser}) {
                 Close
               </Button>
             </Modal.Footer>
-          </Modal> */}
+          </Modal>
 
           {/* PORTFOLIO MODAL  */}
-          {/* <Modal show={portfolioShow}>
+
+          <Modal show={portfolioShow}>
             <Modal.Header>
               <Modal.Title>Add New Portfolio</Modal.Title>
             </Modal.Header>
@@ -306,7 +290,7 @@ export default function PersonalStory({graduateUser}) {
                 Close
               </Button>
             </Modal.Footer>
-          </Modal> */}
+          </Modal>
         </div>
       </div>
     );

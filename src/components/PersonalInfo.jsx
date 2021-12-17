@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import '../css/edit-profile.css'
 // import PersonalInfoModal from "./Modals/PersonalInfoModal";
 // import { Modal, Button } from "react-bootstrap";
@@ -10,9 +10,9 @@ export default function PersonalInfo(graduateUser) {
 
   console.log("GRADUATE USER OBJ", graduateUserObject)
 
-  const [personalInfoShow, setPersonalInfoShow] = useState(false);
-  const handlePersonalInfoShow = () => setPersonalInfoShow(true);
-  const handlePersonalInfoClose = () => setPersonalInfoShow(false);
+  // const [personalInfoShow, setPersonalInfoShow] = useState(false);
+  // const handlePersonalInfoShow = () => setPersonalInfoShow(true);
+  // const handlePersonalInfoClose = () => setPersonalInfoShow(false);
 
   return (
     <div>
@@ -32,13 +32,9 @@ export default function PersonalInfo(graduateUser) {
                <p>Phone: {graduateUserObject.phone}</p>
              </div>
             </div>
-          </div>
-        </div>
-
-
-
-      
-          <div className="dropdown-forms">
+       
+        
+        <div className="dropdown-forms">
             <div className="container-fluid">
 
               <form action="#">
@@ -97,39 +93,55 @@ export default function PersonalInfo(graduateUser) {
                       <option value="istp">ISTP</option>
                       <option value="infp">INFP</option>
                   </select>
-                </form>
-              </div>
+              </form>
+              
+
+
+            </div>
+         
+
+          </div>
+
+          <form action="#" >
+
+          <input className="pi-dropdown" type="file" name="photo" id="photo" />
+
+          </form>
             </div>
 
 
-        <form action="#">
+        
 
-          <input type="file" name="photo" id="photo" />
 
-        </form> 
+        </div>
+
+
+
+      
+          
     </div>
   );
 }
 
 
 
-{/* <div>  
+// {/* <div>  
   
-  <Button
-    onClick={handlePersonalInfoShow}
-    className="btn btn-success"
-    data-toggle="modal"
-  >
-    Edit Personal Information
-    </Button>
-</div> */}
+//   <Button
+//     onClick={handlePersonalInfoShow}
+//     className="btn btn-success"
+//     data-toggle="modal"
+//   >
+//     Edit Personal Information
+//     </Button>
+// </div> */}
 
   
   
             
                
   
-//           {/* PORTFOLIO MODAL 
+//           {/* PERSONAL INFO MODAL 
 //           <Modal show={personalInfoShow}>
 //             <Modal.Header>
 //               <Modal.Title>Edit Personal Information</Modal.Title>
