@@ -101,7 +101,7 @@
     },
     {
       "_id": "54321",
-      "soldOut": false,
+      "available": false,
       "firstName": "Bethany",
       "lastName": "Michaels",
       "dateOfBirth": 759356000,
@@ -200,7 +200,7 @@
     },
     {
       "_id": "60f532903ded77001064ae92",
-      "soldOut": false,
+      "available": false,
       "firstName": "Kalliope",
       "lastName": "Schmidt",
       "dateOfBirth": 709356000,

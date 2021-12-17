@@ -5,38 +5,29 @@ import YourTraining from "./YourTraining";
 
 
 
-export default function Trainee() {
+export default function Trainee(serverURL) {
+
+   // const server_URL = SERVER_URL.SERVER_URL
+
+    console.log("SERVER URL", serverURL.serverURL)
  
     const [graduateUser, setGraduateUser] = useState(null)
 
     useEffect(() => {
-        fetch(" http://localhost:3000/graduateUser")
+
+        fetch("http://localhost:3000/graduateUser")
           .then((res) => {
             return res.json();
           })
             .then((data) => {
               setGraduateUser(data)
            
-          });
-       
+          }); 
     }, [])
-    // const profile = Data.map((data) => {
-    //     return <YourProfile
-    //         key={data.id}
-    //         {...data}
-    //     />
-    // })
-
-    // const training = Data.map((train) => {
-    //     return <YourTraining
-    //         key={train.id}
-    //         {...train}
-        
-    //     />
-    // })
 
     return (
         <div>
+
             {graduateUser && <YourProfile graduateUser={graduateUser} />}
             {graduateUser && <YourTraining graduateUser={graduateUser} />}
             

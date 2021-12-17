@@ -5,40 +5,35 @@ import SchoolQualifications from './SchoolQualifications'
 import WorkExperience from "./Work";
 import Awards from "./Awards";
 import Portfolio from "./Portfolio"
-import DegreesModal from "./Modals/DegreesModal";
+// import DegreesModal from "./Modals/DegreesModal";
 import { Modal, Button } from "react-bootstrap";
-import SchoolModal from "./Modals/SchoolModal";
-import WorkModal from "./Modals/WorkModal";
-import PortfolioModal from "./Modals/PortfolioModal"
-import AwardsModal from "./Modals/AwardsModal"
+// import SchoolModal from "./Modals/SchoolModal";
+// import WorkModal from "./Modals/WorkModal";
+// import PortfolioModal from "./Modals/PortfolioModal"
+// import AwardsModal from "./Modals/AwardsModal"
 
 
 
+export default function PersonalStory({graduateUser}) {
 
+  console.log("PERSONAL STORY", graduateUser)
 
-export default function PersonalStory({graduateUser, setGraduateUser}) {
-
-  
-  
-  
-  //   const { degrees } = graduateUser.degrees;
   const graduateId = graduateUser._id;
-     const degreeRows = graduateUser.degrees.map((degree, graduateId) => (
-       <Degree key={graduateId} degree={degree} />
-       
-     ));
-  
-  
-    const schoolRows = graduateUser.schoolQualifications.map((schooling, graduateId) => (
-        <SchoolQualifications key={graduateId} schooling={schooling} />
-    ))
+  const degreeRows = graduateUser.degrees.length > 0 && graduateUser.degrees.map((degree, graduateId) => (
+    <Degree key={graduateId} degree={degree} />
+    
+  ));
+    
+  const schoolRows = graduateUser.schoolQualifications.map((schooling, graduateId) => (
+      <SchoolQualifications key={graduateId} schooling={schooling} />
+  ))
 
-    const workRows = graduateUser.workExperience.map((work, graduateId) => (
-        <WorkExperience key={graduateId} work={work} />
-    ))
+  const workRows = graduateUser.workExperience.map((work, graduateId) => (
+      <WorkExperience key={graduateId} work={work} />
+  ))
 
-    const awardsRows = graduateUser.certificatesAndAwards.map((award, graduateId) => (
-      <Awards key={graduateId} award={award} />
+  const awardsRows = graduateUser.certificatesAndAwards.map((award, graduateId) => (
+    <Awards key={graduateId} award={award} />
   ))
   
     const portfolioRows = graduateUser.portfolio.map((portfolio, graduateId) => (
@@ -207,13 +202,13 @@ export default function PersonalStory({graduateUser, setGraduateUser}) {
 
           {/* DEGREE MODAL  */}
 
-          <Modal show={degreeShow}>
+          {/* <Modal show={degreeShow}>
             <Modal.Header>
               <Modal.Title>Add Degree</Modal.Title>
             </Modal.Header>
 
             <Modal.Body>
-              <DegreesModal setGraduateUser={setGraduateUser}/>
+              <DegreesModal />
             </Modal.Body>
 
             <Modal.Footer>
@@ -221,7 +216,7 @@ export default function PersonalStory({graduateUser, setGraduateUser}) {
                 Close
               </Button>
             </Modal.Footer>
-          </Modal>
+          </Modal> */}
 
           
 
@@ -245,7 +240,7 @@ export default function PersonalStory({graduateUser, setGraduateUser}) {
 
 
           {/* SCHOOL QUALIFICATIONS  MODAL  */}
-          <Modal show={schoolShow}>
+          {/* <Modal show={schoolShow}>
             <Modal.Header>
               <Modal.Title>Add School Qualifications</Modal.Title>
             </Modal.Header>
@@ -259,11 +254,11 @@ export default function PersonalStory({graduateUser, setGraduateUser}) {
                 Close
               </Button>
             </Modal.Footer>
-          </Modal>
+          </Modal> */}
 
           {/* WORK MODAL  */}
 
-          <Modal show={workShow}>
+          {/* <Modal show={workShow}>
             <Modal.Header>
               <Modal.Title>Add New Work Experience</Modal.Title>
             </Modal.Header>
@@ -277,10 +272,10 @@ export default function PersonalStory({graduateUser, setGraduateUser}) {
                 Close
               </Button>
             </Modal.Footer>
-          </Modal>
+          </Modal> */}
 
           {/* CERTS MODAL  */}
-          <Modal show={awardsShow}>
+          {/* <Modal show={awardsShow}>
             <Modal.Header>
               <Modal.Title>Add New Certificate/Award</Modal.Title>
             </Modal.Header>
@@ -294,10 +289,10 @@ export default function PersonalStory({graduateUser, setGraduateUser}) {
                 Close
               </Button>
             </Modal.Footer>
-          </Modal>
+          </Modal> */}
 
           {/* PORTFOLIO MODAL  */}
-          <Modal show={portfolioShow}>
+          {/* <Modal show={portfolioShow}>
             <Modal.Header>
               <Modal.Title>Add New Portfolio</Modal.Title>
             </Modal.Header>
@@ -311,7 +306,7 @@ export default function PersonalStory({graduateUser, setGraduateUser}) {
                 Close
               </Button>
             </Modal.Footer>
-          </Modal>
+          </Modal> */}
         </div>
       </div>
     );

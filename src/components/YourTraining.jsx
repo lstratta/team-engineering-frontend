@@ -1,5 +1,5 @@
 import React from "react";
-import '../css/your-profile.css'
+import '../css/your-profile.css' 
 
 export default function YourTraining({graduateUser}) {
     return (

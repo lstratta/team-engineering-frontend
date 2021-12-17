@@ -1,42 +1,68 @@
 import React, { useEffect, useState } from "react";
 import PersonalInfo from "./PersonalInfo";
 import PersonalStory from "./PersonalStory";
+import axios from "axios";
 
 
+const EditProfile = () => {
 
-
-
-export default function EditProfile() {
-
-  const [graduateUser, setGraduateUser] = useState(null);
+  const [graduateUser, setGraduateUser] = useState({
+    "_id": "",
+    "available": "",
+    "firstName": "",
+    "lastName": "",
+    "dateOfBirth": "",
+    "gender": "",
+    "nationality": "",
+    "personality": "",
+    "phone": "",
+    "linkedIn": "",
+    "gitHub": "",
+    "personalEmail": "",
+    "digitalFuturesEmail": "",
+    "degrees": [],
+    "schoolQualifications": [],
+    "workExperience": [],
+    "certificatesAndAwards": [],
+    "portfolio": [],
+    "personalSummary": "",
+    "cohort": "",
+    "learningPath": "",
+    "trainer": "",
+    "trainingFinishDate": ""
+  });
   
 
+  const getData = async () => {
 
- useEffect(() => {
-   fetch(" http://localhost:3000/graduateUser")
-     .then((res) => {
-       return res.json();
-     })
-     .then((data) => {
-       setGraduateUser(data);
-     });
- }, []);
+    await axios.get("http://localhost:3000/graduateUser")
+      .then(res => {
+        // console.log("AXIOS RES", res.data[0])
+        setGraduateUser(res.data[0])
+        // console.log("GRADUATE USER", graduateUser)
+      }).catch(err => {
+        console.log(err)
+      })
+  }
 
+  useEffect(() => {
+
+    getData()
 
     
-    // const edit = Data.map((editProfile) => {
-    //     return <PersonalInfo
-    //         key={editProfile.id}
-    //         {...editProfile}/>
-    // })
+
+  }, []);
 
 
     return (
+      
       <div>
-        {graduateUser && <PersonalInfo graduateUser={graduateUser} />}
-        {graduateUser && <PersonalStory setGraduateUser={setGraduateUser} graduateUser={graduateUser[0]} />}
 
-       
+        <PersonalInfo graduateUser={graduateUser}/>
+        <PersonalStory graduateUser={graduateUser}/>
+
       </div>
     );
 }
+
+export default EditProfile;
