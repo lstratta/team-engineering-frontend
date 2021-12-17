@@ -16,7 +16,7 @@ const AwardModal = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newAward = {
-      id: nanoid(),
+      _id: nanoid(),
       type,
       issuer,
       award,
@@ -126,16 +126,16 @@ const AwardModal = () => {
           onChange={(e) => setPriority(e.target.value)}
         >
           <option>Priority</option>
-          <option value="priority1">1</option>
-          <option value="priority2">2</option>
-          <option value="priority3">3</option>
-          <option value="priority4">4</option>
-          <option value="priority5">5</option>
-          <option value="priority6">6</option>
-          <option value="priority7">7</option>
-          <option value="priority8">8</option>
-          <option value="priority9">9</option>
-          <option value="priority10">10</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
         </Form.Select>
 
         <Form.Group className="mb-3">
@@ -148,7 +148,7 @@ const AwardModal = () => {
           />
         </Form.Group>
 
-        <Button variant="success" type="submit" block>
+        <Button variant="success" type="submit">
           Add New Certificate/Award
         </Button>
       </Form>

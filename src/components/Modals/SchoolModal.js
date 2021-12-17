@@ -17,7 +17,7 @@ const SchoolModal = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         const newSchool = {
-            id: nanoid(),
+            _id: nanoid(),
             school, examType, subject, grade, year, weight, priority, description
         }
 
@@ -55,10 +55,10 @@ const SchoolModal = () => {
             onChange={(e) => setExamType(e.target.value)}
           >
             <option> Exam Type </option>
-            <option value="a-level">A level</option>
-            <option value="as-level">AS Level</option>
+            <option value="A level">A level</option>
+            <option value="AS level">AS Level</option>
             <option value="gcse">GCSE</option>
-            <option value="hs-diploma">High School Diploma</option>
+            <option value="hs diploma">High School Diploma</option>
           </Form.Select>
           <br />
 
@@ -81,13 +81,13 @@ const SchoolModal = () => {
             onChange={(e) => setGrade(e.target.value)}
           >
             <option>Grade</option>
-            <option value="first"> A*</option>
-            <option value="twoOne">A</option>
-            <option value="twoTwo">B</option>
-            <option value="twoTwo">C</option>
-            <option value="third">D</option>
-            <option value="third">E</option>
-            <option value="third">U</option>
+            <option value="A*"> A*</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+            <option value="U">U</option>
           </Form.Select>
 
           <br />
@@ -121,16 +121,16 @@ const SchoolModal = () => {
             onChange={(e) => setPriority(e.target.value)}
           >
             <option>Priority</option>
-            <option value="priority1">1</option>
-            <option value="priority2">2</option>
-            <option value="priority3">3</option>
-            <option value="priority4">4</option>
-            <option value="priority5">5</option>
-            <option value="priority6">6</option>
-            <option value="priority7">7</option>
-            <option value="priority8">8</option>
-            <option value="priority9">9</option>
-            <option value="priority10">10</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
           </Form.Select>
 
           <Form.Group className="mb-3">
@@ -143,7 +143,7 @@ const SchoolModal = () => {
             />
           </Form.Group>
 
-          <Button variant="success" type="submit" block>
+          <Button variant="success" type="submit" >
             Add New School Qualification
           </Button>
         </Form>

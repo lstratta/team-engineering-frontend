@@ -16,7 +16,11 @@ import AwardsModal from "./Modals/AwardsModal"
 
 
 
-export default function PersonalStory({ graduateUser }) {
+export default function PersonalStory({graduateUser, setGraduateUser}) {
+
+  
+  
+  
   //   const { degrees } = graduateUser.degrees;
   const graduateId = graduateUser._id;
      const degreeRows = graduateUser.degrees.map((degree, graduateId) => (
@@ -197,6 +201,10 @@ export default function PersonalStory({ graduateUser }) {
             <tbody>{portfolioRows}</tbody>
           </table>
 
+
+
+
+
           {/* DEGREE MODAL  */}
 
           <Modal show={degreeShow}>
@@ -205,7 +213,7 @@ export default function PersonalStory({ graduateUser }) {
             </Modal.Header>
 
             <Modal.Body>
-              <DegreesModal />
+              <DegreesModal setGraduateUser={setGraduateUser}/>
             </Modal.Body>
 
             <Modal.Footer>
@@ -214,6 +222,27 @@ export default function PersonalStory({ graduateUser }) {
               </Button>
             </Modal.Footer>
           </Modal>
+
+          
+
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
           {/* SCHOOL QUALIFICATIONS  MODAL  */}
           <Modal show={schoolShow}>

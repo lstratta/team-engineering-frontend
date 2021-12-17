@@ -34,7 +34,7 @@ export default function EditProfile() {
     return (
       <div>
         {graduateUser && <PersonalInfo graduateUser={graduateUser} />}
-        {graduateUser && <PersonalStory graduateUser={graduateUser[0]} />}
+        {graduateUser && <PersonalStory setGraduateUser={setGraduateUser} graduateUser={graduateUser[0]} />}
 
        
       </div>
