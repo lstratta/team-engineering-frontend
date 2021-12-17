@@ -71,17 +71,18 @@
           "description": "Honing initiative to deliver high-quality team-engagement solutions"
         }
       ],
-      "certificatesAndAwards": [ {
-        "type": "Cert",
-        "issuer": "Oracle",
-        "award": "Oracle Java SE",
-        "grade": "Pass",
-        "year": 2020,
-        "weight": "L",
-        "priority": 8,
-        "description": "Java certified"
-        
-      }],
+      "certificatesAndAwards": [
+        {
+          "type": "Cert",
+          "issuer": "Oracle",
+          "award": "Oracle Java SE",
+          "grade": "Pass",
+          "year": 2020,
+          "weight": "L",
+          "priority": 8,
+          "description": "Java certified"
+        }
+      ],
       "portfolio": [
         {
           "title": "How to drive",
@@ -98,7 +99,6 @@
       "trainer": "Daniel Ferrera",
       "trainingFinishDate": 1610643600
     },
-
     {
       "_id": "54321",
       "soldOut": false,
@@ -180,24 +180,24 @@
           "weight": "L",
           "priority": 8,
           "description": "Java certi"
-          
         }
       ],
-      "portfolio": [{
-        "title": "How to Yoga",
-        "URL": "www.google.com",
-        "year": "2019",
-        "weight": "L",
-        "priority": 8,
-        "description": "Yoga tutorial"
-      }],
+      "portfolio": [
+        {
+          "title": "How to Yoga",
+          "URL": "www.google.com",
+          "year": "2019",
+          "weight": "L",
+          "priority": 8,
+          "description": "Yoga tutorial"
+        }
+      ],
       "personalSummary": "I am driven and determinded",
       "cohort": "mse-2121-a",
       "learningPath": "Software Engineering",
       "trainer": "Doris McLean",
       "trainingFinishDate": 1610643600
     },
-
     {
       "_id": "60f532903ded77001064ae92",
       "soldOut": false,
@@ -279,7 +279,6 @@
           "weight": "L",
           "priority": 2,
           "description": "Pycharm certified"
-          
         }
       ],
       "portfolio": [
@@ -305,6 +304,18 @@
       "learningPath": "Software Engineering",
       "trainer": "Doris McLean",
       "trainingFinishDate": 1610643600
+    },
+    {
+      "id": "GKOu1F5QB6ggS1ZiwHXmh",
+      "university": "UCL",
+      "degreeSubject": "Cloud Engineering",
+      "degreeLevel": "",
+      "grade": "",
+      "fromDate": "2020-12-01",
+      "toDate": "2021-12-01",
+      "weight": "XL",
+      "priority": "priority1",
+      "description": "Cloud engineering"
     }
   ]
 }

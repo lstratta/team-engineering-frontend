@@ -19,19 +19,6 @@ export default function YourProfile({graduateUser}) {
 <div className="your-profile-section">
         <div className="container-fluid">
 
-{/*             
-               { graduateUser && graduateUser.map(graduate => (
-          <div>
-                   {
-             
-                graduate.degrees.map(degree => (
-                    <div key={graduate._id}>
-                     <p className="ps-list">Degree in {degree.degreeSubject}  from</p> 
-
-                </div>
-            ))}
-          </div>
-               ))} */}
             
 
             <div className="profile-edit">

@@ -8,6 +8,12 @@ import Portfolio from "./Portfolio"
 import DegreesModal from "./Modals/DegreesModal";
 import { Modal, Button } from "react-bootstrap";
 import SchoolModal from "./Modals/SchoolModal";
+import WorkModal from "./Modals/WorkModal";
+import PortfolioModal from "./Modals/PortfolioModal"
+import AwardsModal from "./Modals/AwardsModal"
+
+
+
 
 
 export default function PersonalStory({ graduateUser }) {
@@ -42,18 +48,34 @@ export default function PersonalStory({ graduateUser }) {
   const [schoolShow, setSchoolShow] = useState(false)
   const handleSchoolShow = () => setSchoolShow(true)
   const handleSchoolClose = () => setSchoolShow(false)
+
+  const [workShow, setWorkShow] = useState(false);
+  const handleWorkShow = () => setWorkShow(true);
+  const handleWorkClose = () => setWorkShow(false);
+ 
+  const [awardsShow, setAwardsShow] = useState(false);
+  const handleAwardsShow = () => setAwardsShow(true);
+  const handleAwardsClose = () => setAwardsShow(false);
+
+  const [portfolioShow, setPortfolioShow] = useState(false);
+  const handlePortfolioShow = () => setPortfolioShow(true);
+  const handlePortfolioClose = () => setPortfolioShow(false);
  
   
     
     return (
       <div>
-    
         <div className="ep-personal-story">
           <div>
             <div className="app-container">
-             
               <h2>Degrees</h2>
-              <Button onClick={handleShow} className="btn btn-success" data-toggle="modal">Add New Degree</Button>
+              <Button
+                onClick={handleShow}
+                className="btn btn-success"
+                data-toggle="modal"
+              >
+                Add New Degree
+              </Button>
               <table>
                 <thead>
                   <tr>
@@ -68,11 +90,8 @@ export default function PersonalStory({ graduateUser }) {
                     <th>Description</th>
                   </tr>
                 </thead>
-                <tbody>
-                  {degreeRows}
-                </tbody>
+                <tbody>{degreeRows}</tbody>
               </table>
-              
             </div>
           </div>
         </div>
@@ -80,7 +99,13 @@ export default function PersonalStory({ graduateUser }) {
 
         <div className="app-container2">
           <h2>School Qualifications</h2>
-          <Button onClick={handleSchoolShow} className="btn btn-success" data-toggle="modal">Add New School Qualification</Button>
+          <Button
+            onClick={handleSchoolShow}
+            className="btn btn-success"
+            data-toggle="modal"
+          >
+            Add New School Qualification
+          </Button>
           <table>
             <thead>
               <tr>
@@ -100,6 +125,13 @@ export default function PersonalStory({ graduateUser }) {
 
         <div className="app-container3">
           <h2>Work Experience / Positions Held</h2>
+          <Button
+            onClick={handleWorkShow}
+            className="btn btn-success"
+            data-toggle="modal"
+          >
+            Add New Work Experience
+          </Button>
           <table>
             <thead>
               <tr>
@@ -118,6 +150,13 @@ export default function PersonalStory({ graduateUser }) {
         </div>
         <div className="app-container4">
           <h2>Certificates and awards</h2>
+          <Button
+            onClick={handleAwardsShow}
+            className="btn btn-success"
+            data-toggle="modal"
+          >
+            Add New Certificates/Awards
+          </Button>
           <table>
             <thead>
               <tr>
@@ -137,6 +176,13 @@ export default function PersonalStory({ graduateUser }) {
 
         <div className="app-container5">
           <h2>Portfolio</h2>
+          <Button
+            onClick={handlePortfolioShow}
+            className="btn btn-success"
+            data-toggle="modal"
+          >
+            Add New Portfolio
+          </Button>
           <table>
             <thead>
               <tr>
@@ -151,35 +197,28 @@ export default function PersonalStory({ graduateUser }) {
             <tbody>{portfolioRows}</tbody>
           </table>
 
-
           {/* DEGREE MODAL  */}
 
-    <Modal show={degreeShow}>
-          <Modal.Header>
-            <Modal.Title>
-              Add Degree
-            </Modal.Title>
-          </Modal.Header>
-          
+          <Modal show={degreeShow}>
+            <Modal.Header>
+              <Modal.Title>Add Degree</Modal.Title>
+            </Modal.Header>
+
             <Modal.Body>
               <DegreesModal />
             </Modal.Body>
 
-          <Modal.Footer>
-            <Button  onClick={handleClose} variant="secondary">
-              Save
-          </Button>
-          </Modal.Footer>
-          
+            <Modal.Footer>
+              <Button onClick={handleClose} variant="secondary">
+                Close
+              </Button>
+            </Modal.Footer>
           </Modal>
-          
 
-           {/* SCHOOL QUALIFICATIONS  MODAL  */}
+          {/* SCHOOL QUALIFICATIONS  MODAL  */}
           <Modal show={schoolShow}>
             <Modal.Header>
-              <Modal.Title>
-                Add School Qualifications
-              </Modal.Title>
+              <Modal.Title>Add School Qualifications</Modal.Title>
             </Modal.Header>
 
             <Modal.Body>
@@ -188,21 +227,62 @@ export default function PersonalStory({ graduateUser }) {
 
             <Modal.Footer>
               <Button onClick={handleSchoolClose} variant="secondary">
-                Save
+                Close
               </Button>
             </Modal.Footer>
-
           </Modal>
 
+          {/* WORK MODAL  */}
 
+          <Modal show={workShow}>
+            <Modal.Header>
+              <Modal.Title>Add New Work Experience</Modal.Title>
+            </Modal.Header>
 
+            <Modal.Body>
+              <WorkModal />
+            </Modal.Body>
 
+            <Modal.Footer>
+              <Button onClick={handleWorkClose} variant="secondary">
+                Close
+              </Button>
+            </Modal.Footer>
+          </Modal>
 
+          {/* CERTS MODAL  */}
+          <Modal show={awardsShow}>
+            <Modal.Header>
+              <Modal.Title>Add New Certificate/Award</Modal.Title>
+            </Modal.Header>
 
+            <Modal.Body>
+              <AwardsModal />
+            </Modal.Body>
 
+            <Modal.Footer>
+              <Button onClick={handleAwardsClose} variant="secondary">
+                Close
+              </Button>
+            </Modal.Footer>
+          </Modal>
 
+          {/* PORTFOLIO MODAL  */}
+          <Modal show={portfolioShow}>
+            <Modal.Header>
+              <Modal.Title>Add New Portfolio</Modal.Title>
+            </Modal.Header>
 
+            <Modal.Body>
+              <PortfolioModal />
+            </Modal.Body>
 
+            <Modal.Footer>
+              <Button onClick={handlePortfolioClose} variant="secondary">
+                Close
+              </Button>
+            </Modal.Footer>
+          </Modal>
         </div>
       </div>
     );
