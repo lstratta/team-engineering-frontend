@@ -14,13 +14,13 @@ export default class NavBar extends Component {
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
                                 <Nav.Link href="#home"></Nav.Link>
-                                <Nav.Link href="/EditProfile">Edit Profile</Nav.Link>
-                                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                    <NavDropdown.Divider />
-                                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                                <Nav.Link href="/EditProfile"></Nav.Link>
+                                <NavDropdown title="Menu" id="basic-nav-dropdown">
+                                    <NavDropdown.Item href="/EditProfile">Edit Profile</NavDropdown.Item>
+                                    {/* <NavDropdown.Item href="#action/3.2"></NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.3"></NavDropdown.Item> */}
+                                    {/* <NavDropdown.Divider />
+                                    <NavDropdown.Item href="#action/3.4"></NavDropdown.Item> */}
                                 </NavDropdown>
                             </Nav>
                         </Navbar.Collapse>
