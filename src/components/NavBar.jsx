@@ -10,7 +10,7 @@ export default class NavBar extends Component {
             <div className='header2'>
                 <Navbar expand="lg">
                     <Container>
-                        <Navbar.Brand href="/graduate/:id"><img src="../assets/df-logo.png" alt="Digital Futures Logo" width="50px" /></Navbar.Brand>
+                        <Navbar.Brand href="/graduate/:id"><img src="../assets/df-logo.png" alt="Digital Futures Logo" width="100px" /></Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">

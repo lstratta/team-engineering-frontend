@@ -19,7 +19,8 @@ export default function YourProfile({graduateUser}) {
 <div className="your-profile-section">
     <div className="container-fluid">
 
-            <div className="profile-edit">
+                <div className="profile-edit">
+                    
                 <h2 className="profile">Your Profile</h2>
                 {/* <Link to='/graduate/:id/edit'><button className="edit-btn">Edit</button></Link>  */}
             </div>
@@ -35,9 +36,10 @@ export default function YourProfile({graduateUser}) {
                 </div>
 
 
-
+                    
                     <div className="personal-story">
-                        <div className="container-sm">
+                            <div>
+                         <div className="container-fluid">       
                     <h2 className="personal-story-summary">Personal Story Summary:</h2>
                     <div className="box2">
 
@@ -57,7 +59,8 @@ export default function YourProfile({graduateUser}) {
                         <p className="ps-list">{personala} personal achievements</p>
                     </div>
                 </div>
-            </div>
+                    </div>
+                    </div>
         </div>
     </div>
 </div>
