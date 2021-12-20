@@ -37,7 +37,7 @@ export default function YourTraining({graduateUser}) {
 
        
       </div>
-       <h2 className="news">News</h2>
+      
     </div>
     );
 }
