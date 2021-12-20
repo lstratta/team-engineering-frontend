@@ -10,7 +10,7 @@ export default function YourProfile({graduateUser}) {
     const school = graduateUser[0].schoolQualifications.length
     const work = graduateUser[0].workExperience.length;
     const personala = graduateUser[0].certificatesAndAwards.length;
-  
+    let gradDegree = graduateUser[0].degrees
     
     return (
 
@@ -21,7 +21,7 @@ export default function YourProfile({graduateUser}) {
 
             <div className="profile-edit">
                 <h2 className="profile">Your Profile</h2>
-                <Link to='/graduate/:id/edit'><button className="edit-btn">Edit</button></Link> 
+                {/* <Link to='/graduate/:id/edit'><button className="edit-btn">Edit</button></Link>  */}
             </div>
 
             <div className="summary-section">
@@ -41,19 +41,17 @@ export default function YourProfile({graduateUser}) {
                     <h2 className="personal-story-summary">Personal Story Summary:</h2>
                     <div className="box2">
 
-                       { graduates && graduates.map(graduate => (
-                        <div key={graduates._id}>
-                            {graduate.degrees && graduate.degrees.map(degree => (
-                                <div key={graduate._id}>
-                                <p className="ps-list">Degree in {degree.degreeSubject} from { degree.from}</p> 
-                    
-                                </div>
-                            ))}
+                                {  !graduateUser[0].degrees ?  <p className="ps-list">Degree not found</p> :
+                                
+                              <div >
+                                        <p className="ps-list">Degree in {graduateUser[0].degrees[0].degreeSubject} from {graduateUser[0].degrees[0].from}</p> 
+                                    </div>
+                                
+                                
+                                }
                             
-                        </div>
-                        ))}
-            
-                        
+                     
+                    
                         <p className="ps-list">{school} Qualifications</p>
                         <p className="ps-list">{work} work experiences</p>
                         <p className="ps-list">{personala} personal achievements</p>

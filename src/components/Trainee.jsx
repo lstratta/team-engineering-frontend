@@ -29,7 +29,8 @@ export default function Trainee(serverURL) {
         <div>
 
             {graduateUser && <YourProfile graduateUser={graduateUser} />}
-            {graduateUser && <YourTraining graduateUser={graduateUser} />}
+        {graduateUser && <YourTraining graduateUser={graduateUser} />}
+        
             
         </div>
     )

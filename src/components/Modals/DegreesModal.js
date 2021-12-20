@@ -17,6 +17,7 @@ const DegreesModal = ({setGraduateUser}) => {
   const [weight, setWeight] = useState('');
   const [priority, setPriority] = useState('');
   const [description, setDescription] = useState('');
+  const [isPending, setIsPending] = useState(false)
 
   
 
@@ -26,6 +27,7 @@ const DegreesModal = ({setGraduateUser}) => {
       _id: nanoid(),
    university, degreeSubject, degreeLevel, grade, fromDate, toDate, weight, priority, description
     }
+    setIsPending(true);
 
     fetch("http://localhost:3000/graduateUser", {
       method: 'POST',
@@ -35,6 +37,7 @@ const DegreesModal = ({setGraduateUser}) => {
       
     }).then(() => {
       console.log('New degree added')
+      setIsPending(false);
     })
     getData();
    
@@ -82,7 +85,6 @@ const DegreesModal = ({setGraduateUser}) => {
           </Form.Group>
           <br />
 
-       
           <Form.Select
             aria-label="Default select example"
             value={degreeLevel}
@@ -96,7 +98,11 @@ const DegreesModal = ({setGraduateUser}) => {
           </Form.Select>
 
           <br />
-          <Form.Select aria-label="Default select example" value={grade} onChange={(e) => setGrade(e.target.value)}>
+          <Form.Select
+            aria-label="Default select example"
+            value={grade}
+            onChange={(e) => setGrade(e.target.value)}
+          >
             <option>Grade</option>
             <option value="1:1">1:1</option>
             <option value="2:1">2:1</option>
@@ -107,15 +113,32 @@ const DegreesModal = ({setGraduateUser}) => {
 
           <Form.Group className="mb-3">
             <FormLabel>From</FormLabel>
-            <Form.Control type="date" name="from"  required value={fromDate} onChange={(e) => setFromDate(e.target.value)} />
+            <Form.Control
+              type="date"
+              name="from"
+              required
+              value={fromDate}
+              onChange={(e) => setFromDate(e.target.value)}
+            />
           </Form.Group>
 
           <Form.Group className="mb-3">
             <FormLabel>To</FormLabel>
-            <Form.Control type="date" name="to" placeholder="2004" required value={toDate} onChange={(e) => setToDate(e.target.value)}/>
+            <Form.Control
+              type="date"
+              name="to"
+              placeholder="2004"
+              required
+              value={toDate}
+              onChange={(e) => setToDate(e.target.value)}
+            />
           </Form.Group>
 
-          <Form.Select aria-label="Default select example" value={weight} onChange={(e) => setWeight(e.target.value)}>
+          <Form.Select
+            aria-label="Default select example"
+            value={weight}
+            onChange={(e) => setWeight(e.target.value)}
+          >
             <option>Weight</option>
             <option value="XL">XL</option>
             <option value="L">L</option>
@@ -123,7 +146,11 @@ const DegreesModal = ({setGraduateUser}) => {
             <option value="S">S</option>
           </Form.Select>
 
-          <Form.Select aria-label="Default select example" value={priority} onChange={(e) => setPriority(e.target.value)}>
+          <Form.Select
+            aria-label="Default select example"
+            value={priority}
+            onChange={(e) => setPriority(e.target.value)}
+          >
             <option>Priority</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -139,13 +166,24 @@ const DegreesModal = ({setGraduateUser}) => {
 
           <Form.Group className="mb-3">
             <FormLabel>Description</FormLabel>
-            <Form.Control type="text" name="description"  value={description} onChange={(e) => setDescription(e.target.value)}/>
+            <Form.Control
+              type="text"
+              name="description"
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+            />
           </Form.Group>
 
-          <Button variant="success" type="submit" >
-            Add New Degree
-          </Button>
-
+          {!isPending && (
+            <Button variant="success" type="submit">
+              Add New Degree
+            </Button>
+          )}
+          {isPending && (
+            <Button variant="success" type="submit" disabled>
+              Adding New Degree...
+            </Button>
+          )}
         </Form>
       </div>
     );
