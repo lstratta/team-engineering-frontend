@@ -21,7 +21,7 @@ export default function PersonalInfo(graduateUser) {
          <div className="ep-personal-info-summary">
            <div className="ep-personal-info">
              <div className="container-fluid">
-               <h1>Personal Information</h1>
+               <h1 className="pi-info-header">Personal Information</h1>
                <p>
                  {" "}
                  Name: {graduateUserObject.firstName} {graduateUserObject.lastName}
@@ -45,15 +45,15 @@ export default function PersonalInfo(graduateUser) {
                     id="gender"
                     defaultValue={"default"}
                   >
-
+                     
                       <option value="default" hidden>
                         Gender
-                      </option>
-                      <option value="female">Female</option>
-                      <option value="male">Male</option>
-                      <option value="nonBinary">Non-Binary</option>
-                      <option value="other">Prefer not to say</option>
-
+                  </option>
+                      <option   value="female">Female</option>
+                      <option   value="male">Male</option>
+                      <option   value="nonBinary">Non-Binary</option>
+                      <option   value="other">Prefer not to say</option>
+                    
                   </select>
 
                   <br />
