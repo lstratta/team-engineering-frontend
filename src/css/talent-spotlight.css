@@ -1,0 +1,23 @@
+.ep-personal-info-section, .ep-personal-story, .app-container2, .app-container3, .app-container4, .app-container5{
+    border: 1px solid rgb(6, 20, 80);
+    margin: 40px 20px;
+}
+
+.ep-personal-info-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ep-personal-info{
+    display: flex;
+    align-items: center;
+}
+
+select{
+    margin-top: 30px;
+}
+
+.pi-dropdown{
+    font-size: 15px;
+}
