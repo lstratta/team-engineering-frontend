@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+
 import GraduateCard from "./GraduateCard.jsx";
+import DataScienceSection from "./DataScienceSection.jsx";
+import SoftwareEngineeringSection from "./SoftwareEngineeringSection.jsx";
 
 const TalentSpotlight = (serverURL) => {
 
@@ -30,32 +33,10 @@ const TalentSpotlight = (serverURL) => {
             <div className="description">
                 <p> lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  </p>
             </div>
-            <div className="software-engineering-section">
-                <div className="software-engineering-title">
-                    <h3>Software Engineering</h3>
-                </div>
-                <div>
-                    {
-                        graduates.map( (graduate) => {
-                               return (
-                                   <div key={graduate._id}>
-                                        < GraduateCard graduate={graduate} />
-                                   </div>
-                                   )
-                            }
-                     )
-                    } 
-                    
-                </div>
-            </div>
-            <div className="data-science-section">
-                <div className="data-science-title">
-                    <h3>Data Science</h3>
-                </div>
-                <div>
-                    {/* map to jsx data */} 
-                </div>
-            </div>
+
+
+            <DataScienceSection graduates={graduates} />
+            <SoftwareEngineeringSection graduates={graduates} />
 
         </div> 
     );
