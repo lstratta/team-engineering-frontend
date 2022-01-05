@@ -15,7 +15,7 @@ const TalentSpotlight = () => {
                     <h3>Software Engineering</h3>
                 </div>
                 <div>
-                    {/* map to jsx data */} 
+                     
                     < GraduateCard />
                 </div>
             </div>

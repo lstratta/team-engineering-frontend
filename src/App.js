@@ -17,7 +17,7 @@ function App() {
       <NavBar />
 
       <Routes>
-        <Route exact path='/graduate/:id' element={<Trainee  serverURL={SERVER_URL}/>}  />
+        <Route path='/graduate/:id' element={<Trainee  serverURL={SERVER_URL}/>}  />
         <Route path='/graduate/:id/edit' element={<EditProfile />} />
         <Route exact path="/industry-partner/TalentSpotlight" element={<TalentSpotlight />} />
       </Routes>
