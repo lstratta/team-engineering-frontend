@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap'
 import '../css/header.css'
-import { renderMatches } from 'react-router-dom'
+import { renderMatches, Link } from 'react-router-dom'
+
 
 
 export default class NavBar extends Component {
@@ -16,13 +17,13 @@ export default class NavBar extends Component {
                             <Nav className="me-auto">
                                 <Nav.Link href="#home"></Nav.Link>
                                 <Nav.Link href="/EditProfile"></Nav.Link>
-                                {/* <NavDropdown title="Menu" id="basic-nav-dropdown">
+                                <NavDropdown title="Menu" id="basic-nav-dropdown">
                                     <NavDropdown.Item href="/EditProfile">Edit Profile</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2"></NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3"></NavDropdown.Item>
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item href="#action/3.4"></NavDropdown.Item>
-                                </NavDropdown> */}
+                                </NavDropdown>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
