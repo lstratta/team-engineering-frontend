@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Trainee from "./components/Trainee";
 import NavBar from "./components/NavBar";
 import EditProfile from "./components/EditProfile";
+import TalentSpotlight from "./components/industry-partner/TalentSpotlight";
 
 function App() {
 
@@ -16,8 +17,9 @@ function App() {
       <NavBar />
 
       <Routes>
-        <Route exact path='/graduate/:id' element={<Trainee  serverURL={SERVER_URL}/>}  />
+        <Route path='/graduate/:id' element={<Trainee  serverURL={SERVER_URL}/>}  />
         <Route path='/graduate/:id/edit' element={<EditProfile />} />
+        <Route exact path="/industry-partner/TalentSpotlight" element={<TalentSpotlight serverURL={JSON_SERVER_URL} />} />
       </Routes>
       
       
