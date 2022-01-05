@@ -1,12 +1,30 @@
+body{
+    background-image: url("./background.jpg");
+}
+
 .ep-personal-info-section, .ep-personal-story, .app-container2, .app-container3, .app-container4, .app-container5{
-    border: 1px solid rgb(6, 20, 80);
+  
     margin: 40px 20px;
+    font-size: 14px;
+    background-color: rgb(255, 253, 250);
+    border-radius: 10px;
+    box-shadow: rgba(206, 206, 206, 0.5) 3px 3px 3px 3px;
+    
 }
 
 .ep-personal-info-summary {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: rgb(255, 253, 250);
+    border-radius: 10px;
+    box-shadow: rgba(206, 206, 206, 0.5) 3px 3px 3px 3px;
+    
+}
+
+.pi-info-header{
+    padding-top: 10px;
+    font-size: 32px;
 }
 
 .ep-personal-info{
@@ -16,8 +34,13 @@
 
 select{
     margin-top: 30px;
+
 }
 
 .pi-dropdown{
-    font-size: 15px;
+    font-size: 14px;
+}
+
+optgroup{
+font-size: 10px;
 }

@@ -1,23 +1,25 @@
 body{
     font-family: sans-serif;
+    background-image: url("./background.jpg");
    
 }
 
-.your-profile-section, .training-section{
+/* .your-profile-section, .training-section{
     border: 1px solid rgb(6, 20, 80);
     border-radius: 10px;
     margin-top: 40px;
     padding-top: 10px;
     margin: 40px 20px;
-}
+} */
 
-/* .your-profile-section, .training-section{
+.your-profile-section, .training-section{
     border-radius: 10px;
     margin-top: 40px;
     padding-top: 10px;
     margin: 40px 20px;
-    box-shadow: rgba(206, 206, 206, 0.685) 5px 5px;
-} */
+    box-shadow: rgba(206, 206, 206, 0.5) 5px 5px 5px 5px;
+    background-color: rgb(255, 253, 250);
+}
 
 .profile-edit{
     display: flex;
@@ -25,8 +27,13 @@ body{
     padding-left: 10px;
 }
 
-.profile{
+.profile-edit{
     color: black;
+    padding-top: 20px;
+}
+
+.training{
+    padding-top: 3px;
 }
 
 .edit-btn{
@@ -49,18 +56,29 @@ padding: 30px 30px 30px 20px;
 }
 
 .personal-info, .training-info, .ps-list, .ts-list{
-font-size: 12px;
+font-size: 14px;
 }
 
 .personal-story-summary{
-    font-size: 15px;
+    font-size: 18px;
 }
+
+.personal-story{
+padding-left: 30px;
+}
+
+.training-summary{
+   margin-left: 70px;
+   padding-left: 120px;
+}
+
 .box2{
-    border: 1px solid rgb(6, 20, 80);
-    padding: 10px 100px 5px 5px ;
+    /* border: 1px solid rgb(6, 20, 80); */
+    padding: 10px 100px 5px 10px ;
+    background-color: rgb(231, 231, 231);
+    border-radius: 3px;
+   
 }
 
 
-.news{
-    padding-left: 30px;
-}
+
