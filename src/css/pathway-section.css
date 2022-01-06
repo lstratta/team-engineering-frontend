@@ -2,17 +2,14 @@
     width: 95%;
     overflow: hidden;
     align-items: center;
+    justify-content: center;
 }
 
 .pathway-section{
-/* display: inline-block; */
-    align-items: center;
-    /* justify-content: center; */
+    /* display: inline-block; */
+    
 }
 
-.gradCard{
-    align-items: center;
-}
 
 .title{
     margin-top: 2%;
