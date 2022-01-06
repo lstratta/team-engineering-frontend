@@ -1,3 +1,9 @@
+body{
+    font-family: sans-serif;
+    background-image: url("./background.jpg");
+   
+}
+
 img{
     border-radius: 50%;
     width: 50%;   
@@ -6,16 +12,26 @@ img{
 .graduate-card{
     border: 1px solid rgb(6, 20, 80);
     width: 250px;
-    height: 450px;
+    height: 500px;
     float: left;
     text-align: center;
-    margin-right: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
     margin-bottom: 30px;
-    /* padding-bottom: 5%; */
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
     /* display: inline-block; */
 }
 
-.view-profile-button > button{
-    vertical-align: bottom;
+.view-profile-button {
+    /* border: 2px solid rgb(80, 27, 6); */
+    position:absolute;                
+    width: 100%;
+    padding-right: 10%;
+    margin-bottom: 5%;
+    /* vertical-align: bottom; */
     bottom: 0;
+    
 }

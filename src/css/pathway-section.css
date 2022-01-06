@@ -1,8 +1,7 @@
 .wide-div{
     width: 95%;
-    overflow: hidden;
-    /* align-items: center; */
     text-align: center;
+    margin: auto;
 
 }
 
