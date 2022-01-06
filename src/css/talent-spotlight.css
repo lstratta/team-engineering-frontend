@@ -1,4 +1,21 @@
-.ep-personal-info-section, .ep-personal-story, .app-container2, .app-container3, .app-container4, .app-container5{
+body{
+    font-family: sans-serif;
+    background-image: url("./background.jpg");
+   
+}
+
+.headline{
+    padding-top: 1%;
+    padding-left: 2%;
+}
+
+.description{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+
+.data-science-section, .software-engineering-section{
     border: 1px solid rgb(6, 20, 80);
     margin: 40px 20px;
 }
