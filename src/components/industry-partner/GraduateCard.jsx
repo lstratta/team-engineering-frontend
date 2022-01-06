@@ -1,11 +1,13 @@
+import "../../css/graduate-card.css"
+
 const GraduateCard = (graduate) => {
-    
+
     const graduateUser = graduate.graduate;
-    
-    return(
+
+    return (
         <div className="graduate-card">
             <div className="profile-image">
-                <img src="../assets/df-log-black.png" alt="Digital Futures logo"/>
+                <img src="../assets/df-logo-blue-background.png" alt="Digital Futures logo" />
             </div>
             <div className="profile-name">
                 <h4>{graduateUser.firstName + " " + graduateUser.lastName}</h4>

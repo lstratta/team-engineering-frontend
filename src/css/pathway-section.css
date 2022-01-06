@@ -1,0 +1,21 @@
+.wide-div{
+    width: 95%;
+    overflow: hidden;
+    align-items: center;
+}
+
+.pathway-section{
+/* display: inline-block; */
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.gradCard{
+    align-items: center;
+}
+
+.title{
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}

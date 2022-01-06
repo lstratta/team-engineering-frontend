@@ -4,12 +4,13 @@ import axios from "axios";
 import GraduateCard from "./GraduateCard.jsx";
 import DataScienceSection from "./DataScienceSection.jsx";
 import SoftwareEngineeringSection from "./SoftwareEngineeringSection.jsx";
+import "../../css/talent-spotlight.css";
 
 const TalentSpotlight = (serverURL) => {
 
     const [graduates, setGraduates] = useState([]);
 
-    const dataServer = serverURL.serverURL+"graduateUser";
+    const dataServer = serverURL.serverURL + "graduateUser";
     console.log("TALENT SPOTLIGHT SERVER URL", serverURL.serverURL);
 
     const getData = async () => {
@@ -18,27 +19,31 @@ const TalentSpotlight = (serverURL) => {
                 setGraduates(res.data)
             })
             .catch(err => console.log(err));
-        }
+    }
 
     useEffect(() => {
-        getData()            
+        getData()
     }, [])
 
 
-    return( 
+    return (
         <div>
             <div className="headline">
-               <h2>Talent Spotlight</h2>
+                <h2>Talent Spotlight</h2>
             </div>
             <div className="description">
-                <p> lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  </p>
+                <p> lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
             </div>
 
+            <div className="data-science-section">
+                <DataScienceSection graduates={graduates} />
+            </div>
 
-            <DataScienceSection graduates={graduates} />
-            <SoftwareEngineeringSection graduates={graduates} />
+            <div className="software-engineering-section">
+                <SoftwareEngineeringSection graduates={graduates} />
+            </div>
 
-        </div> 
+        </div>
     );
 
 }
