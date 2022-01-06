@@ -304,4 +304,434 @@
       "learningPath": "Software Engineering",
       "trainer": "Doris McLean",
       "trainingFinishDate": 1610643600
-    }]}
+    },
+    {
+      "_id": "60f532903ded77001064ae94",
+      "available": false,
+      "firstName": "Bill",
+      "lastName": "Schmidt",
+      "dateOfBirth": 709356000,
+      "gender": "female",
+      "nationality": "british",
+      "personality": "INTJ",
+      "phone": 447845232994,
+      "linkedIn": "www.linkedin.com/in/kalliope-schmidt-228a23189",
+      "gitHub": "KalliopeSchmidt",
+      "personalEmail": "kallischmidt@gmail.com",
+      "digitalFuturesEmail": "kalliopehederaschmidt@gmail.com",
+      "degrees": [
+        {
+          "university": "Bristol",
+          "degreeSubject": "History",
+          "degreeLevel": "Bachelor's",
+          "grade": "2:1",
+          "from": 2011,
+          "to": 2015,
+          "weight": "XL",
+          "priority": 9,
+          "description": "A history degree"
+        }
+      ],
+      "schoolQualifications": [
+        {
+          "school": "Banana Episcopi",
+          "examType": "A level",
+          "subject": "History",
+          "grade": "A*",
+          "year": 2010,
+          "weight": "L",
+          "priority": 8,
+          "description": "An A level in history"
+        },
+        {
+          "school": "Banana Episcopi",
+          "examType": "A level",
+          "subject": "Geography",
+          "grade": "A",
+          "year": 2010,
+          "weight": "L",
+          "priority": 6,
+          "description": "An A level in geography"
+        },
+        {
+          "school": "Banana Episcopi",
+          "examType": "A level",
+          "subject": "English Literature",
+          "grade": "B",
+          "year": 2010,
+          "weight": "L",
+          "priority": 7,
+          "description": "An A level in English literature"
+        }
+      ],
+      "workExperience": [
+        {
+          "type": "full-time",
+          "employer": "Malvolio ltd",
+          "position": "clerk",
+          "from": 2016,
+          "to": 2020,
+          "weight": "L",
+          "priority": 8,
+          "description": "Honing initiative to deliver high-quality team-engagement solutions"
+        }
+      ],
+      "certificatesAndAwards": [
+        {
+          "type": "Cert",
+          "issuer": "App stuff",
+          "award": "Python",
+          "grade": "Pass",
+          "year": 2019,
+          "weight": "L",
+          "priority": 2,
+          "description": "Pycharm certified"
+        }
+      ],
+      "portfolio": [
+        {
+          "title": "Lava: What is it really?",
+          "url": "https://www.youtube.com/watch?v=uh4dMLK9q8r",
+          "year": 2017,
+          "weight": "L",
+          "priority": 6,
+          "description": "An academic seminar I delivered on lava at a conference"
+        },
+        {
+          "title": "Robespierre's fashion choices",
+          "url": "https://www.youtube.com/watch?v=uh4dGLH9q7s",
+          "year": 2018,
+          "weight": "M",
+          "priority": 7,
+          "description": "A motivational talk I gave about Robespierre"
+        }
+      ],
+      "personalSummary": "I am a highly motivated and determined individual, both creative and analytic. I have a passion for capybaras and knitting. I just love JavaScript.",
+      "cohort": "mse-2121-a",
+      "learningPath": "Software Engineering",
+      "trainer": "Doris McLean",
+      "trainingFinishDate": 1610643600
+    },
+    {
+      "_id": "60f532903ded77001064ae95",
+      "available": false,
+      "firstName": "Ben",
+      "lastName": "Schmidt",
+      "dateOfBirth": 709356000,
+      "gender": "female",
+      "nationality": "british",
+      "personality": "INTJ",
+      "phone": 447845232994,
+      "linkedIn": "www.linkedin.com/in/kalliope-schmidt-228a23189",
+      "gitHub": "KalliopeSchmidt",
+      "personalEmail": "kallischmidt@gmail.com",
+      "digitalFuturesEmail": "kalliopehederaschmidt@gmail.com",
+      "degrees": [
+        {
+          "university": "Bristol",
+          "degreeSubject": "History",
+          "degreeLevel": "Bachelor's",
+          "grade": "2:1",
+          "from": 2011,
+          "to": 2015,
+          "weight": "XL",
+          "priority": 9,
+          "description": "A history degree"
+        }
+      ],
+      "schoolQualifications": [
+        {
+          "school": "Banana Episcopi",
+          "examType": "A level",
+          "subject": "History",
+          "grade": "A*",
+          "year": 2010,
+          "weight": "L",
+          "priority": 8,
+          "description": "An A level in history"
+        },
+        {
+          "school": "Banana Episcopi",
+          "examType": "A level",
+          "subject": "Geography",
+          "grade": "A",
+          "year": 2010,
+          "weight": "L",
+          "priority": 6,
+          "description": "An A level in geography"
+        },
+        {
+          "school": "Banana Episcopi",
+          "examType": "A level",
+          "subject": "English Literature",
+          "grade": "B",
+          "year": 2010,
+          "weight": "L",
+          "priority": 7,
+          "description": "An A level in English literature"
+        }
+      ],
+      "workExperience": [
+        {
+          "type": "full-time",
+          "employer": "Malvolio ltd",
+          "position": "clerk",
+          "from": 2016,
+          "to": 2020,
+          "weight": "L",
+          "priority": 8,
+          "description": "Honing initiative to deliver high-quality team-engagement solutions"
+        }
+      ],
+      "certificatesAndAwards": [
+        {
+          "type": "Cert",
+          "issuer": "App stuff",
+          "award": "Python",
+          "grade": "Pass",
+          "year": 2019,
+          "weight": "L",
+          "priority": 2,
+          "description": "Pycharm certified"
+        }
+      ],
+      "portfolio": [
+        {
+          "title": "Lava: What is it really?",
+          "url": "https://www.youtube.com/watch?v=uh4dMLK9q8r",
+          "year": 2017,
+          "weight": "L",
+          "priority": 6,
+          "description": "An academic seminar I delivered on lava at a conference"
+        },
+        {
+          "title": "Robespierre's fashion choices",
+          "url": "https://www.youtube.com/watch?v=uh4dGLH9q7s",
+          "year": 2018,
+          "weight": "M",
+          "priority": 7,
+          "description": "A motivational talk I gave about Robespierre"
+        }
+      ],
+      "personalSummary": "I am a highly motivated and determined individual, both creative and analytic. I have a passion for capybaras and knitting. I just love JavaScript.",
+      "cohort": "mse-2121-a",
+      "learningPath": "Software Engineering",
+      "trainer": "Doris McLean",
+      "trainingFinishDate": 1610643600
+    },
+    {
+      "_id": "60f532903ded77001064ae96",
+      "available": false,
+      "firstName": "Sarah",
+      "lastName": "Schmidt",
+      "dateOfBirth": 709356000,
+      "gender": "female",
+      "nationality": "british",
+      "personality": "INTJ",
+      "phone": 447845232994,
+      "linkedIn": "www.linkedin.com/in/kalliope-schmidt-228a23189",
+      "gitHub": "KalliopeSchmidt",
+      "personalEmail": "kallischmidt@gmail.com",
+      "digitalFuturesEmail": "kalliopehederaschmidt@gmail.com",
+      "degrees": [
+        {
+          "university": "Bristol",
+          "degreeSubject": "History",
+          "degreeLevel": "Bachelor's",
+          "grade": "2:1",
+          "from": 2011,
+          "to": 2015,
+          "weight": "XL",
+          "priority": 9,
+          "description": "A history degree"
+        }
+      ],
+      "schoolQualifications": [
+        {
+          "school": "Banana Episcopi",
+          "examType": "A level",
+          "subject": "History",
+          "grade": "A*",
+          "year": 2010,
+          "weight": "L",
+          "priority": 8,
+          "description": "An A level in history"
+        },
+        {
+          "school": "Banana Episcopi",
+          "examType": "A level",
+          "subject": "Geography",
+          "grade": "A",
+          "year": 2010,
+          "weight": "L",
+          "priority": 6,
+          "description": "An A level in geography"
+        },
+        {
+          "school": "Banana Episcopi",
+          "examType": "A level",
+          "subject": "English Literature",
+          "grade": "B",
+          "year": 2010,
+          "weight": "L",
+          "priority": 7,
+          "description": "An A level in English literature"
+        }
+      ],
+      "workExperience": [
+        {
+          "type": "full-time",
+          "employer": "Malvolio ltd",
+          "position": "clerk",
+          "from": 2016,
+          "to": 2020,
+          "weight": "L",
+          "priority": 8,
+          "description": "Honing initiative to deliver high-quality team-engagement solutions"
+        }
+      ],
+      "certificatesAndAwards": [
+        {
+          "type": "Cert",
+          "issuer": "App stuff",
+          "award": "Python",
+          "grade": "Pass",
+          "year": 2019,
+          "weight": "L",
+          "priority": 2,
+          "description": "Pycharm certified"
+        }
+      ],
+      "portfolio": [
+        {
+          "title": "Lava: What is it really?",
+          "url": "https://www.youtube.com/watch?v=uh4dMLK9q8r",
+          "year": 2017,
+          "weight": "L",
+          "priority": 6,
+          "description": "An academic seminar I delivered on lava at a conference"
+        },
+        {
+          "title": "Robespierre's fashion choices",
+          "url": "https://www.youtube.com/watch?v=uh4dGLH9q7s",
+          "year": 2018,
+          "weight": "M",
+          "priority": 7,
+          "description": "A motivational talk I gave about Robespierre"
+        }
+      ],
+      "personalSummary": "I am a highly motivated and determined individual, both creative and analytic. I have a passion for capybaras and knitting. I just love JavaScript.",
+      "cohort": "mse-2121-a",
+      "learningPath": "Software Engineering",
+      "trainer": "Doris McLean",
+      "trainingFinishDate": 1610643600
+    },
+    {
+      "_id": "60f532903ded77001064ae92",
+      "available": false,
+      "firstName": "Sue",
+      "lastName": "Schmidt",
+      "dateOfBirth": 709356000,
+      "gender": "female",
+      "nationality": "british",
+      "personality": "INTJ",
+      "phone": 447845232994,
+      "linkedIn": "www.linkedin.com/in/kalliope-schmidt-228a23189",
+      "gitHub": "KalliopeSchmidt",
+      "personalEmail": "kallischmidt@gmail.com",
+      "digitalFuturesEmail": "kalliopehederaschmidt@gmail.com",
+      "degrees": [
+        {
+          "university": "Bristol",
+          "degreeSubject": "History",
+          "degreeLevel": "Bachelor's",
+          "grade": "2:1",
+          "from": 2011,
+          "to": 2015,
+          "weight": "XL",
+          "priority": 9,
+          "description": "A history degree"
+        }
+      ],
+      "schoolQualifications": [
+        {
+          "school": "Banana Episcopi",
+          "examType": "A level",
+          "subject": "History",
+          "grade": "A*",
+          "year": 2010,
+          "weight": "L",
+          "priority": 8,
+          "description": "An A level in history"
+        },
+        {
+          "school": "Banana Episcopi",
+          "examType": "A level",
+          "subject": "Geography",
+          "grade": "A",
+          "year": 2010,
+          "weight": "L",
+          "priority": 6,
+          "description": "An A level in geography"
+        },
+        {
+          "school": "Banana Episcopi",
+          "examType": "A level",
+          "subject": "English Literature",
+          "grade": "B",
+          "year": 2010,
+          "weight": "L",
+          "priority": 7,
+          "description": "An A level in English literature"
+        }
+      ],
+      "workExperience": [
+        {
+          "type": "full-time",
+          "employer": "Malvolio ltd",
+          "position": "clerk",
+          "from": 2016,
+          "to": 2020,
+          "weight": "L",
+          "priority": 8,
+          "description": "Honing initiative to deliver high-quality team-engagement solutions"
+        }
+      ],
+      "certificatesAndAwards": [
+        {
+          "type": "Cert",
+          "issuer": "App stuff",
+          "award": "Python",
+          "grade": "Pass",
+          "year": 2019,
+          "weight": "L",
+          "priority": 2,
+          "description": "Pycharm certified"
+        }
+      ],
+      "portfolio": [
+        {
+          "title": "Lava: What is it really?",
+          "url": "https://www.youtube.com/watch?v=uh4dMLK9q8r",
+          "year": 2017,
+          "weight": "L",
+          "priority": 6,
+          "description": "An academic seminar I delivered on lava at a conference"
+        },
+        {
+          "title": "Robespierre's fashion choices",
+          "url": "https://www.youtube.com/watch?v=uh4dGLH9q7s",
+          "year": 2018,
+          "weight": "M",
+          "priority": 7,
+          "description": "A motivational talk I gave about Robespierre"
+        }
+      ],
+      "personalSummary": "I am a highly motivated and determined individual, both creative and analytic. I have a passion for capybaras and knitting. I just love JavaScript.",
+      "cohort": "mse-2121-a",
+      "learningPath": "Software Engineering",
+      "trainer": "Doris McLean",
+      "trainingFinishDate": 1610643600
+    }
+  ]
+}
