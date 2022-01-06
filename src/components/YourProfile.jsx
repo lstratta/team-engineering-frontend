@@ -22,7 +22,7 @@ export default function YourProfile({graduateUser}) {
                 <div className="profile-edit">
                     
                 <h2 className="profile">Your Profile</h2>
-                <Link to='/graduate/:id/edit'><button className="edit-btn">Edit</button></Link>
+                <Link to='/graduate/:_id/edit'><button className="edit-btn">Edit</button></Link>
             </div>
 
             <div className="summary-section">
