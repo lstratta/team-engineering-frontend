@@ -25,7 +25,15 @@ const DegreesModal = ({setGraduateUser}) => {
     e.preventDefault()
     const newDegree = {
       _id: nanoid(),
-   university, degreeSubject, degreeLevel, grade, fromDate, toDate, weight, priority, description
+      university, 
+      degreeSubject, 
+      degreeLevel, 
+      grade, 
+      fromDate, 
+      toDate, 
+      weight, 
+      priority, 
+      description
     }
    
 
@@ -39,24 +47,23 @@ const DegreesModal = ({setGraduateUser}) => {
       console.log('New degree added')
     
     })
-    getData();
    
   }
 
 
-  const getData = () => {
-    fetch(" http://localhost:3000/graduateUser")
-    .then((res) => {
-      return res.json();
-    })
-    .then((data) => {
-      setGraduateUser(data);
-    });
-  }
+  // const getData = () => {
+  //   fetch(" http://localhost:3000/graduateUser")
+  //   .then((res) => {
+  //     return res.json();
+  //   })
+  //   .then((data) => {
+  //     setGraduateUser(data);
+  //   });
+  // }
   
-   useEffect(() => {
-       getData()
-     }, []);
+  //  useEffect(() => {
+  //      getData()
+  //    }, []);
 
 
   
