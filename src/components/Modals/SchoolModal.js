@@ -17,7 +17,7 @@ const SchoolModal = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         const newSchool = {
-            _id: nanoid(),
+            id: nanoid(),
             school, examType, subject, grade, year, weight, priority, description
         }
 

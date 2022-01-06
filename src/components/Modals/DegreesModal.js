@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import { Form, Button, FormLabel } from "react-bootstrap";
 import {nanoid} from 'nanoid'
 import '../../css/modal.css'
+import axios from "axios";
 
 
 const DegreesModal = ({setGraduateUser}) => {
@@ -21,10 +22,27 @@ const DegreesModal = ({setGraduateUser}) => {
 
   
 
+
+const postData = async (addDegree) => {
+  await axios
+    .post("http://localhost:3000/graduateUser", addDegree)
+    .then((res) => {
+      console.log(res)
+      // console.log("AXIOS RES", res.data[0])
+      // console.log("GRADUATE USER", graduateUser)
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+};
+
+
+
+
   const handleSubmit = (e) => {
     e.preventDefault()
     const newDegree = {
-      _id: nanoid(),
+      id: nanoid(),
       university, 
       degreeSubject, 
       degreeLevel, 
@@ -37,16 +55,24 @@ const DegreesModal = ({setGraduateUser}) => {
     }
    
 
-    fetch("http://localhost:3000/graduateUser", {
-      method: 'POST',
-      mode: 'cors',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(newDegree)
-      
-    }).then(() => {
-      console.log('New degree added')
+
+
+
+
+postData(newDegree)
+
     
-    })
+    // fetch("http://localhost:3000/graduateUser", {
+    //   method: 'POST',
+    //   mode: 'cors',
+    //   headers: { 'Content-Type': 'application/json' },
+    //   body: JSON.stringify(newDegree)
+      
+    // }).then(() => {
+    //   console.log('New degree added')
+    
+    // })
+    // getData();
    
   }
 

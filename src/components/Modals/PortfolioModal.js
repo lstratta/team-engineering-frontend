@@ -15,7 +15,7 @@ const [description, setDescription] = useState("");
  const handleSubmit = (e) => {
    e.preventDefault();
    const newPortfolio = {
-     _id: nanoid(), title, URL, year, weight, priority,description,
+     id: nanoid(), title, URL, year, weight, priority,description,
    };
 
    fetch("http://localhost:3000/graduateUser", {
@@ -24,7 +24,7 @@ const [description, setDescription] = useState("");
      headers: { "Content-Type": "application/json" },
      body: JSON.stringify(newPortfolio),
    }).then(() => {
-     console.log("New school added");
+     console.log("New portfolio added");
    });
  };
 

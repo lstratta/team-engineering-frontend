@@ -16,7 +16,7 @@ const AwardModal = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newAward = {
-      _id: nanoid(),
+      id: nanoid(),
       type,
       issuer,
       award,
@@ -33,7 +33,7 @@ const AwardModal = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newAward),
     }).then(() => {
-      console.log("New school added");
+      console.log("New award added");
     });
   };
 

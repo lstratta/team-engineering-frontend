@@ -1,6 +1,7 @@
 .wide-div{
     width: 95%;
     overflow: hidden;
+<<<<<<< HEAD
     align-items: center;
     justify-content: center;
 }
@@ -10,6 +11,22 @@
     
 }
 
+=======
+    /* align-items: center; */
+    text-align: center;
+
+}
+
+.pathway-section{
+/* display: inline-block; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.gradCard{
+    display: inline-block;
+}
+>>>>>>> 0a5653d6b1430d5ba39fdabddb43442e488fbf2d
 
 .title{
     margin-top: 2%;
