@@ -8,7 +8,7 @@ export default function PersonalInfo(graduateUser) {
 
   const graduateUserObject = graduateUser.graduateUser
 
-  console.log("GRADUATE USER OBJ", graduateUserObject)
+  // console.log("GRADUATE USER OBJ", graduateUserObject)
 
   // const [personalInfoShow, setPersonalInfoShow] = useState(false);
   // const handlePersonalInfoShow = () => setPersonalInfoShow(true);

@@ -17,7 +17,7 @@ const DegreesModal = ({setGraduateUser}) => {
   const [weight, setWeight] = useState('');
   const [priority, setPriority] = useState('');
   const [description, setDescription] = useState('');
-  const [isPending, setIsPending] = useState(false)
+ 
 
   
 
@@ -27,7 +27,7 @@ const DegreesModal = ({setGraduateUser}) => {
       _id: nanoid(),
    university, degreeSubject, degreeLevel, grade, fromDate, toDate, weight, priority, description
     }
-    setIsPending(true);
+   
 
     fetch("http://localhost:3000/graduateUser", {
       method: 'POST',
@@ -37,7 +37,7 @@ const DegreesModal = ({setGraduateUser}) => {
       
     }).then(() => {
       console.log('New degree added')
-      setIsPending(false);
+    
     })
     getData();
    
@@ -174,16 +174,9 @@ const DegreesModal = ({setGraduateUser}) => {
             />
           </Form.Group>
 
-          {!isPending && (
             <Button variant="success" type="submit">
               Add New Degree
             </Button>
-          )}
-          {isPending && (
-            <Button variant="success" type="submit" disabled>
-              Adding New Degree...
-            </Button>
-          )}
         </Form>
       </div>
     );
