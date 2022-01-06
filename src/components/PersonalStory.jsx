@@ -16,7 +16,7 @@ import AwardsModal from "./Modals/AwardsModal"
 
 export default function PersonalStory({ graduateUser }) {
 
-  console.log("PERSONAL STORY", graduateUser)
+  // console.log("PERSONAL STORY", graduateUser)
 
   const graduateId = graduateUser._id;
   const degreeRows = graduateUser.degrees.length > 0 && graduateUser.degrees.map((degree, graduateId) => (
@@ -148,7 +148,7 @@ export default function PersonalStory({ graduateUser }) {
         </table>
       </div>
       <div className="app-container4">
-        <h2>Certificates and awards</h2>
+        <h2>Certificates and Awards</h2>
         <Button
           onClick={handleAwardsShow}
           className="btn btn-success"
