@@ -1,17 +1,19 @@
 .wide-div{
     width: 95%;
     overflow: hidden;
-    align-items: center;
+    /* align-items: center; */
+    text-align: center;
+
 }
 
 .pathway-section{
 /* display: inline-block; */
-    align-items: center;
+    /* align-items: center; */
     /* justify-content: center; */
 }
 
 .gradCard{
-    align-items: center;
+    display: inline-block;
 }
 
 .title{
