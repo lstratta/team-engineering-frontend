@@ -17,7 +17,7 @@ const WorkModal = () => {
     const handleSubmit = (e) => {
       e.preventDefault();
       const newWork = {
-        _id: nanoid(), type, employer, position, from, to, weight,  priority, description,
+        id: nanoid(), type, employer, position, from, to, weight,  priority, description,
       };
 
       fetch("http://localhost:3000/graduateUser", {
@@ -26,7 +26,7 @@ const WorkModal = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newWork),
       }).then(() => {
-        console.log("New school added");
+        console.log("New work added");
       });
     };
 
