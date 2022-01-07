@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { nanoid } from "nanoid";
 import { Form, Button, FormLabel } from "react-bootstrap";
+import { useParams } from "react-router-dom";
 import "../../css/modal.css";
+import axios from "axios";
 
-const AwardModal = () => {
+const AwardModal = ({ serverURL, handleAwardsClose, setGraduateUser }) => {
   const [type, setType] = useState("");
   const [issuer, setIssuer] = useState("");
   const [award, setAward] = useState("");
@@ -13,10 +15,36 @@ const AwardModal = () => {
   const [priority, setPriority] = useState("");
   const [description, setDescription] = useState("");
 
+  const { _id } = useParams()
+
+  const postData = async (addAward) => {
+
+    await axios
+      .post(serverURL + `graduate/${_id}/edit/certificatesAndAwards`, addAward)
+      .then((res) => {
+        console.log(res)
+        getData();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+
+  };
+
+  const getData = async () => {
+
+    await axios.get(serverURL + `graduate/${_id}`)
+      .then((res) => {
+        setGraduateUser(res.data)
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const newAward = {
-      id: nanoid(),
       type,
       issuer,
       award,
@@ -27,14 +55,7 @@ const AwardModal = () => {
       description,
     };
 
-    fetch("http://localhost:3000/graduateUser", {
-      method: "POST",
-      mode: "cors",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(newAward),
-    }).then(() => {
-      console.log("New award added");
-    });
+    postData(newAward);
   };
 
   return (
@@ -148,7 +169,7 @@ const AwardModal = () => {
           />
         </Form.Group>
 
-        <Button variant="success" type="submit">
+        <Button onClick={handleAwardsClose} variant="success" type="submit">
           Add New Certificate/Award
         </Button>
       </Form>

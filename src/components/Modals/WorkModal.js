@@ -1,34 +1,67 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import { useParams } from "react-router-dom";
 import { Form, Button, FormLabel } from "react-bootstrap";
 import { nanoid } from "nanoid";
 import "../../css/modal.css";
+import axios from "axios";
 
-const WorkModal = () => {
+const WorkModal = ({ serverURL, handleWorkClose, setGraduateUser }) => {
 
   const [type, setType] = useState('');
   const [employer, setEmployer] = useState('');
   const [position, setPosition] = useState('');
-  const [from, setFrom] = useState('');
-  const [to, setTo] = useState('');
+  const [fromDate, setFromDate] = useState('');
+  const [toDate, setToDate] = useState('');
   const [weight, setWeight] = useState('');
   const [priority, setPriority] = useState('');
   const [description, setDescription] = useState('');
 
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      const newWork = {
-        id: nanoid(), type, employer, position, from, to, weight,  priority, description,
-      };
 
-      fetch("http://localhost:3000/graduateUser", {
-        method: "POST",
-        mode: "cors",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(newWork),
-      }).then(() => {
-        console.log("New work added");
+  const { _id } = useParams()
+
+  const postData = async (addWork) => {
+
+    await axios
+      .post(serverURL + `graduate/${_id}/edit/workExperience`, addWork)
+      .then((res) => {
+        console.log(res)
+        getData();
+      })
+      .catch((err) => {
+        console.log(err);
       });
+
+  };
+
+  const getData = async () => {
+
+    await axios.get(serverURL + `graduate/${_id}`)
+      .then((res) => {
+        setGraduateUser(res.data)
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  }
+
+
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const newWork = {
+      type,
+      employer,
+      position,
+      fromDate,
+      toDate,
+      weight,
+      priority,
+      description,
     };
+    console.log(newWork);
+    postData(newWork)
+  };
 
 
 
@@ -80,8 +113,8 @@ const WorkModal = () => {
             type="date"
             name="from"
             required
-            value={from}
-            onChange={(e) => setFrom(e.target.value)}
+            value={fromDate}
+            onChange={(e) => setFromDate(e.target.value)}
           />
         </Form.Group>
 
@@ -93,8 +126,8 @@ const WorkModal = () => {
             type="date"
             name="to"
             required
-            value={to}
-            onChange={(e) => setTo(e.target.value)}
+            value={toDate}
+            onChange={(e) => setToDate(e.target.value)}
           />
         </Form.Group>
 
@@ -140,7 +173,7 @@ const WorkModal = () => {
           />
         </Form.Group>
 
-        <Button variant="success" type="submit" >
+        <Button onClick={handleWorkClose} variant="success" type="submit" >
           Add New Work Experience
         </Button>
       </Form>

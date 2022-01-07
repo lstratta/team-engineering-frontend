@@ -1,32 +1,67 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import { useParams } from "react-router-dom";
 import { Form, Button, FormLabel } from "react-bootstrap";
 import { nanoid } from "nanoid";
 import "../../css/modal.css";
+import axios from "axios";
 
-const PortfolioModal = () => {
 
-const [title, setTitle] = useState("");
-const [URL, setURL] = useState("");
-const [year, setYear] = useState("");
-const [weight, setWeight] = useState("");
-const [priority, setPriority] = useState("");
-const [description, setDescription] = useState("");
-    
- const handleSubmit = (e) => {
-   e.preventDefault();
-   const newPortfolio = {
-     id: nanoid(), title, URL, year, weight, priority,description,
-   };
 
-   fetch("http://localhost:3000/graduateUser", {
-     method: "POST",
-     mode: "cors",
-     headers: { "Content-Type": "application/json" },
-     body: JSON.stringify(newPortfolio),
-   }).then(() => {
-     console.log("New portfolio added");
-   });
- };
+
+const PortfolioModal = ({ serverURL, handlePortfolioClose, setGraduateUser }) => {
+
+  const [title, setTitle] = useState("");
+  const [url, setUrl] = useState("");
+  const [year, setYear] = useState("");
+  const [weight, setWeight] = useState("");
+  const [priority, setPriority] = useState("");
+  const [description, setDescription] = useState("");
+
+  const { _id } = useParams()
+
+  const postData = async (addPortfolio) => {
+
+    await axios
+      .post(serverURL + `graduate/${_id}/edit/portfolio`, addPortfolio)
+      .then((res) => {
+        console.log(res)
+        getData();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+
+  };
+
+  const getData = async () => {
+
+    await axios.get(serverURL + `graduate/${_id}`)
+      .then((res) => {
+        setGraduateUser(res.data)
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  }
+
+
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const newPortfolio = {
+      title,
+      url,
+      year,
+      weight,
+      priority,
+      description,
+    };
+
+
+
+    postData(newPortfolio)
+  };
 
 
   return (
@@ -47,12 +82,12 @@ const [description, setDescription] = useState("");
 
         <Form.Group className="mb-3">
           <Form.Control
-            type="URL"
+            type="text"
             placeholder="URL"
-            name="URL"
+            name="url"
             required
-            value={URL}
-            onChange={(e) => setURL(e.target.value)}
+            value={url}
+            onChange={(e) => setUrl(e.target.value)}
           />
         </Form.Group>
 
@@ -110,7 +145,7 @@ const [description, setDescription] = useState("");
           />
         </Form.Group>
 
-        <Button variant="success" type="submit" >
+        <Button onClick={handlePortfolioClose} variant="success" type="submit" >
           Add New Portfolio
         </Button>
       </Form>

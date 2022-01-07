@@ -246,7 +246,7 @@ const PersonalStory = ({ graduateUser, setGraduateUser, serverURL }) => {
           </Modal.Header>
 
           <Modal.Body>
-            <WorkModal />
+            <WorkModal serverURL={serverURL} handleWorkClose={handleWorkClose} setGraduateUser={setGraduateUser} />
           </Modal.Body>
 
           <Modal.Footer>
@@ -264,7 +264,7 @@ const PersonalStory = ({ graduateUser, setGraduateUser, serverURL }) => {
           </Modal.Header>
 
           <Modal.Body>
-            <AwardsModal />
+            <AwardsModal serverURL={serverURL} handleAwardsClose={handleAwardsClose} setGraduateUser={setGraduateUser} />
           </Modal.Body>
 
           <Modal.Footer>
@@ -282,7 +282,7 @@ const PersonalStory = ({ graduateUser, setGraduateUser, serverURL }) => {
           </Modal.Header>
 
           <Modal.Body>
-            <PortfolioModal />
+            <PortfolioModal serverURL={serverURL} handlePortfolioClose={handlePortfolioClose} setGraduateUser={setGraduateUser} />
           </Modal.Body>
 
           <Modal.Footer>
