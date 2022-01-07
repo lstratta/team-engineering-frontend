@@ -37,17 +37,17 @@ const EditProfile = (serverURL) => {
     "trainer": "",
     "trainingFinishDate": ""
   });
-  
+
 
   const getData = async () => {
 
-    await axios.get(serverInfo +`graduate/${_id}`)
-    .then((res) => {
-      setGraduateUser(res.data)
-    })
-    .catch(err => {
-      console.log(err)
-    })
+    await axios.get(serverInfo + `graduate/${_id}`)
+      .then((res) => {
+        setGraduateUser(res.data)
+      })
+      .catch(err => {
+        console.log(err)
+      })
   }
 
   useEffect(() => {
@@ -57,15 +57,15 @@ const EditProfile = (serverURL) => {
   }, []);
 
 
-    return (
-      
-      <div>
+  return (
 
-        <PersonalInfo graduateUser={graduateUser} serverURL={serverInfo} />
-        <PersonalStory graduateUser={graduateUser} serverURL={serverInfo}/>
+    <div>
 
-      </div>
-    );
+      <PersonalInfo graduateUser={graduateUser} serverURL={serverInfo} />
+      <PersonalStory graduateUser={graduateUser} setGraduateUser={setGraduateUser} serverURL={serverInfo} />
+
+    </div>
+  );
 }
 
 export default EditProfile;

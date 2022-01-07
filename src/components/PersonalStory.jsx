@@ -14,7 +14,7 @@ import AwardsModal from "./Modals/AwardsModal"
 
 
 
-const PersonalStory = ({ graduateUser, serverURL }) => {
+const PersonalStory = ({ graduateUser, setGraduateUser, serverURL }) => {
 
   console.log("PERSONAL STORY", serverURL)
 
@@ -208,7 +208,7 @@ const PersonalStory = ({ graduateUser, serverURL }) => {
           </Modal.Header>
 
           <Modal.Body>
-            <DegreesModal serverURL={serverURL}  />
+            <DegreesModal serverURL={serverURL} handleClose={handleClose} setGraduateUser={setGraduateUser} />
           </Modal.Body>
 
           <Modal.Footer>
@@ -228,7 +228,7 @@ const PersonalStory = ({ graduateUser, serverURL }) => {
           </Modal.Header>
 
           <Modal.Body>
-            <SchoolModal />
+            <SchoolModal serverURL={serverURL} handleSchoolClose={handleSchoolClose} setGraduateUser={setGraduateUser} />
           </Modal.Body>
 
           <Modal.Footer>
