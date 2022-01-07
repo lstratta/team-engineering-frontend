@@ -54,8 +54,6 @@ const EditProfile = (serverURL) => {
 
     getData()
 
-    
-
   }, []);
 
 

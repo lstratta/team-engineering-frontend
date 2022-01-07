@@ -18,7 +18,7 @@ function App() {
 
       <Routes>
         <Route path='/graduate/:_id' element={<Trainee  serverURL={SERVER_URL}/>}  />
-        <Route path='/graduate/:_id/edit' element={<EditProfile />} />
+        <Route path='/graduate/:_id/edit' element={<EditProfile serverURL={SERVER_URL} />} />
         <Route exact path="/industry-partner/TalentSpotlight" element={<TalentSpotlight serverURL={JSON_SERVER_URL} />} />
       </Routes>
       
