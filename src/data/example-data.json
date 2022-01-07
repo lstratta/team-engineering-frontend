@@ -1,3 +1,4 @@
+
 {
   "graduateUser": [
     {
@@ -7,7 +8,7 @@
       "lastName": "Schwimmer",
       "dateOfBirth": 609356000,
       "gender": "male",
-      "nationality": "american",
+      "nationality": "American",
       "personality": "INTJ",
       "phone": 447784698568,
       "linkedIn": "www.linkedin.com/in/david-schwimmer",
@@ -106,7 +107,7 @@
       "lastName": "Michaels",
       "dateOfBirth": 759356000,
       "gender": "female",
-      "nationality": "british",
+      "nationality": "British",
       "personality": "INTJ",
       "phone": 447653794451,
       "linkedIn": "www.linkedin.com/in/bethany-michaels",
@@ -205,7 +206,7 @@
       "lastName": "Schmidt",
       "dateOfBirth": 709356000,
       "gender": "female",
-      "nationality": "british",
+      "nationality": "British",
       "personality": "INTJ",
       "phone": 447845232994,
       "linkedIn": "www.linkedin.com/in/kalliope-schmidt-228a23189",
@@ -227,7 +228,7 @@
       ],
       "schoolQualifications": [
         {
-          "school": "Banana Episcopi",
+          "school": "Strawberry School of Speech",
           "examType": "A level",
           "subject": "History",
           "grade": "A*",
@@ -237,7 +238,7 @@
           "description": "An A level in history"
         },
         {
-          "school": "Banana Episcopi",
+          "school": "Strawberry School of Speech",
           "examType": "A level",
           "subject": "Geography",
           "grade": "A",
@@ -247,7 +248,7 @@
           "description": "An A level in geography"
         },
         {
-          "school": "Banana Episcopi",
+          "school": "Strawberry School of Speech",
           "examType": "A level",
           "subject": "English Literature",
           "grade": "B",
@@ -272,7 +273,7 @@
       "certificatesAndAwards": [
         {
           "type": "Cert",
-          "issuer": "App stuff",
+          "issuer": "Apps Rus",
           "award": "Python",
           "grade": "Pass",
           "year": 2019,
@@ -299,7 +300,7 @@
           "description": "A motivational talk I gave about Robespierre"
         }
       ],
-      "personalSummary": "I am a highly motivated and determined individual, both creative and analytic. I have a passion for capybaras and knitting. I just love JavaScript.",
+      "personalSummary": "The greatest thing about never having been born is that one never has to visit Bermondsey",
       "cohort": "mse-2121-a",
       "learningPath": "Software Engineering",
       "trainer": "Doris McLean",
@@ -308,70 +309,70 @@
     {
       "_id": "60f532903ded77001064ae94",
       "available": false,
-      "firstName": "Bill",
-      "lastName": "Schmidt",
+      "firstName": "Billie",
+      "lastName": "Slather",
       "dateOfBirth": 709356000,
       "gender": "female",
-      "nationality": "british",
-      "personality": "INTJ",
+      "nationality": "French",
+      "personality": "INFP",
       "phone": 447845232994,
-      "linkedIn": "www.linkedin.com/in/kalliope-schmidt-228a23189",
-      "gitHub": "KalliopeSchmidt",
-      "personalEmail": "kallischmidt@gmail.com",
-      "digitalFuturesEmail": "kalliopehederaschmidt@gmail.com",
+      "linkedIn": "www.linkedin.com/in/billie-billie-238a24189",
+      "gitHub": "BillieBillie",
+      "personalEmail": "billiethebillie@gmail.com",
+      "digitalFuturesEmail": "biliescaleneslather@gmail.com",
       "degrees": [
         {
-          "university": "Bristol",
-          "degreeSubject": "History",
-          "degreeLevel": "Bachelor's",
-          "grade": "2:1",
-          "from": 2011,
-          "to": 2015,
-          "weight": "XL",
-          "priority": 9,
-          "description": "A history degree"
+          "university": "Aberystwyth",
+          "degreeSubject": "Film Studies",
+          "degreeLevel": "Masters's",
+          "grade": "Distinction",
+          "from": 2010,
+          "to": 2012,
+          "weight": "L",
+          "priority": 7,
+          "description": "A master's in film studies"
         }
       ],
       "schoolQualifications": [
         {
-          "school": "Banana Episcopi",
+          "school": "Fleabag High",
           "examType": "A level",
-          "subject": "History",
-          "grade": "A*",
-          "year": 2010,
+          "subject": "Chemistry",
+          "grade": "B",
+          "year": 2006,
           "weight": "L",
-          "priority": 8,
-          "description": "An A level in history"
+          "priority": 7,
+          "description": "An A level in chemistry"
         },
         {
-          "school": "Banana Episcopi",
+          "school": "Fleabag High",
           "examType": "A level",
-          "subject": "Geography",
+          "subject": "Italian",
           "grade": "A",
-          "year": 2010,
-          "weight": "L",
-          "priority": 6,
-          "description": "An A level in geography"
+          "year": 2006,
+          "weight": "M",
+          "priority": 5,
+          "description": "An A level in Italian"
         },
         {
-          "school": "Banana Episcopi",
+          "school": "Fleabag High",
           "examType": "A level",
-          "subject": "English Literature",
+          "subject": "Mathematics",
           "grade": "B",
           "year": 2010,
           "weight": "L",
-          "priority": 7,
-          "description": "An A level in English literature"
+          "priority": 8,
+          "description": "An A level in mathematics"
         }
       ],
       "workExperience": [
         {
           "type": "full-time",
-          "employer": "Malvolio ltd",
-          "position": "clerk",
-          "from": 2016,
-          "to": 2020,
-          "weight": "L",
+          "employer": "Sunbeams and Daisies",
+          "position": "riddle maker",
+          "from": 2006,
+          "to": 2009,
+          "weight": "M",
           "priority": 8,
           "description": "Honing initiative to deliver high-quality team-engagement solutions"
         }
@@ -379,34 +380,34 @@
       "certificatesAndAwards": [
         {
           "type": "Cert",
-          "issuer": "App stuff",
-          "award": "Python",
+          "issuer": "The Matrix",
+          "award": "Flower Master",
           "grade": "Pass",
-          "year": 2019,
+          "year": 2018,
           "weight": "L",
           "priority": 2,
-          "description": "Pycharm certified"
+          "description": "A flower-arranging qualification"
         }
       ],
       "portfolio": [
         {
-          "title": "Lava: What is it really?",
-          "url": "https://www.youtube.com/watch?v=uh4dMLK9q8r",
+          "title": "James Dean and the Couscous Landmine",
+          "url": "https://www.youtube.com/watch?f=ug4dMMK9q8r",
           "year": 2017,
-          "weight": "L",
+          "weight": "M",
           "priority": 6,
-          "description": "An academic seminar I delivered on lava at a conference"
+          "description": "A seminar I delivered"
         },
         {
-          "title": "Robespierre's fashion choices",
-          "url": "https://www.youtube.com/watch?v=uh4dGLH9q7s",
+          "title": "Website of Yarn",
+          "url": "https://www.websiteofyarn.com",
           "year": 2018,
           "weight": "M",
-          "priority": 7,
-          "description": "A motivational talk I gave about Robespierre"
+          "priority": 4,
+          "description": "A website I created about yarn"
         }
       ],
-      "personalSummary": "I am a highly motivated and determined individual, both creative and analytic. I have a passion for capybaras and knitting. I just love JavaScript.",
+      "personalSummary": "To the arms of Quetzalcoatl we shall all return",
       "cohort": "mse-2121-a",
       "learningPath": "Software Engineering",
       "trainer": "Doris McLean",
@@ -416,211 +417,195 @@
       "_id": "60f532903ded77001064ae95",
       "available": false,
       "firstName": "Ben",
-      "lastName": "Schmidt",
+      "lastName": "DelaCreme",
       "dateOfBirth": 709356000,
-      "gender": "female",
-      "nationality": "british",
-      "personality": "INTJ",
-      "phone": 447845232994,
-      "linkedIn": "www.linkedin.com/in/kalliope-schmidt-228a23189",
-      "gitHub": "KalliopeSchmidt",
-      "personalEmail": "kallischmidt@gmail.com",
-      "digitalFuturesEmail": "kalliopehederaschmidt@gmail.com",
+      "gender": "male",
+      "nationality": "Australian",
+      "personality": "ESTJ",
+      "phone": 447173057395,
+      "linkedIn": "www.linkedin.com/in/dela-ben-228a23189",
+      "gitHub": "BenDeLa",
+      "personalEmail": "delabencreme@gmail.com",
+      "digitalFuturesEmail": "benatdf.com",
       "degrees": [
         {
-          "university": "Bristol",
-          "degreeSubject": "History",
+          "university": "Leicester",
+          "degreeSubject": "Psychology",
           "degreeLevel": "Bachelor's",
-          "grade": "2:1",
-          "from": 2011,
-          "to": 2015,
-          "weight": "XL",
-          "priority": 9,
-          "description": "A history degree"
+          "grade": "2:2",
+          "from": 2009,
+          "to": 2012,
+          "weight": "M",
+          "priority": 5,
+          "description": "A psychology degree"
         }
       ],
       "schoolQualifications": [
         {
-          "school": "Banana Episcopi",
+          "school": "Spoolsteak Academy",
           "examType": "A level",
           "subject": "History",
-          "grade": "A*",
-          "year": 2010,
+          "grade": "A",
+          "year": 2007,
           "weight": "L",
-          "priority": 8,
+          "priority": 6,
           "description": "An A level in history"
         },
         {
-          "school": "Banana Episcopi",
+          "school": "Spoolsteak Academy",
           "examType": "A level",
-          "subject": "Geography",
-          "grade": "A",
-          "year": 2010,
-          "weight": "L",
-          "priority": 6,
-          "description": "An A level in geography"
-        },
-        {
-          "school": "Banana Episcopi",
-          "examType": "A level",
-          "subject": "English Literature",
-          "grade": "B",
-          "year": 2010,
+          "subject": "Physics",
+          "grade": "A*",
+          "year": 2007,
           "weight": "L",
           "priority": 7,
-          "description": "An A level in English literature"
+          "description": "An A level in physics"
+        },
+        {
+          "school": "Spoolsteak Academy",
+          "examType": "A level",
+          "subject": "English Language",
+          "grade": "A",
+          "year": 2007,
+          "weight": "M",
+          "priority": 6,
+          "description": "An A level in English language"
         }
       ],
       "workExperience": [
         {
-          "type": "full-time",
-          "employer": "Malvolio ltd",
-          "position": "clerk",
-          "from": 2016,
-          "to": 2020,
+          "type": "part-time",
+          "employer": "The Blue Cheese Guitar Company",
+          "position": "chef",
+          "from": 2014,
+          "to": 2019,
           "weight": "L",
-          "priority": 8,
+          "priority": 7,
           "description": "Honing initiative to deliver high-quality team-engagement solutions"
         }
       ],
       "certificatesAndAwards": [
         {
-          "type": "Cert",
-          "issuer": "App stuff",
-          "award": "Python",
+          "type": "Diploma",
+          "issuer": "Cabbage ltd",
+          "award": "The Alaska Cross",
           "grade": "Pass",
-          "year": 2019,
+          "year": 2005,
           "weight": "L",
-          "priority": 2,
-          "description": "Pycharm certified"
+          "priority": 6,
+          "description": "An award for many outstanding things"
         }
       ],
       "portfolio": [
         {
-          "title": "Lava: What is it really?",
-          "url": "https://www.youtube.com/watch?v=uh4dMLK9q8r",
-          "year": 2017,
+          "title": "Once Upon a Nosering",
+          "url": "https://www.youtube.com/watch?v=un3dMLK9g8t",
+          "year": 2016,
           "weight": "L",
-          "priority": 6,
-          "description": "An academic seminar I delivered on lava at a conference"
-        },
-        {
-          "title": "Robespierre's fashion choices",
-          "url": "https://www.youtube.com/watch?v=uh4dGLH9q7s",
-          "year": 2018,
-          "weight": "M",
-          "priority": 7,
-          "description": "A motivational talk I gave about Robespierre"
+          "priority": 4,
+          "description": "A novel I wrote"
         }
       ],
-      "personalSummary": "I am a highly motivated and determined individual, both creative and analytic. I have a passion for capybaras and knitting. I just love JavaScript.",
+      "personalSummary": "One day, I will drink tea",
       "cohort": "mse-2121-a",
-      "learningPath": "Software Engineering",
-      "trainer": "Doris McLean",
+      "learningPath": "Data Science",
+      "trainer": "Albrid LaFlue",
       "trainingFinishDate": 1610643600
     },
     {
       "_id": "60f532903ded77001064ae96",
       "available": false,
       "firstName": "Sarah",
-      "lastName": "Schmidt",
+      "lastName": "Smith",
       "dateOfBirth": 709356000,
       "gender": "female",
-      "nationality": "british",
-      "personality": "INTJ",
-      "phone": 447845232994,
-      "linkedIn": "www.linkedin.com/in/kalliope-schmidt-228a23189",
-      "gitHub": "KalliopeSchmidt",
-      "personalEmail": "kallischmidt@gmail.com",
-      "digitalFuturesEmail": "kalliopehederaschmidt@gmail.com",
+      "nationality": "German",
+      "personality": "ENFJ",
+      "phone": 447354089666,
+      "linkedIn": "www.linkedin.com/in/sarah-sylveste-228a23189",
+      "gitHub": "SSylvSmith",
+      "personalEmail": "sarahsarah@gmail.com",
+      "digitalFuturesEmail": "sarahsarahsarah@gmail.com",
       "degrees": [
         {
-          "university": "Bristol",
-          "degreeSubject": "History",
+          "university": "Dundee",
+          "degreeSubject": "Geography",
           "degreeLevel": "Bachelor's",
-          "grade": "2:1",
-          "from": 2011,
-          "to": 2015,
+          "grade": "First Class",
+          "from": 2015,
+          "to": 2019,
           "weight": "XL",
-          "priority": 9,
-          "description": "A history degree"
+          "priority": 8,
+          "description": "A geography degree"
         }
       ],
       "schoolQualifications": [
         {
-          "school": "Banana Episcopi",
+          "school": "Butterfly Hurricane High",
           "examType": "A level",
           "subject": "History",
-          "grade": "A*",
-          "year": 2010,
-          "weight": "L",
-          "priority": 8,
+          "grade": "A",
+          "year": 2014,
+          "weight": "M",
+          "priority": 7,
           "description": "An A level in history"
         },
         {
-          "school": "Banana Episcopi",
+          "school": "Butterfly Hurricane High",
           "examType": "A level",
-          "subject": "Geography",
-          "grade": "A",
-          "year": 2010,
+          "subject": "Philosophy",
+          "grade": "B",
+          "year": 2014,
           "weight": "L",
-          "priority": 6,
-          "description": "An A level in geography"
+          "priority": 9,
+          "description": "An A level in philosophy"
         },
         {
-          "school": "Banana Episcopi",
+          "school": "Butterfly Hurricane High",
           "examType": "A level",
-          "subject": "English Literature",
-          "grade": "B",
-          "year": 2010,
-          "weight": "L",
-          "priority": 7,
-          "description": "An A level in English literature"
+          "subject": "Spanish",
+          "grade": "A",
+          "year": 2014,
+          "weight": "M",
+          "priority": 5,
+          "description": "An A level in Spanish"
         }
       ],
       "workExperience": [
         {
-          "type": "full-time",
-          "employer": "Malvolio ltd",
-          "position": "clerk",
-          "from": 2016,
+          "type": "part-time",
+          "employer": "Ezekiel ltd",
+          "position": "Server",
+          "from": 2019,
           "to": 2020,
           "weight": "L",
-          "priority": 8,
+          "priority": 3,
           "description": "Honing initiative to deliver high-quality team-engagement solutions"
         }
       ],
       "certificatesAndAwards": [
         {
-          "type": "Cert",
-          "issuer": "App stuff",
-          "award": "Python",
+          "type": "Diploma",
+          "issuer": "Ezekiel ltd",
+          "award": "Papier Mache Doyenne",
           "grade": "Pass",
-          "year": 2019,
-          "weight": "L",
-          "priority": 2,
-          "description": "Pycharm certified"
+          "year": 2020,
+          "weight": "M",
+          "priority": 4,
+          "description": "Papier mache certificate"
         }
       ],
       "portfolio": [
         {
-          "title": "Lava: What is it really?",
-          "url": "https://www.youtube.com/watch?v=uh4dMLK9q8r",
+          "title": "Headphones and Humbugs",
+          "url": "https://www.youtube.com/watch?y=eq7dLLK9q8r",
           "year": 2017,
           "weight": "L",
-          "priority": 6,
-          "description": "An academic seminar I delivered on lava at a conference"
-        },
-        {
-          "title": "Robespierre's fashion choices",
-          "url": "https://www.youtube.com/watch?v=uh4dGLH9q7s",
-          "year": 2018,
-          "weight": "M",
-          "priority": 7,
-          "description": "A motivational talk I gave about Robespierre"
+          "priority": 5,
+          "description": "An album I wrote and produced"
         }
       ],
-      "personalSummary": "I am a highly motivated and determined individual, both creative and analytic. I have a passion for capybaras and knitting. I just love JavaScript.",
+      "personalSummary": "Await the tsunami of glitter at your own peril",
       "cohort": "mse-2121-a",
       "learningPath": "Software Engineering",
       "trainer": "Doris McLean",
@@ -630,107 +615,99 @@
       "_id": "60f532903ded77001064ae92",
       "available": false,
       "firstName": "Sue",
-      "lastName": "Schmidt",
+      "lastName": "Theramin",
       "dateOfBirth": 709356000,
       "gender": "female",
-      "nationality": "british",
-      "personality": "INTJ",
-      "phone": 447845232994,
-      "linkedIn": "www.linkedin.com/in/kalliope-schmidt-228a23189",
-      "gitHub": "KalliopeSchmidt",
-      "personalEmail": "kallischmidt@gmail.com",
-      "digitalFuturesEmail": "kalliopehederaschmidt@gmail.com",
+      "nationality": "Irish",
+      "personality": "INTP",
+      "phone": 447788463210,
+      "linkedIn": "www.linkedin.com/in/theramin-canton-228a23189",
+      "gitHub": "SueCantonTheramin",
+      "personalEmail": "suetheramincanton@gmail.com",
+      "digitalFuturesEmail": "cantontheramin@gmail.com",
       "degrees": [
         {
-          "university": "Bristol",
-          "degreeSubject": "History",
+          "university": "Exeter",
+          "degreeSubject": "Philosophy",
           "degreeLevel": "Bachelor's",
-          "grade": "2:1",
-          "from": 2011,
-          "to": 2015,
-          "weight": "XL",
-          "priority": 9,
-          "description": "A history degree"
+          "grade": "2:2",
+          "from": 2013,
+          "to": 2017,
+          "weight": "L",
+          "priority": 7,
+          "description": "A philosophy degree"
         }
       ],
       "schoolQualifications": [
         {
-          "school": "Banana Episcopi",
+          "school": "Five String School",
           "examType": "A level",
-          "subject": "History",
-          "grade": "A*",
-          "year": 2010,
-          "weight": "L",
-          "priority": 8,
-          "description": "An A level in history"
-        },
-        {
-          "school": "Banana Episcopi",
-          "examType": "A level",
-          "subject": "Geography",
+          "subject": "German",
           "grade": "A",
-          "year": 2010,
-          "weight": "L",
+          "year": 2011,
+          "weight": "M",
           "priority": 6,
-          "description": "An A level in geography"
+          "description": "An A level in German"
         },
         {
-          "school": "Banana Episcopi",
+          "school": "Five String School",
           "examType": "A level",
-          "subject": "English Literature",
+          "subject": "Jousting",
           "grade": "B",
-          "year": 2010,
-          "weight": "L",
-          "priority": 7,
-          "description": "An A level in English literature"
+          "year": 2011,
+          "weight": "M",
+          "priority": 5,
+          "description": "An A level in jousting"
+        },
+        {
+          "school": "Five String School",
+          "examType": "A level",
+          "subject": "Pottery",
+          "grade": "A",
+          "year": 2011,
+          "weight": "M",
+          "priority": 5,
+          "description": "An A level in pottery"
         }
       ],
       "workExperience": [
         {
-          "type": "full-time",
-          "employer": "Malvolio ltd",
-          "position": "clerk",
-          "from": 2016,
-          "to": 2020,
+          "type": "part-time",
+          "employer": "Piranha Tower",
+          "position": "funicular",
+          "from": 2011,
+          "to": 2021,
           "weight": "L",
-          "priority": 8,
+          "priority": 9,
           "description": "Honing initiative to deliver high-quality team-engagement solutions"
         }
       ],
       "certificatesAndAwards": [
         {
-          "type": "Cert",
-          "issuer": "App stuff",
-          "award": "Python",
+          "type": "award",
+          "issuer": "Coelacanth Solutions",
+          "award": "Milliner of the Year",
           "grade": "Pass",
           "year": 2019,
-          "weight": "L",
-          "priority": 2,
-          "description": "Pycharm certified"
+          "weight": "XL",
+          "priority": 6,
+          "description": "An award for truly excellent hat-making"
         }
       ],
       "portfolio": [
         {
-          "title": "Lava: What is it really?",
-          "url": "https://www.youtube.com/watch?v=uh4dMLK9q8r",
-          "year": 2017,
-          "weight": "L",
-          "priority": 6,
-          "description": "An academic seminar I delivered on lava at a conference"
-        },
-        {
-          "title": "Robespierre's fashion choices",
-          "url": "https://www.youtube.com/watch?v=uh4dGLH9q7s",
-          "year": 2018,
+          "title": "Baseline Fundamentals of Hyperbole",
+          "url": "https://www.youtube.com/watch?v=uh8eMLH9w8r",
+          "year": 2016,
           "weight": "M",
-          "priority": 7,
-          "description": "A motivational talk I gave about Robespierre"
+          "priority": 5,
+          "description": "An academic seminar I delivered at a conference"
         }
       ],
-      "personalSummary": "I am a highly motivated and determined individual, both creative and analytic. I have a passion for capybaras and knitting. I just love JavaScript.",
+      "personalSummary": "Never cut off my wings",
       "cohort": "mse-2121-a",
-      "learningPath": "Software Engineering",
-      "trainer": "Doris McLean",
+      "learningPath": "Data Science",
+      "trainer": "Albrid LaFlue",
       "trainingFinishDate": 1610643600
     }
   ]

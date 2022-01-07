@@ -9,17 +9,20 @@ const DataScienceSection = (graduates) => {
     return (
         <div className="pathway-section">
             <div className="title">
-                <h3>Data Science</h3>
+                <br />
+                <h2>Data Science</h2>
             </div>
             <div className="wide-div">
                 {graduatesData.map((graduate) => {
-                    return (
+                    if (graduate.learningPath == "Data Science") {
+                        return (
 
-                        <div className="gradCard" key={graduate._id}>
-                            < GraduateCard graduate={graduate} />
-                        </div>
+                            <div className="gradCard" key={graduate._id}>
+                                < GraduateCard graduate={graduate} />
+                            </div>
 
-                    )
+                        )
+                    }
                 }
                 )
                 }
