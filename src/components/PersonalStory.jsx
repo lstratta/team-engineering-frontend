@@ -11,6 +11,7 @@ import SchoolModal from "./Modals/SchoolModal";
 import WorkModal from "./Modals/WorkModal";
 import PortfolioModal from "./Modals/PortfolioModal"
 import AwardsModal from "./Modals/AwardsModal"
+import axios from "axios";
 
 
 
@@ -20,7 +21,7 @@ const PersonalStory = ({ graduateUser, setGraduateUser, serverURL }) => {
 
   const graduateId = graduateUser._id;
   const degreeRows = graduateUser.degrees.length > 0 && graduateUser.degrees.map((degree, graduateId) => (
-    <Degree key={graduateId} degree={degree} />
+    <Degree key={graduateId} degree={degree} serverURL={serverURL} graduateID={graduateId} />
 
   ));
 
@@ -62,6 +63,12 @@ const PersonalStory = ({ graduateUser, setGraduateUser, serverURL }) => {
 
 
 
+  const handleDelete = async () => {
+    await axios
+      .delete()
+  }
+
+
   return (
     <div>
       <div className="ep-personal-story">
@@ -89,8 +96,9 @@ const PersonalStory = ({ graduateUser, setGraduateUser, serverURL }) => {
                   <th>Description</th>
                 </tr>
               </thead>
-              <tbody>{degreeRows}</tbody>
+              <tbody>{degreeRows} </tbody>
             </table>
+
           </div>
         </div>
       </div>
