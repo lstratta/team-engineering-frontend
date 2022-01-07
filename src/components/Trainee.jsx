@@ -1,4 +1,4 @@
-import {React, useState, useEffect} from "react";
+import { React, useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 
@@ -10,7 +10,7 @@ import YourTraining from "./YourTraining";
 
 export default function Trainee(serverURL) {
 
-  const {_id} = useParams()
+  const { _id } = useParams()
 
   const [graduateUser, setGraduateUser] = useState({
     "_id": "",
@@ -39,15 +39,15 @@ export default function Trainee(serverURL) {
   });
 
   const getData = async () => {
-    
-    await axios.get(serverURL.serverURL +`graduate/${_id}`)
-    .then((res) => {
 
-      console.log(res.data)
+    await axios.get(serverURL.serverURL + `graduate/${_id}`)
+      .then((res) => {
 
-      setGraduateUser(res.data)
-            
-    }); 
+        console.log(res.data)
+
+        setGraduateUser(res.data)
+
+      });
   }
 
   useEffect(() => {
@@ -63,12 +63,12 @@ export default function Trainee(serverURL) {
   }, [])
 
   return (
-      <div>
+    <div>
 
-        {graduateUser && <YourProfile graduateUser={graduateUser} />}
-        {graduateUser && <YourTraining graduateUser={graduateUser} />}
-      
-          
-      </div>
+      {graduateUser && <YourProfile graduateUser={graduateUser} />}
+      {graduateUser && <YourTraining graduateUser={graduateUser} />}
+
+
+    </div>
   )
 }

@@ -22,6 +22,7 @@ function App() {
         <Route exact path="/industry-partner/TalentSpotlight" element={<TalentSpotlight serverURL={JSON_SERVER_URL} />} />
       </Routes>
       
+      //comment
       
       
     </div>

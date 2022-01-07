@@ -1,13 +1,13 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 import { Form, Button, FormLabel } from "react-bootstrap";
-import {nanoid} from 'nanoid'
+import { nanoid } from 'nanoid'
 import '../../css/modal.css'
 import axios from "axios";
 
 
-const DegreesModal = ({setGraduateUser, serverURL}) => {
+const DegreesModal = ({ serverURL, handleClose, setGraduateUser }) => {
 
   // const setGraduateUserModal = setGraduateUser.setGraduateUser
 
@@ -20,15 +20,16 @@ const DegreesModal = ({setGraduateUser, serverURL}) => {
   const [weight, setWeight] = useState('');
   const [priority, setPriority] = useState('');
   const [description, setDescription] = useState('');
- 
+
   const { _id } = useParams()
-  
+
   const postData = async (addDegree) => {
 
     await axios
       .post(serverURL + `graduate/${_id}/edit/degrees`, addDegree)
       .then((res) => {
         console.log(res)
+        getData();
       })
       .catch((err) => {
         console.log(err);
@@ -36,29 +37,40 @@ const DegreesModal = ({setGraduateUser, serverURL}) => {
 
   };
 
+  const getData = async () => {
+
+    await axios.get(serverURL + `graduate/${_id}`)
+      .then((res) => {
+        setGraduateUser(res.data)
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault()
     const newDegree = {
-      university, 
-      degreeSubject, 
-      degreeLevel, 
-      grade, 
-      fromDate, 
-      toDate, 
-      weight, 
-      priority, 
+      university,
+      degreeSubject,
+      degreeLevel,
+      grade,
+      fromDate,
+      toDate,
+      weight,
+      priority,
       description
     }
 
     console.log(newDegree)
-  
-    postData(newDegree) 
+
+    postData(newDegree)
   }
 
 
 
 
-  
+
   return (
     <div>
       <Form onSubmit={handleSubmit}>
@@ -173,9 +185,9 @@ const DegreesModal = ({setGraduateUser, serverURL}) => {
           />
         </Form.Group>
 
-          <Button variant="success" type="submit">
-            Add New Degree
-          </Button>
+        <Button onClick={handleClose} variant="success" type="submit">
+          Add New Degree
+        </Button>
       </Form>
     </div>
   );
