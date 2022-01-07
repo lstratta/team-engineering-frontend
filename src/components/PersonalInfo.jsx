@@ -1,5 +1,6 @@
 import React from "react";
 import '../css/edit-profile.css'
+
 // import PersonalInfoModal from "./Modals/PersonalInfoModal";
 // import { Modal, Button } from "react-bootstrap";
 
@@ -101,12 +102,14 @@ export default function PersonalInfo(graduateUser) {
          
 
           </div>
-
+          <div className="profile-block">
+          <img className="profile-img" src='https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg' alt="default picture"></img>
           <form action="#" >
 
           <input className="pi-dropdown" type="file" name="photo" id="photo" />
 
           </form>
+          </div>
             </div>
 
 
