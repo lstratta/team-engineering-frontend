@@ -13,15 +13,15 @@ export default function YourTraining({graduateUser}) {
 
           <div className="summary-section">
             <div className="your-training-info">
-              <p className="training-info">Cohort: {graduateUser[0].cohort}</p>
+              <p className="training-info">Cohort: {graduateUser.cohort}</p>
               <p className="training-info">
-                Learning Path: {graduateUser[0].learningPath}
+                Learning Path: {graduateUser.learningPath}
               </p>
               <p className="training-info">
-                Trainer: {graduateUser[0].trainer}
+                Trainer: {graduateUser.trainer}
               </p>
               <p className="training-info">
-                Training Finish Date: {graduateUser[0].trainingFinishDate}
+                Training Finish Date: {graduateUser.trainingFinishDate}
               </p>
             </div>
 

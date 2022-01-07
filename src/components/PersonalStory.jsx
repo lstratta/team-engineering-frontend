@@ -14,9 +14,9 @@ import AwardsModal from "./Modals/AwardsModal"
 
 
 
-export default function PersonalStory({ graduateUser }) {
+const PersonalStory = ({ graduateUser, serverURL }) => {
 
-  // console.log("PERSONAL STORY", graduateUser)
+  console.log("PERSONAL STORY", serverURL)
 
   const graduateId = graduateUser._id;
   const degreeRows = graduateUser.degrees.length > 0 && graduateUser.degrees.map((degree, graduateId) => (
@@ -208,7 +208,7 @@ export default function PersonalStory({ graduateUser }) {
           </Modal.Header>
 
           <Modal.Body>
-            <DegreesModal />
+            <DegreesModal serverURL={serverURL}  />
           </Modal.Body>
 
           <Modal.Footer>
@@ -295,3 +295,5 @@ export default function PersonalStory({ graduateUser }) {
     </div>
   );
 }
+
+export default PersonalStory;

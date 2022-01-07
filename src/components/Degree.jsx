@@ -4,8 +4,8 @@ const Degree = ({ degree }) => (
     <td>{degree.degreeSubject}</td>
     <td>{degree.degreeLevel}</td>
     <td>{degree.grade}</td>
-    <td>{degree.from}</td>
-    <td>{degree.to}</td>
+    <td>{degree.fromDate}</td>
+    <td>{degree.toDate}</td>
     <td>{degree.weight}</td>
     <td>{degree.priority}</td>
     <td>{degree.description}</td>

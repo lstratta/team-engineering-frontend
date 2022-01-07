@@ -1,54 +1,74 @@
 import {React, useState, useEffect} from "react";
-// import '../css/trainee.css'
+import { useParams } from "react-router-dom";
+import axios from "axios";
+
 import YourProfile from "./YourProfile";
 import YourTraining from "./YourTraining";
-import { useParams } from "react-router-dom";
 
+// import '../css/trainee.css'
 
 
 export default function Trainee(serverURL) {
 
-const {_id} = useParams()
+  const {_id} = useParams()
 
-  console.log("Param Value", _id)
+  const [graduateUser, setGraduateUser] = useState({
+    "_id": "",
+    "available": "",
+    "firstName": "",
+    "lastName": "",
+    "dateOfBirth": "",
+    "gender": "",
+    "nationality": "",
+    "personality": "",
+    "phone": "",
+    "linkedIn": "",
+    "gitHub": "",
+    "personalEmail": "",
+    "digitalFuturesEmail": "",
+    "degrees": [],
+    "schoolQualifications": [],
+    "workExperience": [],
+    "certificatesAndAwards": [],
+    "portfolio": [],
+    "personalSummary": "",
+    "cohort": "",
+    "learningPath": "",
+    "trainer": "",
+    "trainingFinishDate": ""
+  });
 
+  const getData = async () => {
+    
+    await axios.get(serverURL.serverURL +`graduate/${_id}`)
+    .then((res) => {
 
+      console.log(res.data)
 
-   // const server_URL = SERVER_URL.SERVER_URL
-
-    console.log("SERVER URL", serverURL.serverURL)
- 
-    const [graduateUser, setGraduateUser] = useState(null)
-
-    useEffect(() => {
-
-        fetch(`http://localhost:3000/graduateUser`)
-          .then((res) => {
-            return res.json();
-          })
-          .then((data) => {
-              
-            for (let i = 0; i < data.length; i++){
-              if (i._id === _id) {
-                 setGraduateUser(data)
-              } else {
-                console.log("User not found")
-              }
-            }
-
-             
-             
-           console.log("Grad user data", graduateUser)
-          }); 
-    }, [])
-
-    return (
-        <div>
-
-            {/* {graduateUser && <YourProfile graduateUser={graduateUser} />}
-        {graduateUser && <YourTraining graduateUser={graduateUser} />} */}
-        
+      setGraduateUser(res.data)
             
-        </div>
-    )
+    }); 
+  }
+
+  useEffect(() => {
+
+    getData();
+
+    // const timer = setTimeout(() => {
+    //   console.log("timeout")
+    // }, 1000);
+
+    // return () => clearTimeout(timer);
+
+  }, [])
+
+  return (
+      <div>
+
+        {graduateUser && <YourProfile graduateUser={graduateUser} />}
+        {graduateUser && <YourTraining graduateUser={graduateUser} />}
+      
+          
+      </div>
+  )
 }

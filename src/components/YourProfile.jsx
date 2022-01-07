@@ -6,11 +6,13 @@ import { Link } from "react-router-dom";
 export default function YourProfile({graduateUser}) {
 
     
-    const graduates = graduateUser
-    const school = graduateUser[0].schoolQualifications.length
-    const work = graduateUser[0].workExperience.length;
-    const personala = graduateUser[0].certificatesAndAwards.length;
-    let gradDegree = graduateUser[0].degrees
+    console.log("GRADUATE USER " ,graduateUser)
+
+    // const graduates = graduateUser
+    const school = graduateUser.schoolQualifications.length
+    const work = graduateUser.workExperience.length;
+    const personala = graduateUser.certificatesAndAwards.length;
+    let gradDegree = graduateUser.degrees
     
     return (
 
@@ -27,12 +29,12 @@ export default function YourProfile({graduateUser}) {
 
             <div className="summary-section">
                 <div className="your-info">
-                    <p className="personal-info"> Name: {graduateUser[0].firstName} {graduateUser[0].lastName}</p>
-                    <p className="personal-info"> Personal Email: {graduateUser[0].personalEmail}</p>
-                    <p className="personal-info">Digital Futures Email: {graduateUser[0].digitalFuturesEmail}</p>
-                    <p className="personal-info">GitHub: {graduateUser[0].gitHub}</p>
-                    <p className="personal-info">LinkedIn: {graduateUser[0].linkedIn}</p>
-                    <p className="personal-info">Phone: {graduateUser[0].phone}</p>
+                    <p className="personal-info"> Name: {graduateUser.firstName} {graduateUser.lastName}</p>
+                    <p className="personal-info"> Personal Email: {graduateUser.personalEmail}</p>
+                    <p className="personal-info">Digital Futures Email: {graduateUser.digitalFuturesEmail}</p>
+                    <p className="personal-info">GitHub: {graduateUser.gitHub}</p>
+                    <p className="personal-info">LinkedIn: {graduateUser.linkedIn}</p>
+                    <p className="personal-info">Phone: {graduateUser.phone}</p>
                 </div>
 
 
@@ -43,10 +45,10 @@ export default function YourProfile({graduateUser}) {
                     <h2 className="personal-story-summary">Personal Story Summary:</h2>
                     <div className="box2">
 
-                                {  !graduateUser[0].degrees ?  <p className="ps-list">Degree not found</p> :
+                                {  graduateUser.degrees.length === 0 ?  <p className="ps-list">Degree not found</p> :
                                 
                               <div >
-                                        <p className="ps-list">Degree in {graduateUser[0].degrees[0].degreeSubject} from {graduateUser[0].degrees[0].from}</p> 
+                                        <p className="ps-list">Degree in {graduateUser.degrees[0].degreeSubject} from {graduateUser.degrees[0].from}</p> 
                                     </div>
                                 
                                 

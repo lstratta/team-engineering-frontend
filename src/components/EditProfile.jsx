@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+
 import PersonalInfo from "./PersonalInfo";
 import PersonalStory from "./PersonalStory";
 import axios from "axios";
 
 
-const EditProfile = () => {
+const EditProfile = (serverURL) => {
+
+  const serverInfo = serverURL.serverURL
+
+  const { _id } = useParams()
 
   const [graduateUser, setGraduateUser] = useState({
     "_id": "",
@@ -35,14 +41,13 @@ const EditProfile = () => {
 
   const getData = async () => {
 
-    await axios.get("http://localhost:3000/graduateUser")
-      .then(res => {
-        // console.log("AXIOS RES", res.data[0])
-        setGraduateUser(res.data[0])
-        // console.log("GRADUATE USER", graduateUser)
-      }).catch(err => {
-        console.log(err)
-      })
+    await axios.get(serverInfo +`graduate/${_id}`)
+    .then((res) => {
+      setGraduateUser(res.data)
+    })
+    .catch(err => {
+      console.log(err)
+    })
   }
 
   useEffect(() => {
@@ -58,8 +63,8 @@ const EditProfile = () => {
       
       <div>
 
-        <PersonalInfo graduateUser={graduateUser}/>
-        <PersonalStory graduateUser={graduateUser}/>
+        <PersonalInfo graduateUser={graduateUser} serverURL={serverInfo} />
+        <PersonalStory graduateUser={graduateUser} serverURL={serverInfo}/>
 
       </div>
     );

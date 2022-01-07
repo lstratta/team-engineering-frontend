@@ -32,9 +32,7 @@ const TalentSpotlight = (serverURL) => {
                 <h2>Talent Spotlight</h2>
             </div>
             <div className="description">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fuga atque cupiditate est, vero eligendi impedit quae incidunt soluta tenetur laborum laudantium dolores repellendus blanditiis facilis veritatis. Autem veritatis consequuntur expedita exercitationem distinctio nesciunt quisquam, iste rerum, ratione quaerat placeat atque eveniet reiciendis laborum quo amet vero, blanditiis error? Ipsum perferendis laboriosam fugit tenetur, molestiae recusandae sapiente aliquid iste non consequuntur. Hic ipsa a nemo distinctio deserunt reprehenderit voluptas voluptatem impedit, recusandae, corrupti, doloremque qui. Consectetur cum ea suscipit soluta sint, ad pariatur tempora laboriosam explicabo illum culpa velit rerum quaerat minus neque nam blanditiis iure at quis. Ipsum, sunt.
-                </p>
+                <p> lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
             </div>
 
             <div className="data-science-section">

@@ -1,7 +1,6 @@
 
 import GraduateCard from "./GraduateCard";
 
-import "../../css/pathway-section.css";
 const DataScienceSection = (graduates) => {
 
     const graduatesData = graduates.graduates;
@@ -9,21 +8,17 @@ const DataScienceSection = (graduates) => {
     return (
         <div className="pathway-section">
             <div className="title">
-                <br />
-                <h2>Software Engineering</h2>
+                <h3>Software Engineering</h3>
             </div>
             <div className="wide-div">
                 {graduatesData.map((graduate) => {
-                    // "learningPath": "Software Engineering",
-                    if (graduate.learningPath == "Software Engineering") {
-                        return (
+                    return (
 
-                            <div className="gradCard" key={graduate._id}>
-                                < GraduateCard graduate={graduate} />
-                            </div>
+                        <div key={graduate._id}>
+                            < GraduateCard graduate={graduate} />
+                        </div>
 
-                        )
-                    }
+                    )
                 }
                 )
                 }
