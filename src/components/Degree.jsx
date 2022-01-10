@@ -5,14 +5,26 @@ import axios from "axios";
 
 
 
-const Degree = ({ degree, serverURL, graduateID }) => {
+const Degree = ({ degree, serverURL, graduateId, setGraduateUser }) => {
 
+  const getData = async () => {
+
+    await axios.get(serverURL + `graduate/${graduateId}`)
+      .then((res) => {
+        setGraduateUser(res.data)
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  }
 
   const handleDelete = async () => {
+    console.log(degree._id);
     await axios
-      .delete(serverURL + `graduate/${graduateID}/edit/degrees`, { data: { id: degree._id } })
+      .delete(serverURL + `graduate/${graduateId}/edit/degrees/${degree._id}`)
       .then((res) => {
-        console.log(`res body` + res);
+        getData();
+        console.log(res);
       })
   }
 

@@ -20,25 +20,26 @@ const PersonalStory = ({ graduateUser, setGraduateUser, serverURL }) => {
   console.log("PERSONAL STORY", serverURL)
 
   const graduateId = graduateUser._id;
+  console.log(`ID ` + graduateId);
   const degreeRows = graduateUser.degrees.length > 0 && graduateUser.degrees.map((degree, graduateId) => (
-    <Degree key={graduateId} degree={degree} serverURL={serverURL} graduateID={graduateId} />
+    <Degree key={graduateId} degree={degree} serverURL={serverURL} graduateId={graduateUser._id} setGraduateUser={setGraduateUser} />
 
   ));
 
   const schoolRows = graduateUser.schoolQualifications.map((schooling, graduateId) => (
-    <SchoolQualifications key={graduateId} schooling={schooling} />
+    <SchoolQualifications key={graduateId} schooling={schooling} serverURL={serverURL} graduateId={graduateUser._id} setGraduateUser={setGraduateUser} />
   ))
 
   const workRows = graduateUser.workExperience.map((work, graduateId) => (
-    <WorkExperience key={graduateId} work={work} />
+    <WorkExperience key={graduateId} work={work} serverURL={serverURL} graduateId={graduateUser._id} setGraduateUser={setGraduateUser} />
   ))
 
   const awardsRows = graduateUser.certificatesAndAwards.map((award, graduateId) => (
-    <Awards key={graduateId} award={award} />
+    <Awards key={graduateId} award={award} serverURL={serverURL} graduateId={graduateUser._id} setGraduateUser={setGraduateUser} />
   ))
 
   const portfolioRows = graduateUser.portfolio.map((portfolio, graduateId) => (
-    <Portfolio key={graduateId} portfolio={portfolio} />
+    <Portfolio key={graduateId} portfolio={portfolio} serverURL={serverURL} graduateId={graduateUser._id} setGraduateUser={setGraduateUser} />
   ));
 
   const [degreeShow, setDegreeShow] = useState(false)
