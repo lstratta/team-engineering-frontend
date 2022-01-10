@@ -1,8 +1,16 @@
 import "../../css/graduate-card.css"
+import React, { useState } from "react";
+import ProfilePopup from "./ProfilePopup";
+import { Modal, Button } from "react-bootstrap";
+import "../../css/modal.css"
+
 
 const GraduateCard = (graduate) => {
 
     const graduateUser = graduate.graduate;
+    const [profileShow, setProfileShow] = useState(false)
+    const handleProfileShow = () => setProfileShow(true)
+    const handleProfileClose = () => setProfileShow(false)
 
     return (
         <div className="graduate-card">
@@ -18,8 +26,31 @@ const GraduateCard = (graduate) => {
                 <h5>{graduateUser.gitHub}</h5>
             </div>
             <div className="view-profile-button">
-                <button>View Profile</button>
+                <button onClick={handleProfileShow}>View Profile</button>
             </div>
+
+            {/* PROFILE POPUP */}
+
+            <Modal show={profileShow}>
+          <Modal.Header>
+            <Modal.Title>Profile</Modal.Title>
+          </Modal.Header>
+
+          <Modal.Body>
+            <ProfilePopup graduateUser={graduateUser}  />
+          </Modal.Body>
+
+          <Modal.Footer>
+            <Button onClick={handleProfileClose} variant="secondary">
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
+
+
+
+
+
         </div>
     )
 }

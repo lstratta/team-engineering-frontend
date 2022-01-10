@@ -37,3 +37,9 @@ body{
     bottom: 0;
     
 }
+
+.popup-profile-image > img{
+    border-radius: 50%;
+    width: 30%;
+    margin-bottom: 20px;
+}
