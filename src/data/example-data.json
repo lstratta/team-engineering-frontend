@@ -2,7 +2,7 @@
   "graduateUser": [
     {
       "_id": "60f532903ded77001064ae90",
-      "available": false,
+      "available": true,
       "firstName": "David",
       "lastName": "Wannsinn",
       "dateOfBirth": 609356000,
@@ -101,7 +101,7 @@
     },
     {
       "_id": "60f532903ded77001064ae91",
-      "available": false,
+      "available": true,
       "firstName": "Bethany",
       "lastName": "Michaels",
       "dateOfBirth": 759356000,
@@ -200,7 +200,7 @@
     },
     {
       "_id": "60f532903ded77001064ae92",
-      "available": false,
+      "available": true,
       "firstName": "Kalliope",
       "lastName": "Schmidt",
       "dateOfBirth": 709356000,
@@ -307,7 +307,7 @@
     },
     {
       "_id": "60f532903ded77001064ae93",
-      "available": false,
+      "available": true,
       "firstName": "Billie",
       "lastName": "Slather",
       "dateOfBirth": 709356000,
@@ -414,7 +414,7 @@
     },
     {
       "_id": "60f532903ded77001064ae94",
-      "available": false,
+      "available": true,
       "firstName": "Ben",
       "lastName": "Hanoi",
       "dateOfBirth": 709356000,
@@ -513,7 +513,7 @@
     },
     {
       "_id": "60f532903ded77001064ae95",
-      "available": false,
+      "available": true,
       "firstName": "Sarah",
       "lastName": "Smith",
       "dateOfBirth": 709356000,
@@ -612,7 +612,7 @@
     },
     {
       "_id": "60f532903ded77001064ae96",
-      "available": false,
+      "available": true,
       "firstName": "Sue",
       "lastName": "Theramin",
       "dateOfBirth": 709356000,
