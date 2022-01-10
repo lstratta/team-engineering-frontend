@@ -43,7 +43,7 @@ export default function Trainee(serverURL) {
     await axios.get(serverURL.serverURL + `graduate/${_id}`)
       .then((res) => {
 
-        console.log(res.data)
+        
 
         setGraduateUser(res.data)
 
@@ -53,13 +53,7 @@ export default function Trainee(serverURL) {
   useEffect(() => {
 
     getData();
-
-    // const timer = setTimeout(() => {
-    //   console.log("timeout")
-    // }, 1000);
-
-    // return () => clearTimeout(timer);
-
+    
   }, [])
 
   return (

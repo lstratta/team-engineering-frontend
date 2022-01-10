@@ -23,6 +23,17 @@ const DegreesModal = ({ serverURL, handleClose, setGraduateUser }) => {
 
   const { _id } = useParams()
 
+  const getData = async () => {
+
+  await axios.get(serverURL + `graduate/${_id}`)
+    .then((res) => {
+      setGraduateUser(res.data)
+    })
+    .catch(err => {
+      console.log(err)
+    })
+  }
+
   const postData = async (addDegree) => {
 
     await axios
@@ -36,17 +47,6 @@ const DegreesModal = ({ serverURL, handleClose, setGraduateUser }) => {
       });
 
   };
-
-  const getData = async () => {
-
-    await axios.get(serverURL + `graduate/${_id}`)
-      .then((res) => {
-        setGraduateUser(res.data)
-      })
-      .catch(err => {
-        console.log(err)
-      })
-  }
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -62,7 +62,7 @@ const DegreesModal = ({ serverURL, handleClose, setGraduateUser }) => {
       description
     }
 
-    console.log(newDegree)
+    console.log("NEW DEGREE ", newDegree)
 
     postData(newDegree)
   }

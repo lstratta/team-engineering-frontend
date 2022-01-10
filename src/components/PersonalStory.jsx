@@ -11,6 +11,7 @@ import SchoolModal from "./Modals/SchoolModal";
 import WorkModal from "./Modals/WorkModal";
 import PortfolioModal from "./Modals/PortfolioModal"
 import AwardsModal from "./Modals/AwardsModal"
+import axios from "axios";
 
 
 
@@ -19,25 +20,26 @@ const PersonalStory = ({ graduateUser, setGraduateUser, serverURL }) => {
   console.log("PERSONAL STORY", serverURL)
 
   const graduateId = graduateUser._id;
+  console.log(`ID ` + graduateId);
   const degreeRows = graduateUser.degrees.length > 0 && graduateUser.degrees.map((degree, graduateId) => (
-    <Degree key={graduateId} degree={degree} />
+    <Degree key={graduateId} degree={degree} serverURL={serverURL} graduateId={graduateUser._id} setGraduateUser={setGraduateUser} />
 
   ));
 
   const schoolRows = graduateUser.schoolQualifications.map((schooling, graduateId) => (
-    <SchoolQualifications key={graduateId} schooling={schooling} />
+    <SchoolQualifications key={graduateId} schooling={schooling} serverURL={serverURL} graduateId={graduateUser._id} setGraduateUser={setGraduateUser} />
   ))
 
   const workRows = graduateUser.workExperience.map((work, graduateId) => (
-    <WorkExperience key={graduateId} work={work} />
+    <WorkExperience key={graduateId} work={work} serverURL={serverURL} graduateId={graduateUser._id} setGraduateUser={setGraduateUser} />
   ))
 
   const awardsRows = graduateUser.certificatesAndAwards.map((award, graduateId) => (
-    <Awards key={graduateId} award={award} />
+    <Awards key={graduateId} award={award} serverURL={serverURL} graduateId={graduateUser._id} setGraduateUser={setGraduateUser} />
   ))
 
   const portfolioRows = graduateUser.portfolio.map((portfolio, graduateId) => (
-    <Portfolio key={graduateId} portfolio={portfolio} />
+    <Portfolio key={graduateId} portfolio={portfolio} serverURL={serverURL} graduateId={graduateUser._id} setGraduateUser={setGraduateUser} />
   ));
 
   const [degreeShow, setDegreeShow] = useState(false)
@@ -60,6 +62,12 @@ const PersonalStory = ({ graduateUser, setGraduateUser, serverURL }) => {
   const handlePortfolioShow = () => setPortfolioShow(true);
   const handlePortfolioClose = () => setPortfolioShow(false);
 
+
+
+  const handleDelete = async () => {
+    await axios
+      .delete()
+  }
 
 
   return (
@@ -89,8 +97,9 @@ const PersonalStory = ({ graduateUser, setGraduateUser, serverURL }) => {
                   <th>Description</th>
                 </tr>
               </thead>
-              <tbody>{degreeRows}</tbody>
+              <tbody>{degreeRows} </tbody>
             </table>
+
           </div>
         </div>
       </div>
