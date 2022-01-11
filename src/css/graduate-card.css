@@ -51,7 +51,7 @@ body{
 
 .popup-profile-image > img{
     border-radius: 50%;
-    width: 50%;
+    width: 100px;
     margin-bottom: 10px;
 }
 
@@ -83,11 +83,9 @@ padding-bottom: 10px;
 }
 
 .summary{
-
-    display: block;    isolation: isolate;
-    align-items: center;
     padding-top: 20px;
 }
+
 
 
 

@@ -36,20 +36,52 @@ Form{
     display: block;
 }
 
-/* .popup-top{
-	text-align: center;
-} */
 
 .image-name{
 display: flex;
 align-items: center;
 padding-bottom: 30px;
+
 }
 
-/* .popup-info-sections{
+.popup-info-sections{
 	display: flex;
-} */
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	
+}
 
-/* .industry-modal{
+.industry-modal .modal-content{
 	width: 700px;
-} */
+}
+
+.student-name{
+margin-left: 20px;
+}
+
+.popup-personal-section, .popup-qualifications, .popup-training{
+	background-color: rgb(231, 231, 231);
+	padding: 10px;
+	
+	
+}
+
+
+.student-summary{
+font-style: italic;
+text-align: center;
+padding-bottom: 20px;
+font-size: 16px;
+}
+
+.popup-personal-section p, .popup-qualifications p, .popup-training p{
+font-size: 13.5px;
+line-height: 1px;
+padding-top: 20px;
+}
+
+.popup-titles{
+	font-weight: 600;
+}

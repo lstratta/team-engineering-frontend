@@ -28,11 +28,11 @@ const GraduateCard = (graduate) => {
 
           <div className="degree-github">
             <div className="degree-icon">
-              <h5> <img src="../assets/graduate-cap.png" /> {graduateUser.degrees[0].degreeSubject}</h5>
+              <h5> <img src="../assets/graduate-cap.png" alt="graduate cap" /> {graduateUser.degrees[0].degreeSubject}</h5>
             </div>
 
             <div className="github-icon">
-              <h5><img src="../assets/github-logo.png" /> {graduateUser.gitHub}</h5>
+              <h5><img src="../assets/github-logo.png" alt="github icon" /> {graduateUser.gitHub}</h5>
             </div>
           </div>
 
@@ -44,12 +44,12 @@ const GraduateCard = (graduate) => {
 
         {/* PROFILE POPUP */}
 
-        <Modal show={profileShow} >
+        <Modal show={profileShow} className="industry-modal">
           <Modal.Header>
-            <Modal.Title>Profile</Modal.Title>
+            <Modal.Title>Score Card</Modal.Title>
           </Modal.Header>
 
-          <Modal.Body className="industry-modal" >
+          <Modal.Body  >
             <ProfilePopup graduateUser={graduateUser} />
           </Modal.Body>
 
