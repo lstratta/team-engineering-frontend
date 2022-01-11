@@ -51,7 +51,7 @@ export default function Trainee( {serverURL} ) {
   useEffect(() => {
 
     getData();
-    
+
   }, [])
 
   return (

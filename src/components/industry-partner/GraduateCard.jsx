@@ -7,37 +7,50 @@ import "../../css/modal.css"
 
 const GraduateCard = (graduate) => {
 
-    const graduateUser = graduate.graduate;
-    const [profileShow, setProfileShow] = useState(false)
-    const handleProfileShow = () => setProfileShow(true)
-    const handleProfileClose = () => setProfileShow(false)
+  const graduateUser = graduate.graduate;
+  const [profileShow, setProfileShow] = useState(false)
+  const handleProfileShow = () => setProfileShow(true)
+  const handleProfileClose = () => setProfileShow(false)
 
-    return (
-        <div className="graduate-card">
-            <div className="profile-image">
-                <img src="../assets/df-logo-blue-background.png" alt="Digital Futures logo" />
-            </div>
-            <div className="profile-name">
-                <h4>{graduateUser.firstName + " " + graduateUser.lastName}</h4>
-            </div>
-            <div className="student-data">
-                <h5>{graduateUser.personalSummary}</h5>
-                <h5>{graduateUser.degrees[0].degreeSubject}</h5>
-                <h5>{graduateUser.gitHub}</h5>
-            </div>
-            <div className="view-profile-button">
-                <button onClick={handleProfileShow}>View Profile</button>
+  return (
+
+    <div className="graduate-card">
+      <div className="inner-card">
+        <div className="profile-image">
+          <img src="../assets/df-logo-blue-background.png" alt="Digital Futures logo" />
+        </div>
+        <div className="profile-name">
+          <h4>{graduateUser.firstName + " " + graduateUser.lastName}</h4>
+        </div>
+        <div className="student-data">
+
+          <h5 className="summary">" {graduateUser.personalSummary} " </h5>
+
+          <div className="degree-github">
+            <div className="degree-icon">
+              <h5> <img src="../assets/graduate-cap.png" alt="graduate cap" /> {graduateUser.degrees[0].degreeSubject}</h5>
             </div>
 
-            {/* PROFILE POPUP */}
+            <div className="github-icon">
+              <h5><img src="../assets/github-logo.png" alt="github icon" /> {graduateUser.gitHub}</h5>
+            </div>
+          </div>
 
-            <Modal show={profileShow}>
+
+        </div>
+        <div className="view-profile-button">
+          <Button onClick={handleProfileShow}>View Profile</Button>
+        </div>
+
+        {/* PROFILE POPUP */}
+
+        <Modal show={profileShow} className="industry-modal">
           <Modal.Header>
-            <Modal.Title>Profile</Modal.Title>
+            <Modal.Title>Score Card</Modal.Title>
           </Modal.Header>
 
-          <Modal.Body>
-            <ProfilePopup graduateUser={graduateUser}  />
+          <Modal.Body  >
+            <ProfilePopup graduateUser={graduateUser} />
           </Modal.Body>
 
           <Modal.Footer>
@@ -50,9 +63,13 @@ const GraduateCard = (graduate) => {
 
 
 
+      </div>
+    </div>
 
-        </div>
-    )
+
+
+
+  )
 }
 
 export default GraduateCard;

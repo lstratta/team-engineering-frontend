@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { useParams } from "react-router-dom";
 
 import { Form, Button, FormLabel } from "react-bootstrap";
-import { nanoid } from 'nanoid'
 import '../../css/modal.css'
 import axios from "axios";
 
