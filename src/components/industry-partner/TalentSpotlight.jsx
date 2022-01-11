@@ -10,7 +10,7 @@ const TalentSpotlight = ({serverURL}) => {
 
     const [graduates, setGraduates] = useState([]);
 
-    const dataServer = serverURL + "graduateUser";
+    const dataServer = serverURL + "graduate";
     console.log("TALENT SPOTLIGHT SERVER URL", serverURL);
 
     const getData = async () => {
