@@ -13,15 +13,17 @@ const DataScienceSection = (graduates) => {
             </div>
             <div className="wide-div">
                 {graduatesData.map((graduate) => {
-                    return (
 
-                        <div className="gradCard" key={graduate._id}>
-                            < GraduateCard graduate={graduate} />
-                        </div>
+                    if (graduate.learningPath === "Data Science"){
+                        return (
 
+                            <div className="gradCard" key={graduate._id}>
+                                < GraduateCard graduate={graduate} />
+                            </div>
+
+                        )}
+                        }
                     )
-                }
-                )
                 }
             </div>
         </div>

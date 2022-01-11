@@ -32,7 +32,9 @@ const TalentSpotlight = ({serverURL}) => {
                 <h2>Talent Spotlight</h2>
             </div>
             <div className="description">
-                <p> lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+                <p> The talent spotlight is where you can find the graduates that are right for your business.</p>
+                <p>Whether you are looking for highly-skilled Data Scientists, Software Engineers or Cloud Engineers, each one of our graduates will be an asset to your team.</p>
+                <p>View each of our graduate's profiles below to see what their specific skills are and decide whether you'd like to interview them.</p>
             </div>
 
             <div className="data-science-section">
