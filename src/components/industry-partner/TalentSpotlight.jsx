@@ -6,12 +6,12 @@ import DataScienceSection from "./DataScienceSection.jsx";
 import SoftwareEngineeringSection from "./SoftwareEngineeringSection.jsx";
 import "../../css/talent-spotlight.css";
 
-const TalentSpotlight = (serverURL) => {
+const TalentSpotlight = ({serverURL}) => {
 
     const [graduates, setGraduates] = useState([]);
 
-    const dataServer = serverURL.serverURL + "graduateUser";
-    console.log("TALENT SPOTLIGHT SERVER URL", serverURL.serverURL);
+    const dataServer = serverURL + "graduateUser";
+    console.log("TALENT SPOTLIGHT SERVER URL", serverURL);
 
     const getData = async () => {
         await axios.get(dataServer)
