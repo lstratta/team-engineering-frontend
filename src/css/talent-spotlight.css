@@ -41,3 +41,7 @@ select{
 .pi-dropdown{
     font-size: 15px;
 }
+
+#basic-nav-dropdown:hover{
+    display: none;
+}
