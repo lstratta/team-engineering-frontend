@@ -8,7 +8,7 @@ import YourTraining from "./YourTraining";
 // import '../css/trainee.css'
 
 
-export default function Trainee(serverURL) {
+export default function Trainee( {serverURL} ) {
 
   const { _id } = useParams()
 
@@ -40,10 +40,8 @@ export default function Trainee(serverURL) {
 
   const getData = async () => {
 
-    await axios.get(serverURL.serverURL + `graduate/${_id}`)
+    await axios.get(`${serverURL}/graduate/${_id}`)
       .then((res) => {
-
-        
 
         setGraduateUser(res.data)
 
