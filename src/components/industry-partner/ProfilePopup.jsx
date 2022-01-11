@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {useEffect } from "react";
 import axios from "axios";
 import "../../css/graduate-card.css";
 import { useParams } from "react-router-dom";
@@ -43,19 +43,24 @@ const ProfilePopup = ({serverURL, setGraduateUser, graduateUser}) => {
           />
             </div>
             
-        <h3>
+        <h3 className="student-name">
           {graduateUser.firstName} {graduateUser.lastName}
         </h3>
-            <h6> " {graduateUser.personalSummary} " </h6>
+            <h6 className="student-summary"> " {graduateUser.personalSummary} " </h6>
         </div>    
-
+        <div className="popup-personal-section">
         <p>Degree: {graduateUser.degrees[0].degreeSubject}</p>
         <p>Digital Futures Email: {graduateUser.digitalFuturesEmail}</p>
             <p>Github: {graduateUser.gitHub}</p>
+        </div>
+
+            <div className="popup-qualifications">
             <p>School Qualifications: {school}</p>
             <p>Work Experience: {work }</p>
             <p>Certs and Awards: {graduateUser.certificatesAndAwards[0].award}</p>
             <p>Portfolio: "{graduateUser.portfolio[0].title}"</p>
+            </div>
+
             <p>Cohort: {graduateUser.cohort}</p>
             <p>Learning Path: {graduateUser.learningPath}</p>
             <p>Training Finish Date: { graduateUser.trainingFinishDate}</p>

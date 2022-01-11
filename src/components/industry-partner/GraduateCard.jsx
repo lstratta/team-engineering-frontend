@@ -12,8 +12,10 @@ const GraduateCard = (graduate) => {
     const handleProfileShow = () => setProfileShow(true)
     const handleProfileClose = () => setProfileShow(false)
 
-    return (
-        <div className="graduate-card">
+  return (
+      
+      <div className="graduate-card">
+        <div className="inner-card">
             <div className="profile-image">
                 <img src="../assets/df-logo-blue-background.png" alt="Digital Futures logo" />
             </div>
@@ -21,12 +23,12 @@ const GraduateCard = (graduate) => {
                 <h4>{graduateUser.firstName + " " + graduateUser.lastName}</h4>
             </div>
             <div className="student-data">
-                <h5>{graduateUser.personalSummary}</h5>
+                <h5 className="summary">" {graduateUser.personalSummary} " </h5>
                 <h5>{graduateUser.degrees[0].degreeSubject}</h5>
                 <h5>{graduateUser.gitHub}</h5>
             </div>
             <div className="view-profile-button">
-                <button onClick={handleProfileShow}>View Profile</button>
+                <Button onClick={handleProfileShow}>View Profile</Button>
             </div>
 
             {/* PROFILE POPUP */}
@@ -50,8 +52,12 @@ const GraduateCard = (graduate) => {
 
 
 
-
         </div>
+      </div>
+    
+    
+    
+   
     )
 }
 
