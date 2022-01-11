@@ -9,7 +9,7 @@ import TalentSpotlight from "./components/industry-partner/TalentSpotlight";
 
 function App() {
 
-  const SERVER_URL = 'http://localhost:5757/'
+  const SERVER_URL = 'http://172.31.26.65:4675/'
   const JSON_SERVER_URL = 'http://localhost:3000/'
 
   return (
