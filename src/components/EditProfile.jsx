@@ -6,9 +6,7 @@ import PersonalStory from "./PersonalStory";
 import axios from "axios";
 
 
-const EditProfile = (serverURL) => {
-
-  const serverInfo = serverURL.serverURL
+const EditProfile = ({serverURL}) => {
 
   const { _id } = useParams()
 
@@ -42,7 +40,7 @@ const EditProfile = (serverURL) => {
 
   const getData = async () => {
 
-    await axios.get(serverInfo + `graduate/${_id}`)
+    await axios.get(serverURL + `graduate/${_id}`)
       .then((res) => {
         setGraduateUser(res.data)
       })
@@ -62,8 +60,8 @@ const EditProfile = (serverURL) => {
 
     <div>
 
-      <PersonalInfo graduateUser={graduateUser} serverURL={serverInfo} setGraduateUser={setGraduateUser} />
-      <PersonalStory graduateUser={graduateUser} setGraduateUser={setGraduateUser} serverURL={serverInfo} />
+      <PersonalInfo graduateUser={graduateUser} serverURL={serverURL} setGraduateUser={setGraduateUser} />
+      <PersonalStory graduateUser={graduateUser} setGraduateUser={setGraduateUser} serverURL={serverURL} />
 
     </div>
   );
