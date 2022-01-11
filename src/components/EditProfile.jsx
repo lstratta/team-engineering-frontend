@@ -14,6 +14,7 @@ const EditProfile = (serverURL) => {
 
   const [graduateUser, setGraduateUser] = useState({
     "_id": "",
+    "picture": "",
     "available": "",
     "firstName": "",
     "lastName": "",
@@ -61,7 +62,7 @@ const EditProfile = (serverURL) => {
 
     <div>
 
-      <PersonalInfo graduateUser={graduateUser} serverURL={serverInfo} />
+      <PersonalInfo graduateUser={graduateUser} serverURL={serverInfo} setGraduateUser={setGraduateUser} />
       <PersonalStory graduateUser={graduateUser} setGraduateUser={setGraduateUser} serverURL={serverInfo} />
 
     </div>

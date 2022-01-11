@@ -8,23 +8,63 @@ import "../css/edit-profile.css";
 // const fileUploadHandler = ;
 // const state = ;
 
+export default function PersonalInfo({ graduateUser, serverURL, setGraduateUser }) {
+  const graduateUserObject = graduateUser;
+  const [file64, setFile64] = useState();
 
+  const getData = async () => {
 
-export default function PersonalInfo(graduateUser) {
-  const graduateUserObject = graduateUser.graduateUser;
-  
-//   const state = {
-//   selectedFile: null
-// }
-// const fileSelectedHandler = event => {
-//   this.setState({
-//     selectedFile: event.target.files[0]
-//   })
-// }
+    await axios.get(serverURL + `graduate/${graduateUserObject._id}`)
+      .then((res) => {
+        setGraduateUser(res.data)
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  }
 
-// const fileUploadHandler = () => {
-//   axios.post('');
-// }
+  const fileSelectedHandler = (e) => {
+    getBase64(e.target.files[0]);
+  }
+
+  const getBase64 = file => {
+    return new Promise(resolve => {
+      let fileInfo;
+      let baseURL = "";
+      // Make new FileReader
+      let reader = new FileReader();
+
+      // Convert the file to base64 text
+      reader.readAsDataURL(file);
+
+      // on reader load somthing...
+      reader.onload = () => {
+        // Make a fileInfo Object
+        // console.log("Called", reader);
+        baseURL = reader.result;
+        // console.log("BU" + baseURL);
+        setFile64(baseURL);
+        resolve(baseURL);
+      };
+      // console.log("FI" + fileInfo);
+    });
+  };
+
+  const fileUploadHandler = async (e) => {
+    e.preventDefault();
+    postData(file64);
+  }
+
+  const postData = async (file) => {
+    await axios
+      .post(`http://localhost:5757/graduate/${graduateUserObject._id}/edit/picture`, { fileString: file })
+      .then((res) => {
+        getData()
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
 
   // console.log("GRADUATE USER OBJ", graduateUserObject)
 
@@ -34,6 +74,7 @@ export default function PersonalInfo(graduateUser) {
 
   return (
     <div>
+      <img src={graduateUserObject.picture} />
       <div className="ep-personal-info-section">
         <div className="ep-personal-info-summary">
           <div className="ep-personal-info">
@@ -111,16 +152,17 @@ export default function PersonalInfo(graduateUser) {
               </form>
             </div>
           </div>
-            
-          <form action="#">
+
+          <form onSubmit={fileUploadHandler} encType='multipart/form-data'>
             <input
               className="pi-dropdown"
               type="file"
+              accept=".png, .jpg, .jpeg"
               name="photo"
               id="photo"
-              // onChange={this.fileSelectedHandler}
+              onChange={fileSelectedHandler}
             />
-            {/* <button onClick={this.fileUploadHandler}>Upload</button> */}
+            <input type="submit" />
           </form>
         </div>
       </div>

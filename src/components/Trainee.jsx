@@ -43,7 +43,7 @@ export default function Trainee(serverURL) {
     await axios.get(serverURL.serverURL + `graduate/${_id}`)
       .then((res) => {
 
-        
+
 
         setGraduateUser(res.data)
 
@@ -53,7 +53,7 @@ export default function Trainee(serverURL) {
   useEffect(() => {
 
     getData();
-    
+
   }, [])
 
   return (
