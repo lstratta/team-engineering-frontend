@@ -74,7 +74,6 @@ export default function PersonalInfo({ graduateUser, serverURL, setGraduateUser 
 
   return (
     <div>
-      <img src={graduateUserObject.picture} />
       <div className="ep-personal-info-section">
         <div className="ep-personal-info-summary">
           <div className="ep-personal-info">
@@ -155,7 +154,8 @@ export default function PersonalInfo({ graduateUser, serverURL, setGraduateUser 
 
 
           <div className="profile-block">
-            <img className="profile-img" src='https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg' alt="default picture"></img>
+            {!graduateUserObject.picture && <img className="profile-img" src='https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg' alt="default picture"></img>}
+            {graduateUserObject.picture && <img className="profile-img" src={graduateUserObject.picture} alt="profile picture"></img>}
             <form onSubmit={fileUploadHandler} encType='multipart/form-data'>
               <input
                 className="pi-dropdown"
