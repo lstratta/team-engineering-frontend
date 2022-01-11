@@ -153,17 +153,22 @@ export default function PersonalInfo({ graduateUser, serverURL, setGraduateUser 
             </div>
           </div>
 
-          <form onSubmit={fileUploadHandler} encType='multipart/form-data'>
-            <input
-              className="pi-dropdown"
-              type="file"
-              accept=".png, .jpg, .jpeg"
-              name="photo"
-              id="photo"
-              onChange={fileSelectedHandler}
-            />
-            <input type="submit" />
-          </form>
+
+          <div className="profile-block">
+            <img className="profile-img" src='https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg' alt="default picture"></img>
+            <form onSubmit={fileUploadHandler} encType='multipart/form-data'>
+              <input
+                className="pi-dropdown"
+                type="file"
+                accept=".png, .jpg, .jpeg"
+                name="photo"
+                id="photo"
+                onChange={fileSelectedHandler}
+              />
+              <input type="submit" />
+            </form>
+          </div>
+
         </div>
       </div>
     </div>
