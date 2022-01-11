@@ -6,7 +6,9 @@ body{
 
 .profile-image > img{
     border-radius: 50%;
-    width: 50%;   
+    width: 50%;  
+    margin-bottom: 20px; 
+    margin-top: 5px;
 }
 
 .graduate-card{
@@ -15,7 +17,7 @@ body{
     height: 500px;
     float: left;
     text-align: center;
-    margin-left: 15px;
+    margin-left: 15x;
     margin-right: 15px;
     margin-bottom: 30px;
     padding-top: 10px;
@@ -25,7 +27,15 @@ body{
     border-radius: 10px;
     background-color: rgb(240, 240, 240);
     /* display: inline-block; */
+    
+    
 }
+
+.wide-div{
+   margin: auto;
+}
+
+
 
 .view-profile-button {
     /* border: 2px solid rgb(80, 27, 6); */
@@ -36,10 +46,49 @@ body{
     /* vertical-align: bottom; */
     bottom: 0;
     
+    
 }
 
 .popup-profile-image > img{
     border-radius: 50%;
-    width: 30%;
-    margin-bottom: 20px;
+    width: 50%;
+    margin-bottom: 10px;
 }
+
+h2{
+    margin-left: -10px;
+}
+
+.student-data h5{
+font-size: 18px;
+
+}
+
+.profile-name h4{
+font-weight: 600;
+padding-bottom: 10px;
+}
+
+.student-data .summary{
+    font-size: 15px;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+.degree-github{
+    position:absolute; 
+    bottom: 120px;
+    width: 90%;
+    text-align: center;
+}
+
+.summary{
+
+    display: block;    isolation: isolate;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+
+

@@ -36,6 +36,20 @@ Form{
     display: block;
 }
 
-.popup-top{
+/* .popup-top{
 	text-align: center;
+} */
+
+.image-name{
+display: flex;
+align-items: center;
+padding-bottom: 30px;
 }
+
+/* .popup-info-sections{
+	display: flex;
+} */
+
+/* .industry-modal{
+	width: 700px;
+} */
