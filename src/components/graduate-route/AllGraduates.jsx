@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import ProfileCard from "./ProfileCard";
-// import Navbar from "./NavBar"
+import Navbar from "../NavBar"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../../css/all-graduates.css"
@@ -30,7 +30,8 @@ const AllGraduates = ( {serverURL} ) => {
     return (
         <div>
 
-            {/* <Navbar id={graduateUser._id}/> */}
+            <Navbar />
+            {/* <Navbar id={allGraduates}/> */}
             
             <div className="wide-div">
                 {allGraduates && allGraduates.map( graduate => (
