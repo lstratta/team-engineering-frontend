@@ -10,7 +10,8 @@ import AllGraduates from "./components/graduate-route/AllGraduates";
 
 function App() {
 
-  const SERVER_URL = 'https://cors-anywhere.herokuapp.com/http://ec2-34-192-124-43.compute-1.amazonaws.com:4675/'
+  //const SERVER_URL = 'https://cors-anywhere.herokuapp.com/http://ec2-34-192-124-43.compute-1.amazonaws.com:4675/'
+  const SERVER_URL = 'http://localhost:5757/'
   const JSON_SERVER_URL = 'http://localhost:3000/'
 
   return (
