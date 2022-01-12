@@ -40,7 +40,7 @@ const ProfilePopup = ({ serverURL, setGraduateUser, graduateUser }) => {
         <div className="image-name">
           <div className="popup-profile-image">
             {!graduateUser.picture && <img src="../assets/df-logo-blue-background.png" alt="Digital Futures logo" />}
-            {graduateUser.picture && <img src={graduateUser.picture} alt="Profile picture" />}
+            {graduateUser.picture && <img src={graduateUser.picture} alt="Profile head shot" />}
           </div>
 
 

@@ -45,3 +45,7 @@ select{
 #basic-nav-dropdown:hover{
     display: none;
 }
+h2{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
