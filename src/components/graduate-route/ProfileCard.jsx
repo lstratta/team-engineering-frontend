@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from "react-bootstrap";
@@ -6,11 +6,7 @@ import "../../css/profile-card.css"
 
 const ProfileCard = ( { graduate } ) => {
 
-    const navigate = useNavigate()
-
-    const onClick = () => {
-        navigate(`${graduate._id}`)
-    }
+    
 
     return (
 
@@ -50,7 +46,9 @@ const ProfileCard = ( { graduate } ) => {
 
 
                     <div className="view-profile-button">
-                        <Button onClick={onClick}>View Your Profile</Button>
+                        <Link to={`/graduate/${graduate._id}/`}>
+                            <Button>View Your Profile</Button>
+                        </Link>
                     </div>
 
                 </div>
