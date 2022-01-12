@@ -7,7 +7,7 @@ const ProfilePopup = ({ serverURL, setGraduateUser, graduateUser }) => {
 
   const school = graduateUser.schoolQualifications.length;
   const work = graduateUser.workExperience.length;
-
+  const endDate = new Date(graduateUser.trainingFinishDate * 1000);
 
   // const [firstName, setFirstName] = useState("")
   // const [lastName, setLastName] = useState('')
@@ -64,7 +64,7 @@ const ProfilePopup = ({ serverURL, setGraduateUser, graduateUser }) => {
         <div className="popup-training ">
           <p><span className="popup-titles">Cohort:</span>  {graduateUser.cohort}</p>
           <p><span className="popup-titles">Learning Path:</span> {graduateUser.learningPath}</p>
-          <p><span className="popup-titles">Training Finish Date:</span> {graduateUser.trainingFinishDate}</p>
+          <p><span className="popup-titles">Training Finish Date:</span> {endDate.getDate() + "/" + (endDate.getMonth() + 1) + "/" + endDate.getFullYear()}</p>
         </div>
       </div>
 
