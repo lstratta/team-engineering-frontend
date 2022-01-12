@@ -1,7 +1,8 @@
 import axios from "axios";
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProfileCard from "./ProfileCard";
+
+import "../../css/all-graduates.css"
 
 const AllGraduates = ( {serverURL} ) => {
 
@@ -11,27 +12,30 @@ const AllGraduates = ( {serverURL} ) => {
 
         await axios.get(`${serverURL}graduate`)
             .then( res => {
+
                 setAllGraduates(res.data)
 
-                console.log("ALL GRADUATES ", allGraduates)
+                
             })
     }
 
     useEffect ( () => {
+
         getData()
-        
+        //console.log("ALL GRADUATES ", allGraduates)
     }, [] )
 
     return (
         <div>
-
-            {allGraduates && allGraduates.map( graduate => (
-                    
-                    <div key={graduate._id}>
-                        <ProfileCard graduate={graduate} />
-                    </div>
-    )) 
-            }
+            <div >
+                {allGraduates && allGraduates.map( graduate => (
+                        
+                        <div className="graduate-profile-card" key={graduate._id}>
+                            <ProfileCard graduate={graduate} />
+                        </div>
+                    )) 
+                }
+            </div>
 
         </div>
     );
