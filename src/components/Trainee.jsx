@@ -40,7 +40,7 @@ export default function Trainee( {serverURL} ) {
 
   const getData = async () => {
 
-    await axios.get(`${serverURL}/graduate/${_id}`)
+    await axios.get(`${serverURL}graduate/${_id}`)
       .then((res) => {
 
         setGraduateUser(res.data)

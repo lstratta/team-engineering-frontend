@@ -154,8 +154,8 @@ export default function PersonalInfo({ graduateUser, serverURL, setGraduateUser 
 
 
           <div className="profile-block">
-            {!graduateUserObject.picture && <img className="profile-img" src='https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg' alt="default picture"></img>}
-            {graduateUserObject.picture && <img className="profile-img" src={graduateUserObject.picture} alt="profile picture"></img>}
+            {!graduateUserObject.picture && <img className="profile-img" src='https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg' alt="default "></img>}
+            {graduateUserObject.picture && <img className="profile-img" src={graduateUserObject.picture} alt="profile "></img>}
             <form onSubmit={fileUploadHandler} encType='multipart/form-data'>
               <input
                 className="pi-dropdown"
@@ -165,7 +165,7 @@ export default function PersonalInfo({ graduateUser, serverURL, setGraduateUser 
                 id="photo"
                 onChange={fileSelectedHandler}
               />
-              <Button className="submit-btn" variant="primary" type="submit">Submit</Button>
+              <input type="submit"/>
             </form>
           </div>
 

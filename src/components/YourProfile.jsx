@@ -1,7 +1,7 @@
 import React from "react";
 import '../css/your-profile.css'
 import { Link } from "react-router-dom";
-
+import { useParams } from "react-router-dom";
 
 export default function YourProfile({graduateUser}) {
 
@@ -13,7 +13,9 @@ export default function YourProfile({graduateUser}) {
     const work = graduateUser.workExperience.length;
     const personala = graduateUser.certificatesAndAwards.length;
     let gradDegree = graduateUser.degrees
-    
+    const { _id } = useParams();
+
+
     return (
 
     
@@ -22,9 +24,13 @@ export default function YourProfile({graduateUser}) {
     <div className="container-fluid">
 
                 <div className="profile-edit">
-                    
+                    {!graduateUser.picture && <img src="../assets/defaultProfile.jpg" alt="default" className="default-profile-picture"/>}
+                    {graduateUser.picture && <img src={graduateUser.picture} alt="Profile" className="default-profile-picture"/>}
+
+                    <div className="profile-edit-section">
                 <h2 className="profile">Your Profile</h2>
-                <Link to={`/graduate/${graduateUser._id}/edit`}><button className="edit-btn">Edit</button></Link>
+                    <Link to={`/graduate/${_id}/edit`}><button className="edit-btn">Edit</button></Link>
+                    </div>
             </div>
 
             <div className="summary-section">
@@ -48,7 +54,7 @@ export default function YourProfile({graduateUser}) {
                                 {  graduateUser.degrees.length === 0 ?  <p className="ps-list">Degree not found</p> :
                                 
                               <div >
-                                        <p className="ps-list">Degree in {graduateUser.degrees[0].degreeSubject} from {graduateUser.degrees[0].from}</p> 
+                                        <p className="ps-list">Degree in {graduateUser.degrees[0].degreeSubject} from {graduateUser.degrees[0].fromDate}</p> 
                                     </div>
                                 
                                 
