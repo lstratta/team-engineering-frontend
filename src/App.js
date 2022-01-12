@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div>
-      <NavBar />
+      {/* <NavBar /> */}
 
       <Routes>
         <Route path='/graduate' element={<AllGraduates serverURL={SERVER_URL} />} />

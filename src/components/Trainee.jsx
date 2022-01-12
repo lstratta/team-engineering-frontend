@@ -4,7 +4,7 @@ import axios from "axios";
 
 import YourProfile from "./YourProfile";
 import YourTraining from "./YourTraining";
-
+import Navbar from "./NavBar"
 // import '../css/trainee.css'
 
 
@@ -56,7 +56,7 @@ export default function Trainee( {serverURL} ) {
 
   return (
     <div>
-
+      <Navbar id={graduateUser._id}/>
       {graduateUser && <YourProfile graduateUser={graduateUser} />}
       {graduateUser && <YourTraining graduateUser={graduateUser} />}
 

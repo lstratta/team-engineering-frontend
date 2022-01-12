@@ -29,7 +29,9 @@ export default function YourProfile({graduateUser}) {
 
                     <div className="profile-edit-section">
                 <h2 className="profile">Your Profile</h2>
+                <div className="edit-btn-container">
                     <Link to={`/graduate/${_id}/edit`}><button className="edit-btn">Edit</button></Link>
+                    </div>
                     </div>
             </div>
 

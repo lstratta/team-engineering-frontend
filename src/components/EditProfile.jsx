@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 
 import PersonalInfo from "./PersonalInfo";
 import PersonalStory from "./PersonalStory";
+import Navbar from "./NavBar"
 import axios from "axios";
 
 
@@ -59,7 +60,7 @@ const EditProfile = ({ serverURL }) => {
   return (
 
     <div>
-
+      <Navbar   id={graduateUser._id} />
       <PersonalInfo graduateUser={graduateUser} serverURL={serverURL} setGraduateUser={setGraduateUser} />
       <PersonalStory graduateUser={graduateUser} setGraduateUser={setGraduateUser} serverURL={serverURL} />
 
