@@ -25,12 +25,11 @@ body{
     display: flex;
     align-items: center;
     padding-left: 10px;
-}
-
-.profile-edit{
     color: black;
     padding-top: 20px;
 }
+
+
 
 .training{
     padding-top: 3px;
@@ -80,5 +79,19 @@ padding-left: 30px;
    
 }
 
+.default-profile-picture{
+    border-radius: 50%;
+    width: 150px; 
+    height: 150px; 
+    
+}
 
+.profile{
+    margin-left: 20px;
+    padding: 0;
+}
 
+.profile-edit-section{
+    display: flex;
+    align-items: center;
+}

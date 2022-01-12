@@ -18,6 +18,8 @@ const GraduateCard = (graduate) => {
       <div className="inner-card">
         <div className="profile-image">
 
+          {!graduateUser.picture && <img src="../assets/df-logo-blue-background.png" alt="Digital Futures logo" />}
+          {graduateUser.picture && <img src={graduateUser.picture} alt="Profile" />}
           
 
         </div>
