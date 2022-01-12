@@ -19,7 +19,7 @@ export default function NavBar (id) {
           <Container>
             <Navbar.Brand href="/graduate">
               <img
-                src="../assets/df-logo.png"
+                src="/assets/df-logo.png"
                 alt="Digital Futures Logo"
                 width="100px"
               />
