@@ -11,22 +11,27 @@ const GraduateCard = (graduate) => {
   const [profileShow, setProfileShow] = useState(false)
   const handleProfileShow = () => setProfileShow(true)
   const handleProfileClose = () => setProfileShow(false)
-
+  console.log(graduateUser.picture);
   return (
 
     <div className="graduate-card">
       <div className="inner-card">
         <div className="profile-image">
-          <img src="../assets/df-logo-blue-background.png" alt="Digital Futures logo" />
+
+          {!graduateUser.picture && <img src="../assets/df-logo-blue-background.png" alt="Digital Futures logo" />}
+          {graduateUser.picture && <img src={graduateUser.picture} alt="Profile" />}
+          
+
         </div>
-        <div className="profile-name">
-          <h4>{graduateUser.firstName + " " + graduateUser.lastName}</h4>
-        </div>
+          <div className="profile-name">
+            <h4>{graduateUser.firstName + " " + graduateUser.lastName}</h4>
+          </div>
         <div className="student-data">
 
           <h5 className="summary">" {graduateUser.personalSummary} " </h5>
 
           <div className="degree-github">
+
             <div className="degree-icon">
               <h5> <img src="../assets/graduate-cap.png" alt="graduate cap" /> {graduateUser.degrees[0].degreeSubject}</h5>
             </div>
@@ -34,10 +39,12 @@ const GraduateCard = (graduate) => {
             <div className="github-icon">
               <h5><img src="../assets/github-logo.png" alt="github icon" /> {graduateUser.gitHub}</h5>
             </div>
+
           </div>
 
 
         </div>
+        
         <div className="view-profile-button">
           <Button onClick={handleProfileShow}>View Profile</Button>
         </div>

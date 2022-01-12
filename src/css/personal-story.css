@@ -45,3 +45,7 @@ form * {
   font-size: 28px;
 }
 
+.delete-btn{
+margin-top: 5px;
+float: right;
+}

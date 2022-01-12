@@ -1,0 +1,21 @@
+.wide-div{
+    margin: auto;
+    text-align: center;
+}
+
+
+
+.graduate-profile-card{
+    /* display: inline-block; */
+    text-align: center;
+    margin: auto;
+}
+
+.outer-graduate {
+    text-align: center;
+    margin: auto;
+}
+
+h3{
+padding-top: 25px;
+}

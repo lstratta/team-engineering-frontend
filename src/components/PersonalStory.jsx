@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../css/personal-story.css";
+
 import Degree from "./Degree";
 import SchoolQualifications from './SchoolQualifications'
 import WorkExperience from "./Work";

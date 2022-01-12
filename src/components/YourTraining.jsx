@@ -1,10 +1,14 @@
 import React from "react";
-import '../css/your-profile.css' 
+import '../css/your-profile.css'
 
 
-export default function YourTraining({graduateUser}) {
+export default function YourTraining({ graduateUser }) {
+
+  const endDate = new Date(graduateUser.trainingFinishDate * 1000);
+
+
   return (
-      <div>
+    <div>
       <div className="training-section">
         <div className="container-fluid">
           <div className="profile-edit">
@@ -21,7 +25,7 @@ export default function YourTraining({graduateUser}) {
                 Trainer: {graduateUser.trainer}
               </p>
               <p className="training-info">
-                Training Finish Date: {graduateUser.trainingFinishDate}
+                Training Finish Date: {endDate.getDate() + "/" + (endDate.getMonth() + 1) + "/" + endDate.getFullYear()}
               </p>
             </div>
 
@@ -35,9 +39,9 @@ export default function YourTraining({graduateUser}) {
           </div>
         </div>
 
-       
+
       </div>
-      
+
     </div>
-    );
+  );
 }

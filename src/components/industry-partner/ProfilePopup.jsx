@@ -7,7 +7,7 @@ const ProfilePopup = ({ serverURL, setGraduateUser, graduateUser }) => {
 
   const school = graduateUser.schoolQualifications.length;
   const work = graduateUser.workExperience.length;
-
+  const endDate = new Date(graduateUser.trainingFinishDate * 1000);
 
   // const [firstName, setFirstName] = useState("")
   // const [lastName, setLastName] = useState('')
@@ -38,41 +38,39 @@ const ProfilePopup = ({ serverURL, setGraduateUser, graduateUser }) => {
       <div className="popup-top">
 
         <div className="image-name">
-        <div className="popup-profile-image">
-          <img
-            src="../assets/df-logo-blue-background.png"
-            alt="Digital Futures logo"
-          />
-        </div>
+          <div className="popup-profile-image">
+            {!graduateUser.picture && <img src="../assets/df-logo-blue-background.png" alt="Digital Futures logo" />}
+            {graduateUser.picture && <img src={graduateUser.picture} alt="Profile head shot" />}
+          </div>
 
 
-        <h3 className="student-name">
-          {graduateUser.firstName} {graduateUser.lastName}
-        </h3>
+          <h3 className="student-name">
+            {graduateUser.firstName} {graduateUser.lastName}
+          </h3>
         </div>
 
         <h6 className="student-summary"> " {graduateUser.personalSummary} " </h6>
       </div>
 
-   
+
       <div className="popup-info-sections">
 
-      <div className="popup-personal-section " >
-        <p><span className="popup-titles">Degree:</span>  {graduateUser.degrees[0].degreeSubject}</p>
-        <p><span className="popup-titles">Digital Futures Email:</span> {graduateUser.digitalFuturesEmail}</p>
-        <p><span className="popup-titles">Github:</span>  {graduateUser.gitHub}</p>
+        <div className="popup-personal-section " >
+          <p><span className="popup-titles">Degree:</span>  {graduateUser.degrees[0].degreeSubject}</p>
+          <p><span className="popup-titles">Digital Futures Email:</span> {graduateUser.digitalFuturesEmail}</p>
+          <p><span className="popup-titles">Github:</span>  {graduateUser.gitHub}</p>
+        </div>
+
+        <div className="popup-training ">
+          <p><span className="popup-titles">Cohort:</span>  {graduateUser.cohort}</p>
+          <p><span className="popup-titles">Learning Path:</span> {graduateUser.learningPath}</p>
+          <p><span className="popup-titles">Training Finish Date:</span> {endDate.getDate() + "/" + (endDate.getMonth() + 1) + "/" + endDate.getFullYear()}</p>
+        </div>
       </div>
 
-      <div className="popup-training ">
-        <p><span className="popup-titles">Cohort:</span>  {graduateUser.cohort}</p>
-        <p><span className="popup-titles">Learning Path:</span> {graduateUser.learningPath}</p>
-        <p><span className="popup-titles">Training Finish Date:</span> {graduateUser.trainingFinishDate}</p>
-      </div>
-      </div>
-      
 
-      
-<div className="popup-qualifications">
+
+      <div className="popup-qualifications">
         <p><span className="popup-titles">School Qualifications:</span> {school}</p>
         <p><span className="popup-titles">Work Experience:</span> {work}</p>
         <p><span className="popup-titles">Certs and Awards:</span> {graduateUser.certificatesAndAwards[0].award}</p>
@@ -82,7 +80,7 @@ const ProfilePopup = ({ serverURL, setGraduateUser, graduateUser }) => {
 
 
 
-      
+
 
 
     </div>

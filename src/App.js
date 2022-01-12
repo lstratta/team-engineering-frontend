@@ -6,6 +6,7 @@ import Trainee from "./components/Trainee";
 import NavBar from "./components/NavBar";
 import EditProfile from "./components/EditProfile";
 import TalentSpotlight from "./components/industry-partner/TalentSpotlight";
+import AllGraduates from "./components/graduate-route/AllGraduates";
 
 function App() {
 
@@ -15,9 +16,11 @@ function App() {
 
   return (
     <div>
-      <NavBar />
+      {/* <NavBar /> */}
 
       <Routes>
+        <Route exact path='/' element={<AllGraduates serverURL={SERVER_URL} />} />
+        <Route path='/graduate' element={<AllGraduates serverURL={SERVER_URL} />} />
         <Route path='/graduate/:_id' element={<Trainee serverURL={SERVER_URL} />} />
         <Route path='/graduate/:_id/edit' element={<EditProfile serverURL={SERVER_URL} />} />
         <Route exact path="/industry-partner/TalentSpotlight" element={<TalentSpotlight serverURL={SERVER_URL} />} />

@@ -34,7 +34,7 @@ const SchoolQualifications = ({ schooling, serverURL, graduateId, setGraduateUse
       <td>{schooling.weight}</td>
       <td>{schooling.priority}</td>
       <td>{schooling.description}</td>
-      <Button onClick={handleDelete}>Delete</Button>
+      <Button onClick={handleDelete} variant="danger" className="delete-btn" >Delete</Button>
     </tr>
   )
 };
