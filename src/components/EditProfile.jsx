@@ -6,7 +6,7 @@ import PersonalStory from "./PersonalStory";
 import axios from "axios";
 
 
-const EditProfile = ({serverURL}) => {
+const EditProfile = ({ serverURL }) => {
 
   const { _id } = useParams()
 

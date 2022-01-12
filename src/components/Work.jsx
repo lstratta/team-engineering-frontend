@@ -34,7 +34,7 @@ const WorkExperience = ({ work, serverURL, graduateId, setGraduateUser }) => {
       <td>{work.weight}</td>
       <td>{work.priority}</td>
       <td>{work.description}</td>
-      <Button onClick={handleDelete}>Delete</Button>
+      <Button onClick={handleDelete} variant="danger" className="delete-btn">Delete</Button>
     </tr>
   )
 };

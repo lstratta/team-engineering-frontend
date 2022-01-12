@@ -3,7 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import "../css/edit-profile.css";
 // import PersonalInfoModal from "./Modals/PersonalInfoModal";
-// import { Modal, Button } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 // const fileSelectedHandler = ;
 // const fileUploadHandler = ;
 // const state = ;
@@ -165,7 +165,7 @@ export default function PersonalInfo({ graduateUser, serverURL, setGraduateUser 
                 id="photo"
                 onChange={fileSelectedHandler}
               />
-              <input type="submit" />
+              <Button className="submit-btn" variant="primary" type="submit">Submit</Button>
             </form>
           </div>
 

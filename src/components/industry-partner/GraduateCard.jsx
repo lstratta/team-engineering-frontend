@@ -11,13 +11,16 @@ const GraduateCard = (graduate) => {
   const [profileShow, setProfileShow] = useState(false)
   const handleProfileShow = () => setProfileShow(true)
   const handleProfileClose = () => setProfileShow(false)
-
+  console.log(graduateUser.picture);
   return (
 
     <div className="graduate-card">
       <div className="inner-card">
         <div className="profile-image">
-          <img src="../assets/df-logo-blue-background.png" alt="Digital Futures logo" />
+
+          {!graduateUser.picture && <img src="../assets/df-logo-blue-background.png" alt="Digital Futures logo" />}
+          {graduateUser.picture && <img src={graduateUser.picture} alt="Profile picture" />}
+
         </div>
         <div className="profile-name">
           <h4>{graduateUser.firstName + " " + graduateUser.lastName}</h4>

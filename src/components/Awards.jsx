@@ -34,7 +34,7 @@ const Awards = ({ award, serverURL, graduateId, setGraduateUser }) => {
       <td>{award.weight}</td>
       <td>{award.priority}</td>
       <td>{award.description}</td>
-      <Button onClick={handleDelete}>Delete</Button>
+      <Button onClick={handleDelete} variant="danger" className="delete-btn" >Delete</Button>
     </tr>
   )
 };

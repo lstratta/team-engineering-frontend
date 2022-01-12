@@ -33,7 +33,7 @@ const Portfolio = ({ portfolio, serverURL, graduateId, setGraduateUser }) => {
       <td>{portfolio.weight}</td>
       <td>{portfolio.priority}</td>
       <td>{portfolio.description}</td>
-      <Button onClick={handleDelete}>Delete</Button>
+      <Button onClick={handleDelete} variant="danger" className="delete-btn" >Delete</Button>
     </tr>
   )
 };

@@ -39,7 +39,7 @@ const Degree = ({ degree, serverURL, graduateId, setGraduateUser }) => {
       <td>{degree.weight}</td>
       <td>{degree.priority}</td>
       <td>{degree.description}</td>
-      <Button onClick={handleDelete}>Delete</Button>
+      <Button onClick={handleDelete} variant="danger" className="delete-btn">Delete</Button>
     </tr>
   )
 };
