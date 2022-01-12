@@ -20,6 +20,7 @@ const GraduateCard = (graduate) => {
 
           {!graduateUser.picture && <img src="../assets/df-logo-blue-background.png" alt="Digital Futures logo" />}
           {graduateUser.picture && <img src={graduateUser.picture} alt="Profile" />}
+          
 
         </div>
         <div className="profile-name">
