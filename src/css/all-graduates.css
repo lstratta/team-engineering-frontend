@@ -1,25 +1,19 @@
 .wide-div{
-    width: 95%;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-}
-
-.pathway-section{
-
-    text-align: center;
     margin: auto;
-
+    text-align: center;
 }
+
+
 
 .graduate-profile-card{
-    display: inline-block;
+    /* display: inline-block; */
+    text-align: center;
+    margin: auto;
 }
 
-.title{
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-bottom: 2%;
+.outer-graduate {
+    text-align: center;
+    margin: auto;
 }
 
 h3{

@@ -19,6 +19,7 @@ function App() {
       {/* <NavBar /> */}
 
       <Routes>
+        <Route exact path='/' element={<AllGraduates serverURL={SERVER_URL} />} />
         <Route path='/graduate' element={<AllGraduates serverURL={SERVER_URL} />} />
         <Route path='/graduate/:_id' element={<Trainee serverURL={SERVER_URL} />} />
         <Route path='/graduate/:_id/edit' element={<EditProfile serverURL={SERVER_URL} />} />
