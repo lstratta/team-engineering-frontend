@@ -1,12 +1,12 @@
 .wide-div{
     margin: auto;
     text-align: center;
+    padding-top: 1%;
 }
 
 
 
 .graduate-profile-card{
-    /* display: inline-block; */
     text-align: center;
     margin: auto;
 }

@@ -34,14 +34,16 @@ const AllGraduates = ( {serverURL} ) => {
             {/* <Navbar id={allGraduates}/> */}
             
             <div className="wide-div">
+                <div className="row justify-content-center">
                 {allGraduates && allGraduates.map( graduate => (
                         // <div className="outer-graduate" key={graduate._id}>
-                            <div class="col-md-8 mx-auto" key={graduate._id}>
+                            <div className="col-md-5" key={graduate._id}>
                                 <ProfileCard graduate={graduate} />
                             </div>
                         // </div>
                     )) 
                 }
+                </div>
             </div>
 
         </div>

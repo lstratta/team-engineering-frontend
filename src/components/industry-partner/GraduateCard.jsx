@@ -1,9 +1,8 @@
-import "../../css/graduate-card.css"
 import React, { useState } from "react";
 import ProfilePopup from "./ProfilePopup";
 import { Modal, Button } from "react-bootstrap";
-import "../../css/modal.css"
-
+import "../../css/modal.css";
+import "../../css/graduate-card.css";
 
 const GraduateCard = (graduate) => {
 

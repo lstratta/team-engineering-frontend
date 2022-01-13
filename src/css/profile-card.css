@@ -4,9 +4,21 @@ body{
    
 }
 
+.pc-profile-card{
+    height: 200px;
+    width: 700px;
+    margin-bottom: 30px;
+    /* margin-left: 25%; */
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* position: relative; */
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: rgba(206, 206, 206, 0.5) 5px 5px 5px 5px;
+}
 
-
-.profile-image {
+.pc-profile-image img {
     border-radius: 50%;
     margin-bottom: 20px; 
     margin-top: 5px;
@@ -14,84 +26,45 @@ body{
     height: 150px; 
 }
 
-.outer-profile-guide {
+.pc-outer-profile-guide {
     display: flex;
     align-items: center;
 }
-
-.profile-image > img{
-    width: 150px; 
-    height: 150px;
-}
-
-.profile-card{
-    /* border: 1px solid rgb(6, 20, 80);  */
-    height: 200px;
-    margin-bottom: 30px;
-    padding-top: 10px;
-    padding-left: 5%;
-    padding-right: 5%;
-    position: relative;
-    border-radius: 10px;
-    background-color: rgb(240, 240, 240);
-    box-shadow: rgba(206, 206, 206, 0.5) 5px 5px 5px 5px;
-    
-}
-
-/* .wide-div{
-   margin: auto;
-} */
-
-
-
-.view-profile-button {
-    /* border: 2px solid rgb(80, 27, 6); */
-    /* position:absolute;                 */
-    width: 100%;
-    padding-right: 10%;
-    margin-bottom: 2%;
-    /* vertical-align: bottom; */
-    /* bottom: 0; */
-    
-    
-}
-
 
 h2{
     margin-left: -10px;
 }
 
-.profile-name h4{
+.pc-profile-name h4{
     font-weight: 600;
     font-size: 35px;
-    padding-bottom: 10px;
+    padding-bottom: 50px;
     margin-left: 40px;
     margin-bottom: 40px;
-    margin-top: -50px;
 }
 
 
-.degree-github{
+.pc-degree-github{
     position: relative; 
-    /* bottom: 85px; */
-    /* width: 90%; */
     text-align: center;
     display: flex;
     align-items: center;
     margin-left: 200px;
-    margin-bottom: 90px;
-    margin-top: -7px;
+    margin-top: -90px;
 }
 
-.github-icon img {
+.pc-github-icon img {
     margin-left: 10px;
 }
 
-.summary{
-    padding-top: 20px;
+.pc-view-profile-button {
+    padding-right: 10%;
+    margin-top: 0px;
+    font-size: 40px;
+
+} 
+
+.pc-view-profile-button.btn-primary{
+    height: 50px;
+    width: 100;
 }
-
-
-
-
-
