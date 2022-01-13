@@ -55,6 +55,7 @@ padding-bottom: 30px;
 
 .industry-modal .modal-content{
 	width: 700px;
+	margin-left: -150px;
 }
 
 .student-name{

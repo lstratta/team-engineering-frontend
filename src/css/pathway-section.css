@@ -17,11 +17,15 @@
 }
 
 .title{
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-bottom: 2%;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    
+
 }
 
 h3{
-padding-top: 25px;
+    padding-top: 25px;
+    font-size: 32px;
+    font-weight: 650;
 }

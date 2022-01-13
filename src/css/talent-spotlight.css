@@ -15,8 +15,22 @@ body{
 }
 
 
-.data-science-section, .software-engineering-section{
+.software-engineering-section{
     /* border: 1px solid rgb(6, 20, 80); */
+    /* width: 1300px; */
+    /* position: absolute; */
+    width: 1250px;
+    margin: 40px 20px;
+    box-shadow: rgba(206, 206, 206, 0.5) 5px 5px 5px 5px;
+    background-color: rgb(255, 253, 250);
+    border-radius: 10px;
+}
+
+.data-science-section {
+    /* border: 1px solid rgb(6, 20, 80); */
+    /* width: 1300px; */
+    /* position: absolute; */
+    width: 950px;
     margin: 40px 20px;
     box-shadow: rgba(206, 206, 206, 0.5) 5px 5px 5px 5px;
     background-color: rgb(255, 253, 250);
@@ -51,8 +65,11 @@ h2{
     background-color: rgb(255, 253, 250);
     border-radius: 10px;
     padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
     margin: 30px auto;
-    width: 98%;
+    width: fit-content;
     box-shadow: rgba(206, 206, 206, 0.5) 5px 5px 5px 5px;
     
 }

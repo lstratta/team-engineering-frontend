@@ -52,7 +52,7 @@ const GraduateCard = (graduate) => {
 
         <Modal show={profileShow} className="industry-modal">
           <Modal.Header>
-            <Modal.Title>Score Card</Modal.Title>
+            <Modal.Title>Scorecard</Modal.Title>
           </Modal.Header>
 
           <Modal.Body  >

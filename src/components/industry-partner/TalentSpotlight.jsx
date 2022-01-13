@@ -6,6 +6,7 @@ import DataScienceSection from "./DataScienceSection.jsx";
 import SoftwareEngineeringSection from "./SoftwareEngineeringSection.jsx";
 import Navbar from "../NavBar";
 import "../../css/talent-spotlight.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const TalentSpotlight = ({ serverURL }) => {
   const [graduates, setGraduates] = useState([]);
@@ -31,33 +32,45 @@ const TalentSpotlight = ({ serverURL }) => {
       <Navbar />
 
       <div className="talent-spotlight-top">
-      <div className="headline">
-        <h2>Talent Spotlight</h2>
-      </div>
-      <div className="description">
-        <p>
-          {" "}
-          The talent spotlight is where you can find the graduates that are
-          right for your business.
-        </p>
-        <p>
-          Whether you are looking for highly-skilled Data Scientists or Software
-          Engineers, each one of our graduates will be an asset to your team.
-        </p>
-        <p>
-          View each of our graduate's profiles below to see what their specific
-          skills are and decide whether you'd like to interview them.
-        </p>
-      </div>
-      </div>
-      <div className="data-science-section">
-        <DataScienceSection graduates={graduates} />
+
+        <div className="headline">
+          <h2>Talent Spotlight</h2>
+        </div>
+
+        <div className="description">
+          <p>
+            {" "}
+            The talent spotlight is where you can find the graduates that are
+            right for your business.
+          </p>
+          <p>
+            Whether you are looking for highly-skilled Data Scientists or Software
+            Engineers, each one of our graduates will be an asset to your team.
+          </p>
+          <p>
+            View each of our graduate's profiles below to see what their specific
+            skills are and decide whether you'd like to interview them.
+          </p>
+        </div>
+
       </div>
 
-      <div className="software-engineering-section">
-        <SoftwareEngineeringSection graduates={graduates} />
-      </div>
-    </div>
+
+        <div className="row justify-content-center">
+          
+            <div className="data-science-section">
+              <DataScienceSection graduates={graduates} />
+            </div>
+
+        </div>
+
+        <div className="row justify-content-center">
+          <div className="software-engineering-section">
+            <SoftwareEngineeringSection graduates={graduates} />
+          </div>
+        </div>
+      </div>  
+
   );
 };
 
