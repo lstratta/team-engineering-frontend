@@ -12,7 +12,7 @@ import DemoHomepage from "./components/demo-route/DemoHomepage";
 function App() {
 
   const SERVER_URL = 'https://cors-anywhere.herokuapp.com/http://ec2-34-192-124-43.compute-1.amazonaws.com:4675/'
-  // const SERVER_URL = 'http://localhost:5757/'
+  // const SERVER_URL = 'http://localhost:4675/'
   const JSON_SERVER_URL = 'http://localhost:3000/'
 
   return (
