@@ -57,7 +57,7 @@ export default function PersonalInfo({ graduateUser, serverURL, setGraduateUser 
 
   const postData = async (file) => {
     await axios
-      .post(`http://localhost:5757/graduate/${graduateUserObject._id}/edit/picture`, { fileString: file })
+      .post(`${serverURL}graduate/${graduateUserObject._id}/edit/picture`, { fileString: file })
       .then((res) => {
         getData()
       })
