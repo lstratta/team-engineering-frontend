@@ -17,7 +17,7 @@ export default function NavBar (id) {
       <div className="header2">
         <Navbar expand="lg">
           <Container>
-            <Navbar.Brand href="/graduate">
+            <Navbar.Brand href="/">
               <img
                 src="/assets/df-logo.png"
                 alt="Digital Futures Logo"

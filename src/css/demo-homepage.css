@@ -1,0 +1,41 @@
+body{
+    font-family: sans-serif;
+    background-image: url("./background.jpg");
+   
+}
+
+
+
+
+
+.demo-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    
+}
+
+.grad-btn, .partner-btn{
+   background-color: rgb(6, 20, 80);
+   border: none;
+   align-self: center;
+   margin-left: 15px;
+   height: 300px;
+width: 350px;
+cursor: pointer;
+border-radius: 10px;
+font-size: 30px;
+}
+
+.grad-btn a, .partner-btn a{
+    color: white;
+
+}
+
+.btn-pics{
+    display: block;
+    margin: auto;
+    width: 50px;
+}
+

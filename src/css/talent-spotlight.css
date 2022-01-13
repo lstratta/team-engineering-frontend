@@ -10,8 +10,8 @@ body{
 }
 
 .description{
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-left: 1.8%;
+    /* padding-right: 4%; */
 }
 
 
@@ -45,4 +45,14 @@ select{
 h2{
     font-size: 40px;
     padding-bottom: 20px;
+}
+
+.talent-spotlight-top{
+    background-color: rgb(255, 253, 250);
+    border-radius: 10px;
+    padding-bottom: 10px;
+    margin: 30px auto;
+    width: 98%;
+    box-shadow: rgba(206, 206, 206, 0.5) 5px 5px 5px 5px;
+    
 }

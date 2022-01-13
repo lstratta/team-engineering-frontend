@@ -29,6 +29,8 @@ const TalentSpotlight = ({ serverURL }) => {
   return (
     <div>
       <Navbar />
+
+      <div className="talent-spotlight-top">
       <div className="headline">
         <h2>Talent Spotlight</h2>
       </div>
@@ -47,7 +49,7 @@ const TalentSpotlight = ({ serverURL }) => {
           skills are and decide whether you'd like to interview them.
         </p>
       </div>
-
+      </div>
       <div className="data-science-section">
         <DataScienceSection graduates={graduates} />
       </div>
