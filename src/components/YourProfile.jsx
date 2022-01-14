@@ -25,7 +25,7 @@ export default function YourProfile({graduateUser}) {
 
                 <div className="profile-edit">
 
-                    { !graduate.picture ? <img src="../assets/df-logo-blue-background.png" alt="Digital Futures logo" /> : <img src={graduate.picture} alt="Profile Image" /> }
+                    { !graduateUser.picture ? <img src="../assets/df-logo-blue-background.png" alt="Digital Futures logo" /> : <img src={graduateUser.picture} alt="Profile Image" /> }
 
                     {/* {!graduateUser.picture && <img src="../assets/defaultProfile.jpg" alt="default" className="default-profile-picture"/>}
                     {graduateUser.picture && <img src={graduateUser.picture} alt="Profile" className="default-profile-picture"/>} */}
