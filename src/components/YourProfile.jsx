@@ -24,8 +24,11 @@ export default function YourProfile({graduateUser}) {
     <div className="container-fluid">
 
                 <div className="profile-edit">
-                    {!graduateUser.picture && <img src="../assets/defaultProfile.jpg" alt="default" className="default-profile-picture"/>}
-                    {graduateUser.picture && <img src={graduateUser.picture} alt="Profile" className="default-profile-picture"/>}
+
+                    { !graduate.picture ? <img src="../assets/df-logo-blue-background.png" alt="Digital Futures logo" /> : <img src={graduate.picture} alt="Profile Image" /> }
+
+                    {/* {!graduateUser.picture && <img src="../assets/defaultProfile.jpg" alt="default" className="default-profile-picture"/>}
+                    {graduateUser.picture && <img src={graduateUser.picture} alt="Profile" className="default-profile-picture"/>} */}
 
                     <div className="profile-edit-section">
                 <h2 className="profile">Your Profile</h2>
